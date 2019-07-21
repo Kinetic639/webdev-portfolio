@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+
+
+
+body {
+    background-image: url("../../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-color: green;
+    // border: 1px solid yellowgreen;
+    height: 100%;
+    // border: 2px solid lightseagreen;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+// header,
+// main,
+// footer {
+//     border: 2px solid green;
+// }
+
+// .section {
+//     //     height: 100%;
+//     border: 2px solid lightseagreen;
+
+//     // & * {
+//     //     border: 1px solid orangered;
+
+//     // }
+
+//     // &-home {
+
+//     //     &__left,
+//     //     &__img,
+//     //     &__right {
+//     //         border: 1px solid yellowgreen;
+
+//     //     }
+//     // }
+// }
+
+// footer * {
+
+//     border: 1px solid orangered;
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+
+// .section {
+//     &-home {
+//         &__title,
+
+//         &__left,
+
+//         &__right {
+
+//             border: 1px solid yellowgreen;
+
+//         }
+//     }
+// }

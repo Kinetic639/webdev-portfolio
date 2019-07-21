@@ -1,3 +1,3 @@
 ##My portfolio
 
-https://kinetic639.github.io/portfolio/
+https://kinetic639.github.io/webdev-portfolio/

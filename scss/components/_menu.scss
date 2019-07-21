@@ -1,0 +1,313 @@
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////mobile first////////////////////
+.menu {
+
+    // &-social,
+    // &-nav {
+    //     display: none;
+    // }
+
+    &-btn {
+        z-index: 3;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-end;
+
+        cursor: pointer;
+        @include easeOut;
+
+        .btn-line {
+            height: 3px;
+            background-color: $primary-color;
+            transition: all ease-in .2s;
+
+            &:nth-child(1),
+            &:nth-child(3) {
+                width: 34px;
+            }
+
+            &:nth-child(2) {
+                width: 25px;
+
+            }
+
+            &:not(:last-child) {
+                margin: 0 0 8px 0;
+
+            }
+        }
+
+        &.close {
+            .btn-line {
+
+                &:nth-child(1) {
+                    transform: rotate(135deg) translate(9px, -7px);
+                }
+
+                &:nth-child(2) {
+                    width: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-135deg) translate(8px, 7px);
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+    &-contact {
+        list-style-type: none;
+        padding: 1rem;
+        align-items: center;
+        justify-content: space-evenly;
+
+        display: flex;
+
+        flex-wrap: wrap;
+        // display: grid;
+
+        // // grid-template-columns: repeat(2, 1fr);
+        // grid-gap: 1rem;
+        // justify-items: center;
+        // grid-template-areas:
+        //     'a''a'
+
+        //     'b''b'
+        //     'a''a';
+
+
+        &__item {
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+
+            // &:hover {
+            //     background: rgba(#242323, .8);
+            //     border: 2px solid $third-color;
+            //     color: $third-color;
+            //     transform: scale(.9);
+            //     transition: all .3s ease-in-out;
+
+            // }
+        }
+
+        // &.a {
+        //     grid-area: 'a'
+        // }
+
+        // &.b {
+        //     grid-area: 'b'
+        // }
+
+        // &.c {
+        //     grid-area: 'c'
+        // }
+
+    }
+
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+
+
+// .menu {
+//     display: flex;
+//     list-style: none;
+
+//     &__item {
+
+
+
+//         &:not(:last-child) {
+//             margin-right: 6rem;
+//         }
+//     }
+
+//     &-btn {
+//         height: auto;
+//         display: none;
+//         flex-direction: column;
+//         align-items: flex-end;
+
+//         cursor: pointer;
+
+//         .btn-line {
+//             height: 3px;
+//             background-color: $primary-color;
+//             transition: all ease-in .2s;
+
+//             &:nth-child(1),
+//             &:nth-child(3) {
+//                 width: 34px;
+//             }
+
+//             &:nth-child(2) {
+//                 width: 25px;
+
+//             }
+
+//             &:not(:last-child) {
+//                 margin: 0 0 8px 0;
+
+//             }
+//         }
+
+
+//     }
+
+//     &-social {
+//         & .menu__item i {
+//             &:hover {
+//                 color: $third-color;
+//             }
+//         }
+//     }
+
+//     // &__item {
+//     //     & a {
+
+//     //     color: #fff;
+//     //     }
+//     // }
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+
+
+//////////////////////////////////////////////
+
+
+
+// .menu {
+//     //     // border: 1px solid yellowgreen;
+//     display: none;
+//     // display: flex;
+//     align-items: center;
+//     padding: 3rem 2rem;
+
+//     &-nav__item,
+//     &-social__item {
+//         &:not(:last-child) {
+//             margin-right: 8rem;
+//         }
+//     }
+
+//     &-btn {
+//         // position: absolute;
+//         // border: 1px solid red;
+//         height: auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-end;
+
+//         cursor: pointer;
+
+//         .btn-line {
+//             height: 3px;
+//             background-color: $primary-color;
+//             transition: all ease-in .2s;
+
+//             &:nth-child(1),
+//             &:nth-child(3) {
+//                 width: 34px;
+//             }
+
+//             &:nth-child(2) {
+//                 width: 25px;
+
+//             }
+
+//             &:not(:last-child) {
+//                 margin: 0 0 8px 0;
+
+//             }
+//         }
+
+//         &.close {
+
+//             .btn-line {
+
+//                 &:nth-child(1) {
+//                     transform: rotate(135deg) translate(9px, -7px);
+//                 }
+
+//                 &:nth-child(2) {
+//                     width: 0;
+//                 }
+
+//                 &:nth-child(3) {
+//                     transform: rotate(-135deg) translate(8px, 7px);
+//                 }
+//             }
+//         }
+
+//     }
+
+//     &-social {
+//         display: none;
+//         list-style: none;
+//         font-size: 3.7rem;
+//         color: $primary-color;
+//     }
+
+//     &-current {
+//         // position: absolute;
+//         // border: 1px solid red;
+//         height: auto;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         padding: 5rem 0;
+
+
+//         .current-line {
+//             background-color: $secondary-color;
+//             transition: all ease-in .2s;
+//             flex: 1;
+//             width: 8px;
+//             border-radius: 3px;
+
+//             &:not(:last-child) {
+//                 margin: 0 0 30px 0;
+
+//             }
+
+//             &.active {
+//                 background-color: $primary-color;
+//             }
+//         }
+
+//         &.close {
+
+//             .btn-line {
+
+//                 &:nth-child(1) {
+//                     transform: rotate(135deg) translate(9px, -7px);
+//                 }
+
+//                 &:nth-child(2) {
+//                     width: 0;
+//                 }
+
+//                 &:nth-child(3) {
+//                     transform: rotate(-135deg) translate(8px, 7px);
+//                 }
+//             }
+//         }
+//     }
+// }

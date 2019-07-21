@@ -1,0 +1,291 @@
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+// @include mediaXxl {
+
+//     .section {
+//         &-home {
+//             &__title h1 {
+//                 font-size: 6rem;
+//             }
+//         }
+//     }
+// }
+
+// @include mediaXl {
+
+//     .wrapper {
+//         width: 85%;
+//     }
+
+//     .section {
+//         &-home {
+//             &__title h1 {
+//                 font-size: 5rem;
+//             }
+//         }
+//     }
+// }
+
+// // // Desktops & Laptops
+// @include mediaLg {
+
+//     .wrapper {
+//         width: 90%;
+//     }
+
+//     .section {
+//         &-home {
+//             &__img {
+//                 width: auto;
+//                 height: 100%;
+//             }
+//         }
+//     }
+// }
+
+// // // Desktops & Laptops
+// @include mediaL {
+
+//     // body {
+//     //     height: 100%;
+//     // }
+//     .menu-nav {
+//         display: none;
+//         visibility: hidden;
+//     }
+
+//     .menu-btn {
+//         display: block;
+//     }
+
+//     .wrapper {
+//         width: auto;
+//     }
+
+//     .header,
+//     .footer {
+//         padding: 2.3rem 4rem;
+
+//     }
+
+//     .side-bars__menu {
+//         display: none;
+//     }
+
+//     .section {
+//         &-home {
+
+//             &__title h1 {
+//                 font-size: 4rem;
+//             }
+//         }
+//     }
+// }
+
+
+// // // Tablets & Small Laptops
+// @include mediaMd {
+
+//     body {
+//         background-image: none;
+//         background-color: green;
+
+
+//     }
+// }
+
+
+
+// // // Tablets & Small Laptops
+// @include mediaMd {
+
+//     body {
+//         background-image: none;
+//         background-color: green;
+
+
+//     }
+// }
+
+
+// // //  Small Smartphones
+// @include mediaSm {
+
+//     // body {
+//     //     background-image: none;
+//     //     background-color: yellow;
+
+
+//     // }
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////pierwsza wersja////////////////////
+
+
+
+
+// //  Small Smartphones
+// @include mediaXs {
+//     .branding {
+//         display: none;
+//     }
+
+//     .header {
+//         justify-content: flex-end;
+//         padding: 3rem
+//     }
+
+
+// }
+
+// // Smartphones
+// @include mediaSm {
+
+
+//     .content__active-bars {
+//         display: flex;
+//     }
+
+//     //home section
+
+//     .home__title {
+//         & h1 {
+//             font-size: 5rem;
+//         }
+
+//         & h2 {
+//             font-size: 2rem;
+//         }
+//     }
+
+
+//     //footer
+//     .current {
+//         &-full {
+//             // border: 1px solid yellowgreen;
+
+//             font-weight: 300;
+//             font-size: 1.8rem;
+//         }
+
+//         &-view {
+//             font-weight: 900;
+//             font-size: 2.4rem;
+
+//         }
+//     }
+// }
+
+// // Tablets & Small Laptops
+// @include mediaMd {
+//     .wrapper__main {
+//         // width: 90vw;
+//         max-width: 130rem;
+//     }
+// }
+
+// // Desktops & Laptops
+// @include mediaLg {
+
+//     .menu,
+//     .menu-social,
+//     .copyright {
+//         display: flex;
+//     }
+
+//     .menu {
+//         flex: 1;
+
+//         &-nav {
+//             justify-content: center;
+//         }
+
+//         &-btn {
+//             display: none;
+//         }
+//     }
+
+//     .scroll {
+
+//         width: fit-content;
+//         transform: translate(-50%, -50%);
+//     }
+
+//     .home {
+//         // border: 1px solid white;
+
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+
+//         &__title {
+//             border-right: 10px solid white;
+//             padding-right: 3rem;
+
+//             & h1 {
+//                 margin-bottom: 3rem;
+//                 font-size: 7rem;
+//             }
+
+//             & h2 {
+//                 font-size: 3rem;
+//             }
+//         }
+
+//         &__left-side {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-end;
+//             justify-content: center;
+//             // border: 1px solid white;
+//             height: 70%;
+//             min-width: 600px;
+//             flex: 0;
+
+//         }
+
+//         &__right-side {
+//             // border: 1px solid white;
+//             position: static;
+
+//             align-items: flex-start;
+//             flex: 0;
+//             padding: 0 0 0 3rem;
+//             height: 80%;
+//             opacity: 1;
+//             display: flex;
+//             justify-content: center;
+//             z-index: -1;
+//             margin-top: 6rem;
+
+//             transform: translate(0, 0);
+//         }
+//     }
+
+//     .btn-cta-contact {
+//         position: static;
+//     }
+
+//     .portrait {
+//         //     // position: absolute;
+//         //     // top: 0;
+//         //     // left: 0;
+//         height: 100%;
+//         margin: 0 auto;
+//         //     width: 100%;
+
+//     }
+
+//     .menu-social-contact {
+//         flex: 0;
+//         display: grid;
+//         grid-row-gap: 8rem;
+//         grid-column-gap: 20rem;
+//         margin-right: 0;
+//     }
+// }
+
+// // Widescreens
+// @include mediaXl {}
