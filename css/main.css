@@ -42,6 +42,15 @@ body {
   .menu__link:hover {
     color: #FF7F00; }
 
+.menu-branding__title h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.5rem; }
+
+.menu-branding__title h2 {
+  font-size: 1.4rem;
+  color: #9e9e9e;
+  font-weight: 300; }
+
 .address-primary {
   font-size: 1.8rem;
   margin-bottom: 1.5rem; }
@@ -96,6 +105,7 @@ html {
 
 .main {
   flex: 1;
+  height: 1000px;
   overflow: auto;
   scroll-behavior: smooth; }
 
@@ -146,17 +156,23 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
-    height: 40vh;
+    height: 40%;
     width: 100%;
     z-index: 4;
     transition: all .4s ease-in; }
+    .menu-branding__img {
+      height: 70%;
+      opacity: .3; }
+    .menu-branding__title {
+      text-align: center;
+      position: absolute; }
   .menu-nav {
     background-color: #050f15;
     position: absolute;
     bottom: 0;
     left: 100%;
     list-style: none;
-    height: 60vh;
+    height: 60%;
     width: 100%;
     z-index: 4;
     transition: all .4s ease-in; }

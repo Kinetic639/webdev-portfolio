@@ -5,7 +5,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const menuFooter = document.querySelector("footer");
 const menuSocial = document.querySelector(".menu-social");
-const menuItem = document.getElementsByClassName("menu__item");
+// const menuWrapper = document.querySelector(".menu-wrapper");
 const navItems = document.querySelectorAll(".menu__item");
 
 // Set Initial State Of Menu
@@ -16,7 +16,7 @@ menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
-    // menu.classList.add("show");
+    // menuWrapper.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
     // menuFooter.classList.add("show");
@@ -27,7 +27,7 @@ function toggleMenu() {
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
-    // menu.classList.remove("show");
+    // menuWrapper.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
     // menuFooter.classList.remove("show");

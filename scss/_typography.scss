@@ -84,6 +84,21 @@ body {
             color: $third-color;
         }
     }
+
+    &-branding {
+        &__title {
+            & h1 {
+                font-size: 3.6rem;
+                margin-bottom: 1.5rem;
+            }
+
+            & h2 {
+                font-size: 1.4rem;
+                color: $secondary-color;
+                font-weight: 300;
+            }
+        }
+    }
 }
 
 .address {
