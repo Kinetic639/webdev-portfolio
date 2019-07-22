@@ -5,6 +5,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const menuFooter = document.querySelector("footer");
 const menuSocial = document.querySelector(".menu-social");
+const menuItem = document.getElementsByClassName("menu__item");
 const navItems = document.querySelectorAll(".menu__item");
 
 // Set Initial State Of Menu
@@ -36,4 +37,13 @@ function toggleMenu() {
     // Set Menu State
     showMenu = false;
   }
+}
+
+menuNav.addEventListener("click", closeMenu);
+
+function closeMenu() {
+  menuBtn.classList.remove("close");
+  menuNav.classList.remove("show");
+  menuBranding.classList.remove("show");
+  showMenu = false;
 }

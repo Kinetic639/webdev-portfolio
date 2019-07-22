@@ -12,6 +12,7 @@
         visibility: hidden;
 
         &.show {
+            // display: flex;
             visibility: visible;
             left: 0;
             @include easeInFast;
