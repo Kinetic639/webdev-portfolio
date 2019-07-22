@@ -70,6 +70,20 @@ body {
 
         }
     }
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 2rem 0;
+        text-decoration: none;
+        color: $primary-color;
+        width: 100%;
+
+        &:hover {
+            color: $third-color;
+        }
+    }
 }
 
 .address {

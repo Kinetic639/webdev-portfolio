@@ -2,13 +2,55 @@
 ///////////////////////////////////////////////mobile first////////////////////
 .menu {
 
-    // &-social,
-    // &-nav {
-    //     display: none;
-    // }
+    &-branding,
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        visibility: hidden;
+
+        &.show {
+            visibility: visible;
+            transform: translate3d(0, 0, 0);
+            @include easeInFast;
+        }
+    }
+
+    &-branding {
+        background-color: rgba(lighten($fourth-color, 10), 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40vh;
+        width: 100%;
+        z-index: 4;
+        transform: translate3d(-100%, 0, 0);
+        @include easeInFast;
+
+
+    }
+
+
+    &-nav {
+        background-color: rgba(darken($fourth-color, 10), 1);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        list-style: none;
+        height: 60vh;
+        width: 100%;
+        z-index: 4;
+        transform: translate3d(100%, 0, 0);
+        @include easeInFast;
+
+
+
+    }
+
 
     &-btn {
-        z-index: 3;
+        z-index: 5;
         display: flex;
         height: auto;
         flex-direction: column;
@@ -114,8 +156,24 @@
 
     }
 
+    &__item {
+        transform: translate3d(110%, 0, 0);
+        @include easeOut;
+        width: 90%;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+            @include easeOut;
+        }
+    }
+
 }
 
+@for $x from 1 through 5 {
+    .menu__item:nth-child(#{$x}) {
+        transition-delay: $x * .1s;
+    }
+}
 
 /////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////pierwsza wersja////////////////////
