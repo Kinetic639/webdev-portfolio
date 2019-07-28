@@ -120,7 +120,7 @@
 
     .skills {
         &-box {
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
             height: auto;
         }
 
@@ -150,13 +150,16 @@
         &-block {
             display: flex;
             flex-direction: column;
+            margin-bottom: 1.5rem;
 
-            // &__title {
-            //     padding-bottom: 1rem;
-            // }
+            &__title {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
 
             &__icons {
-
+                display: flex;
+                justify-content: space-around;
                 padding: 1.5rem 0;
 
                 & .icon {
@@ -171,20 +174,23 @@
                         transform: scale(1.2);
                     }
 
-                    &:not(:last-child) {
-                        margin-right: 4rem;
-                    }
+                    // &:not(:last-child) {
+                    //     margin-right: 4rem;
+                    // }
                 }
             }
         }
 
         &-modal {
             visibility: hidden;
-            padding: 0;
-            width: 100%;
+            padding: 1.6rem 0;
+            margin: 0 2rem;
             max-height: 0;
             overflow: hidden;
             opacity: 0;
+            border-bottom: 2px solid $secondary-color;
+
+            border-top: 2px solid $secondary-color;
             // transition: opacity 0.2s linear 2s, all 2.5s;
             @include easeOutFast;
 
@@ -249,8 +255,8 @@
                 // }
 
                 &__item {
-                    padding-bottom: 1.5rem;
-                    // transform: translate3d(0, 0, 0);
+                    // padding-bottom: 1.5rem;
+                    transform: translate3d(0, 0, 0);
                     // @include easeOut;
                 }
             }
@@ -283,15 +289,19 @@
         padding: 2rem;
         position: absolute;
         width: 100%;
-        bottom: -80%;
+        bottom: calc((100% - 5.5rem) * -1);
         left: 0;
         background-color: rgba(#0e212e, $alpha: .7);
         transition: all .4s cubic-bezier(.66, .01, .44, .99);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &__title {
-            padding-bottom: 13.6rem;
+            padding-bottom: 1.6rem;
             border-bottom: 2px solid $secondary-color;
             transition: all .8s ease-in-out;
+            justify-self: flex-start;
         }
 
         &__description {
@@ -312,12 +322,14 @@
         }
 
         &__link-box {
+            border-top: 2px solid $secondary-color;
+            padding-top: 2rem;
             display: flex;
             justify-content: space-evenly;
         }
 
         &__item {
-            padding-bottom: 20rem;
+            transform: translate3d(0, 1000px, 0);
             @include easeOut;
 
 
@@ -345,7 +357,7 @@
         padding: 1.5rem 2.5rem;
         border: 2px solid transparent;
         transition: all .3s ease-in-out;
-        margin: 10% 0;
+        margin: 10% 2rem;
 
     }
 
@@ -353,7 +365,7 @@
 }
 
 
-@for $x from 1 through 5 {
+@for $x from 1 through 4 {
     .image-overlay__item:nth-child(#{$x}) {
         transition-delay: $x * .1s;
     }
