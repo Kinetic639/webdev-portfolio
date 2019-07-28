@@ -114,14 +114,32 @@ $(".skills-modal").click(function() {
   $(this).removeClass("show");
 });
 
-// var previousTarget = null;
-// $(".icon").click(function() {
-//   if (this === previousTarget) {
-//     $(".skills-modal").toggleClass("show");
-//     // previousTarget = null;
-//   }
-//   console.log(previousTarget);
-//   console.log(this);
-//   // return false;
-//   previousTarget = this;
-// });
+document.getElementById("main").addEventListener("scroll", myFunction);
+
+function myFunction() {
+  if (bounding.bottom >= 600) {
+    console.log("In the home!");
+  } else {
+    console.log("Not in the viewport... whomp whomp");
+  }
+}
+
+var home = document.querySelector(".section-home");
+var about = document.querySelector(".section-about");
+var skills = document.querySelector(".section-skills");
+var projects = document.querySelector(".section-projects");
+var contact = document.querySelector(".section-contact");
+
+// Get it's position in the viewport
+var bounding = home.getBoundingClientRect();
+var bounding = about.getBoundingClientRect();
+var bounding = skills.getBoundingClientRect();
+var bounding = projects.getBoundingClientRect();
+var bounding = contact.getBoundingClientRect();
+
+// Log the results
+console.log(home.getBoundingClientRect());
+console.log(about.getBoundingClientRect());
+console.log(skills.getBoundingClientRect());
+console.log(projects.getBoundingClientRect());
+console.log(contact.getBoundingClientRect());

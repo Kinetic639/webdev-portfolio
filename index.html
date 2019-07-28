@@ -2,391 +2,425 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
-    <title>Michał Stępień - Portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+  <title>Michał Stępień - Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/main.css">
-    </link>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/most-visible@1.4.0/dist/most-visible.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  </link>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/jquery.waypoints.js"></script>
 </head>
 
 <body class="body">
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__title">Portfolio</div>
-         <!-- <div class="menu-wrapper"> -->
-              <div class="menu-branding ">
-                <img class="menu-branding__img" src="img/Background (2).png" alt="portrait">
-                <div class="menu-branding__title">
-                  <h1>Michał Stępień</h1>
-                  <h2>front end developer / programmer</h2>
-              </div>
-              </div>
-              <ul class="menu menu-nav ">
-                  <li class="menu__item"><a href="#home-section" class="menu__link active"><span>Home</span></a></li>
-                  <li class="menu__item"><a href="#about-section" class="menu__link"><span>About</span></a></li>
-                  <li class="menu__item"><a href="#skills-section" class="menu__link"><span>Skills</span></a></li>
-                  <li class="menu__item"><a href="#projects-section" class="menu__link"><span>Projects</span></a></li>
-                  <li class="menu__item"><a href="#contact-section" class="menu__link"><span>Contact</span></a></li>
-  
-              </ul>
-            <!-- </div> -->
-              <div class="menu-btn">
-                  <div class="btn-line"></div>
-                  <div class="btn-line"></div>
-                  <div class="btn-line"></div>
-              </div>
-        </header>
-        <main class="main">
-            <section id="home-section" class="section section-home">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__title">Portfolio</div>
+      <!-- <div class="menu-wrapper"> -->
+      <div class="menu-branding ">
+        <img class="menu-branding__img" src="img/Background (2).png" alt="portrait">
+        <div class="menu-branding__title">
+          <h1>Michał Stępień</h1>
+          <h2>front end developer / programmer</h2>
+        </div>
+      </div>
+      <ul class="menu menu-nav ">
+        <li class="menu__item"><a href="#home-section" class="menu__link active"><span>Home</span></a></li>
+        <li class="menu__item"><a href="#about-section" class="menu__link"><span>About</span></a></li>
+        <li class="menu__item"><a href="#skills-section" class="menu__link"><span>Skills</span></a></li>
+        <li class="menu__item"><a href="#projects-section" class="menu__link"><span>Projects</span></a></li>
+        <li class="menu__item"><a href="#contact-section" class="menu__link"><span>Contact</span></a></li>
 
-                <div class="section-home__left">
-                    <div class="section-home__title">
-                        <h1>Michał Stępień</h1>
-                        <h2>front end developer / programmer</h2>
-                    </div>
+      </ul>
+      <!-- </div> -->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+    </header>
+    <main id="main" class="main">
 
-                    <a href="#contact-section" class="btn btn-cta__contact"><span>Contact</span></a>
-                </div>
-                <div class="section-home__right">
-                    <img class="section-home__img" src="img/Background (2).png" alt="portrait">
-                </div>
-            </section>
-            <section id="about-section" class="section section-about">
+      <section id="home-section" class="section section-home">
 
-                <div class="section-about__info">
-                    <img src="img/portrait.jpg" alt="Michał Stępień" class="bio-image">
-                    <div class="bio">
-                        <h3 class="about__title">Bio</h3>
-                        <p class="about__desc">I am 31 years old self tought aspiring developer. My first contact with javascript was when i had an office job working mostly with google spreadsheets (writing scripts for them using Google App Script - javascript framework). That's when i fell in love with programing and started to look for ways to do it full time.</p>
-                    </div>
-                    <div class="about__col about__col-1">
-                        <h3 class="about__title">Experience</h3>
-                        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
-                            nam tempore culpa
-                            officiis libero ullam!</p>
-                    </div>
-                    <div class="about__col about__col-2">
-                        <h3 class="about__title">Career goals</h3>
-                        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
-                            nam tempore culpa
-                            officiis libero ullam!</p>
-                    </div>
-                    <div class="about__col about__col-3">
-                        <h3 class="about__title">What job I'm looking for</h3>
-                        <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
-                            nam tempore culpa
-                            officiis libero ullam!</p>
-                    </div>
-                </div>
-            </section>
-                       
-                        <section id="skills-section" class=" section section-skills">
-        
-                            <div class="skills-container">
-                                <div class="skills-container__left">                     
-                                   <div class="skills-box">
-                                      <div class="skills-block">
-                                          <header class="skills-block__title">
-                                              <h3>Web technologies</h3>
-                                          </header>
-                                          <div class="skills-block__icons">
-                                                  <svg class="icon icon-html" xmlns="http://www.w3.org/2000/svg" width="41.603" height="47.182" viewBox="0 0 41.603 47.182">
-                                                      <g id="html5-original" transform="translate(0)">
-                                                        <path id="Path_37" data-name="Path 37" d="M12.818,44.127,9.032,1.661h41.6L46.845,44.12,29.808,48.843Z" transform="translate(-9.032 -1.661)" fill="#e44d26"/>
-                                                        <path id="Path_38" data-name="Path 38" d="M64,50.66l14.3-3.791,3.365-36.033H64Z" transform="translate(-44.009 -7.229)" fill="#f16529"/>
-                                                        <path id="Path_39" data-name="Path 39" d="M43.058,34.894H35.9L35.4,29.685h7.655V24.6H29.489l.13,1.365,1.33,14.017h12.11Zm0,13.21-.024.006-6.026-1.53-.385-4.056H31.19l.758,7.986L43.033,53.4l.025-.006Z" transform="translate(-21.886 -15.58)" fill="#ebebeb"/>
-                                                        <path id="Path_40" data-name="Path 40" d="M63.952,34.894v5.087h6.663l-.628,6.6-6.035,1.531V53.4l11.094-2.89.081-.859L76.4,36.26l.132-1.366H63.952Zm0-10.3v5.086H77.023l.109-1.143.247-2.579.129-1.364Z" transform="translate(-43.539 -15.58)" fill="#fff"/>
-                                                      </g>
-                                                    </svg>
-                                                    
-          
-                                                    <svg class="icon icon-css" xmlns="http://www.w3.org/2000/svg" width="41.602" height="47.182" viewBox="0 0 41.602 47.182">
-                                                      <g id="css3-original" transform="translate(0)">
-                                                        <path id="Path_41" data-name="Path 41" d="M12.546,43.817,8.76,1.352h41.6l-3.79,42.459L29.536,48.534l-16.99-4.717Z" transform="translate(-8.76 -1.352)" fill="#1572b6"/>
-                                                        <path id="Path_42" data-name="Path 42" d="M64,50.359l14.374-3.787,3.382-36H64V50.359Z" transform="translate(-44.118 -6.947)" fill="#33a9dc"/>
-                                                        <path id="Path_43" data-name="Path 43" d="M64,34.442h7.2l.5-5.569H64V23.435H77.637l-.131,1.459L76.17,39.88H64V34.442Z" transform="translate(-43.62 -15.303)" fill="#fff"/>
-                                                        <path id="Path_44" data-name="Path 44" d="M45.678,78.142l-.024.007L39.6,76.514l-.387-4.337H33.752l.762,8.539,11.139,3.092.025-.007Z" transform="translate(-24.498 -45.871)" fill="#ebebeb"/>
-                                                        <path id="Path_45" data-name="Path 45" d="M70.755,64.675,70.1,71.958l-6.065,1.637v5.658l11.148-3.09.082-.919.946-10.569H70.755Z" transform="translate(-43.578 -41.273)" fill="#fff"/>
-                                                        <path id="Path_46" data-name="Path 46" d="M43.024,23.435v5.438H29.889l-.109-1.222-.248-2.757-.13-1.459Zm-.018,11.007v5.438h-5.98l-.109-1.222L36.669,35.9l-.13-1.459Z" transform="translate(-21.786 -15.303)" fill="#ebebeb"/>
-                                                      </g>
-                                                    </svg>
+        <div class="section-home__left">
+            <div class="section-home__title">
+                <h1>Michał Stępień</h1>
+                <h2>front end developer / programmer</h2>
+            </div>
       
-                                                    <svg class="icon icon-sass" xmlns="http://www.w3.org/2000/svg" width="63.086" height="47.182" viewBox="0 0 63.086 47.182">
-                                                      <path id="sass-original" d="M1.219,36.674a2.782,2.782,0,0,0,.162.813,9.991,9.991,0,0,0,2.165,3.892,25.66,25.66,0,0,0,4.8,4.212c1.5,1.079,3.033,2.134,4.541,3.206.259.184.5.4.784.621-.242.131-.443.246-.652.352a34.881,34.881,0,0,0-5.667,3.51,11.591,11.591,0,0,0-2.817,2.851,6.133,6.133,0,0,0-.711,5.909,3.488,3.488,0,0,0,1.189,1.534,1.758,1.758,0,0,0,.584.3c.532.125,1.073.207,1.611.306H8.733A9.481,9.481,0,0,0,13.339,62.5a10.106,10.106,0,0,0,4.254-6.073,10.72,10.72,0,0,0-.063-5.6c-.05-.173-.113-.342-.178-.509s-.142-.33-.233-.539l3.455-1.987.052.044c-.063.206-.13.411-.186.618a13.992,13.992,0,0,0-.585,4.581,8.791,8.791,0,0,0,1.538,4.6,2.228,2.228,0,0,0,3.489.038,8.047,8.047,0,0,0,.8-1.263c.563-1.163,1.085-2.347,1.623-3.523l.094-.215c-.039.557-.084,1.046-.1,1.535a5.85,5.85,0,0,0,.274,2.251,1.554,1.554,0,0,0,1.316,1.169,1.655,1.655,0,0,0,1.234-.45,5.217,5.217,0,0,0,1.352-1.607c.955-1.754,1.936-3.5,2.8-5.3.937-1.945,1.756-3.947,2.625-5.925l.144-.351c.206.807.349,1.6.612,2.347a22.182,22.182,0,0,0,1.1,2.541.76.76,0,0,1-.1.969c-1.134,1.367-2.247,2.75-3.362,4.132a9.282,9.282,0,0,0-.7.949,1.86,1.86,0,0,0-.241.685.873.873,0,0,0,.695.99,4.854,4.854,0,0,0,1.361.1,7.97,7.97,0,0,0,4.218-1.586,4.422,4.422,0,0,0,1.746-4.774,11.091,11.091,0,0,0-.476-1.545.571.571,0,0,1,.062-.6,49.165,49.165,0,0,0,3.427-5.813,1.2,1.2,0,0,1,.154-.242,15.1,15.1,0,0,0,1.733,4.92c-.458.442-.912.842-1.322,1.283a8.847,8.847,0,0,0-2.1,3.314,3.915,3.915,0,0,0-.233,1.711,1.442,1.442,0,0,0,1.78,1.308,8.09,8.09,0,0,0,4.83-2.977,3.914,3.914,0,0,0,.553-3.574c-.094-.346-.207-.686-.327-1.082.478-.148.944-.326,1.425-.436a12.635,12.635,0,0,1,7.387.432,5.575,5.575,0,0,1,3.219,2.8,3.229,3.229,0,0,1-1.232,4.382,2.745,2.745,0,0,0-.444.3.436.436,0,0,0-.1.337c.011.062.174.139.268.138a2.449,2.449,0,0,0,1.362-.563,4.2,4.2,0,0,0,1.936-2.923l.032-.094-.039-.819c-.016-.047.012-.094.008-.13A6.422,6.422,0,0,0,61.655,46.1,9.554,9.554,0,0,0,56,44.2a12.763,12.763,0,0,0-4.907.755c-.451.163-.9.357-1.351.539-.061-.11-.126-.216-.18-.325a9.183,9.183,0,0,1-1.154-2.955,6.616,6.616,0,0,1-.013-2.318c.177-.738.409-1.464.626-2.192a.534.534,0,0,0-.325-.754,1.434,1.434,0,0,0-.395-.13,6.083,6.083,0,0,0-2.6.193.744.744,0,0,0-.587.59c-.038.191-.116.375-.17.564a14.1,14.1,0,0,1-.74,2.334c-.9,1.877-1.93,3.683-2.984,5.475-.114.193-.234.383-.378.618a8.1,8.1,0,0,1-.884-2.282,7,7,0,0,1-.013-2.753c.17-.681.393-1.35.6-2.022a.468.468,0,0,0-.237-.656,1.4,1.4,0,0,0-.476-.185,5.85,5.85,0,0,0-2.69.22.727.727,0,0,0-.5.546,21.062,21.062,0,0,1-.8,2.47c-1.394,3.2-2.828,6.375-4.26,9.553-.3.664-.649,1.3-.986,1.951a4.528,4.528,0,0,1-.317.462.377.377,0,0,1-.118-.24,6.616,6.616,0,0,1,.032-1.224c.236-1.195.507-2.383.793-3.567.236-.978.511-1.947.773-2.918a.916.916,0,0,0-.144-.9,1.349,1.349,0,0,0-1.7-.206l-.215.122.042-.347a5.4,5.4,0,0,0-.081-2.216,1.763,1.763,0,0,0-1.852-1.408,3.978,3.978,0,0,0-1.313.25,9.929,9.929,0,0,0-4.163,3.3,1.3,1.3,0,0,1-.38.329c-1.454.806-2.912,1.6-4.369,2.4l-1.622.889c-.435-.415-.831-.846-1.279-1.211-1.37-1.117-2.763-2.207-4.142-3.312a16.327,16.327,0,0,1-3.314-3.3A5.9,5.9,0,0,1,6.08,37.124a7.542,7.542,0,0,1,1.152-4.2,16.118,16.118,0,0,1,3.824-4.184A35.429,35.429,0,0,1,16.085,25.4,37.932,37.932,0,0,1,23.8,22a21.315,21.315,0,0,1,8.524-.969,8.759,8.759,0,0,1,3.28.952,3.383,3.383,0,0,1,1.722,1.867,4.669,4.669,0,0,1,.081,2.615,9.982,9.982,0,0,1-2.61,4.547,17.64,17.64,0,0,1-7.211,4.568,19.836,19.836,0,0,1-4.907,1.047,9.24,9.24,0,0,1-4.012-.483,5.219,5.219,0,0,1-2.21-1.5c-.108-.126-.245-.262-.446-.144a.381.381,0,0,0-.165.492,4.818,4.818,0,0,0,.383.924,5.26,5.26,0,0,0,1.75,1.657,8.562,8.562,0,0,0,4.351,1.194,21.89,21.89,0,0,0,6.861-.874,16.831,16.831,0,0,0,8.232-4.966A12.645,12.645,0,0,0,40.9,25.679a7.013,7.013,0,0,0-.655-3.992,7.215,7.215,0,0,0-3.148-3.078A13.327,13.327,0,0,0,30.9,17H28.732a22.416,22.416,0,0,0-7.609,1.645,52.268,52.268,0,0,0-5.461,2.363A35.3,35.3,0,0,0,5.254,28.461a15.544,15.544,0,0,0-3.433,5.422c-.21.606-.408,1.256-.558,1.882m13.988,18.1a7.986,7.986,0,0,1-2.842,5.528,6.466,6.466,0,0,1-3.251,1.623A2.386,2.386,0,0,1,7.8,60.916,1.381,1.381,0,0,1,7.025,59.5,5.115,5.115,0,0,1,7.79,56.9a9.314,9.314,0,0,1,2.382-2.616,36.506,36.506,0,0,1,4.657-3.138l.122-.05a8.173,8.173,0,0,1,.3,2.767Zm12.641-9.737a16.9,16.9,0,0,1-.475,2.125,62.643,62.643,0,0,1-2.654,7.021,12.111,12.111,0,0,1-.69,1.214.848.848,0,0,1-.142.168c-.29.287-.566.272-.712-.1a7.911,7.911,0,0,1-.366-1.365,7.231,7.231,0,0,1-.065-.953,11.947,11.947,0,0,1,1.877-6.22,5.816,5.816,0,0,1,1.808-2.037,3.15,3.15,0,0,1,.8-.355c.427-.12.689.077.619.505ZM36.516,55.11l3.1-3.619C39.744,52.835,37.46,55.518,36.516,55.11Zm9.9-2.435c-.219.126-.458.216-.682.332-.205.107-.273,0-.279-.178a1.2,1.2,0,0,1,.047-.362,7.792,7.792,0,0,1,2.335-3.761l.08-.041a3.321,3.321,0,0,1-1.5,4.011Z" transform="translate(-1.219 -17)" fill="#cb6699" fill-rule="evenodd"/>
-                                                    </svg>
-                                                    
-                                                    
-          
-                                                    <svg class="icon icon-js" id="javascript-original" xmlns="http://www.w3.org/2000/svg" width="47.31" height="47.31" viewBox="0 0 47.31 47.31">
-                                                      <path id="Path_47" data-name="Path 47" d="M1.408,1.408h47.31v47.31H1.408Z" transform="translate(-1.408 -1.408)" fill="#f0db4f"/>
-                                                      <path id="Path_48" data-name="Path 48" d="M66.565,73.351c-.361-2.245-1.825-4.132-6.162-5.89-1.507-.692-3.186-1.188-3.687-2.33a2.541,2.541,0,0,1-.089-1.441c.323-1.305,1.881-1.712,3.116-1.338a3.429,3.429,0,0,1,2,1.857c2.124-1.375,2.12-1.366,3.6-2.312a9.209,9.209,0,0,0-1.188-1.59c-1.277-1.427-3.018-2.162-5.8-2.105l-1.45.188a6.58,6.58,0,0,0-3.49,2.058,6.444,6.444,0,0,0,1.17,9.175c2.793,2.1,6.9,2.573,7.421,4.534.51,2.4-1.764,3.177-4.024,2.9a5.274,5.274,0,0,1-3.593-2.732c-1.843,1.067-1.843,1.067-3.738,2.157a8.319,8.319,0,0,0,1.675,2.278c3.565,3.616,12.487,3.439,14.088-2.035A6.77,6.77,0,0,0,66.565,73.351ZM48.131,58.491h-4.6l-.019,11.9c0,2.531.131,4.852-.281,5.563-.674,1.4-2.419,1.226-3.214.954a3.95,3.95,0,0,1-1.7-1.763,2.319,2.319,0,0,0-.262-.421L34.31,77.019a7.4,7.4,0,0,0,2.714,3.107,8.936,8.936,0,0,0,6.578.81,5.81,5.81,0,0,0,3.715-2.91c1.048-1.932.823-4.272.814-6.859C48.154,66.945,48.131,62.725,48.131,58.491Z" transform="translate(-23.284 -37.78)" fill="#323330"/>
-                                                    </svg>
-                                                    
+            <a href="#contact-section" class="btn btn-cta__contact"><span>Contact</span></a>
+        </div>
+        <div class="section-home__right">
+            <img class="section-home__img" src="img/Background (2).png" alt="portrait">
+        </div>
+      </section>
+      <section id="about-section" class="section section-about">
+      
+        <div class="section-about__info">
+            <img src="img/portrait.jpg" alt="Michał Stępień" class="bio-image">
+            <div class="bio">
+                <h3 class="about__title">Bio</h3>
+                <p class="about__desc">I am 31 years old self tought aspiring developer. My first contact with javascript was when i had an office job working mostly with google spreadsheets (writing scripts for them using Google App Script - javascript framework). That's when i fell in love with programing and started to look for ways to do it full time.</p>
+            </div>
+            <div class="about__col about__col-1">
+                <h3 class="about__title">Experience</h3>
+                <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    nam tempore culpa
+                    officiis libero ullam!</p>
+            </div>
+            <div class="about__col about__col-2">
+                <h3 class="about__title">Career goals</h3>
+                <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    nam tempore culpa
+                    officiis libero ullam!</p>
+            </div>
+            <div class="about__col about__col-3">
+                <h3 class="about__title">What job I'm looking for</h3>
+                <p class="about__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    nam tempore culpa
+                    officiis libero ullam!</p>
+            </div>
+        </div>
+      </section>
+               
+                <section id="skills-section" class=" section section-skills">
+      
+                    <div class="skills-container">
+                        <div class="skills-container__left">                     
+                           <div class="skills-box">
+                              <div class="skills-block">
+                                  <header class="skills-block__title">
+                                      <h3>Web technologies</h3>
+                                  </header>
+                                  <div class="skills-block__icons">
+                                          <svg class="icon icon-html" xmlns="http://www.w3.org/2000/svg" width="41.603" height="47.182" viewBox="0 0 41.603 47.182">
+                                              <g id="html5-original" transform="translate(0)">
+                                                <path id="Path_37" data-name="Path 37" d="M12.818,44.127,9.032,1.661h41.6L46.845,44.12,29.808,48.843Z" transform="translate(-9.032 -1.661)" fill="#e44d26"/>
+                                                <path id="Path_38" data-name="Path 38" d="M64,50.66l14.3-3.791,3.365-36.033H64Z" transform="translate(-44.009 -7.229)" fill="#f16529"/>
+                                                <path id="Path_39" data-name="Path 39" d="M43.058,34.894H35.9L35.4,29.685h7.655V24.6H29.489l.13,1.365,1.33,14.017h12.11Zm0,13.21-.024.006-6.026-1.53-.385-4.056H31.19l.758,7.986L43.033,53.4l.025-.006Z" transform="translate(-21.886 -15.58)" fill="#ebebeb"/>
+                                                <path id="Path_40" data-name="Path 40" d="M63.952,34.894v5.087h6.663l-.628,6.6-6.035,1.531V53.4l11.094-2.89.081-.859L76.4,36.26l.132-1.366H63.952Zm0-10.3v5.086H77.023l.109-1.143.247-2.579.129-1.364Z" transform="translate(-43.539 -15.58)" fill="#fff"/>
+                                              </g>
+                                            </svg>
+                                            
+      
+                                            <svg class="icon icon-css" xmlns="http://www.w3.org/2000/svg" width="41.602" height="47.182" viewBox="0 0 41.602 47.182">
+                                              <g id="css3-original" transform="translate(0)">
+                                                <path id="Path_41" data-name="Path 41" d="M12.546,43.817,8.76,1.352h41.6l-3.79,42.459L29.536,48.534l-16.99-4.717Z" transform="translate(-8.76 -1.352)" fill="#1572b6"/>
+                                                <path id="Path_42" data-name="Path 42" d="M64,50.359l14.374-3.787,3.382-36H64V50.359Z" transform="translate(-44.118 -6.947)" fill="#33a9dc"/>
+                                                <path id="Path_43" data-name="Path 43" d="M64,34.442h7.2l.5-5.569H64V23.435H77.637l-.131,1.459L76.17,39.88H64V34.442Z" transform="translate(-43.62 -15.303)" fill="#fff"/>
+                                                <path id="Path_44" data-name="Path 44" d="M45.678,78.142l-.024.007L39.6,76.514l-.387-4.337H33.752l.762,8.539,11.139,3.092.025-.007Z" transform="translate(-24.498 -45.871)" fill="#ebebeb"/>
+                                                <path id="Path_45" data-name="Path 45" d="M70.755,64.675,70.1,71.958l-6.065,1.637v5.658l11.148-3.09.082-.919.946-10.569H70.755Z" transform="translate(-43.578 -41.273)" fill="#fff"/>
+                                                <path id="Path_46" data-name="Path 46" d="M43.024,23.435v5.438H29.889l-.109-1.222-.248-2.757-.13-1.459Zm-.018,11.007v5.438h-5.98l-.109-1.222L36.669,35.9l-.13-1.459Z" transform="translate(-21.786 -15.303)" fill="#ebebeb"/>
+                                              </g>
+                                            </svg>
+      
+                                            <svg class="icon icon-sass" xmlns="http://www.w3.org/2000/svg" width="63.086" height="47.182" viewBox="0 0 63.086 47.182">
+                                              <path id="sass-original" d="M1.219,36.674a2.782,2.782,0,0,0,.162.813,9.991,9.991,0,0,0,2.165,3.892,25.66,25.66,0,0,0,4.8,4.212c1.5,1.079,3.033,2.134,4.541,3.206.259.184.5.4.784.621-.242.131-.443.246-.652.352a34.881,34.881,0,0,0-5.667,3.51,11.591,11.591,0,0,0-2.817,2.851,6.133,6.133,0,0,0-.711,5.909,3.488,3.488,0,0,0,1.189,1.534,1.758,1.758,0,0,0,.584.3c.532.125,1.073.207,1.611.306H8.733A9.481,9.481,0,0,0,13.339,62.5a10.106,10.106,0,0,0,4.254-6.073,10.72,10.72,0,0,0-.063-5.6c-.05-.173-.113-.342-.178-.509s-.142-.33-.233-.539l3.455-1.987.052.044c-.063.206-.13.411-.186.618a13.992,13.992,0,0,0-.585,4.581,8.791,8.791,0,0,0,1.538,4.6,2.228,2.228,0,0,0,3.489.038,8.047,8.047,0,0,0,.8-1.263c.563-1.163,1.085-2.347,1.623-3.523l.094-.215c-.039.557-.084,1.046-.1,1.535a5.85,5.85,0,0,0,.274,2.251,1.554,1.554,0,0,0,1.316,1.169,1.655,1.655,0,0,0,1.234-.45,5.217,5.217,0,0,0,1.352-1.607c.955-1.754,1.936-3.5,2.8-5.3.937-1.945,1.756-3.947,2.625-5.925l.144-.351c.206.807.349,1.6.612,2.347a22.182,22.182,0,0,0,1.1,2.541.76.76,0,0,1-.1.969c-1.134,1.367-2.247,2.75-3.362,4.132a9.282,9.282,0,0,0-.7.949,1.86,1.86,0,0,0-.241.685.873.873,0,0,0,.695.99,4.854,4.854,0,0,0,1.361.1,7.97,7.97,0,0,0,4.218-1.586,4.422,4.422,0,0,0,1.746-4.774,11.091,11.091,0,0,0-.476-1.545.571.571,0,0,1,.062-.6,49.165,49.165,0,0,0,3.427-5.813,1.2,1.2,0,0,1,.154-.242,15.1,15.1,0,0,0,1.733,4.92c-.458.442-.912.842-1.322,1.283a8.847,8.847,0,0,0-2.1,3.314,3.915,3.915,0,0,0-.233,1.711,1.442,1.442,0,0,0,1.78,1.308,8.09,8.09,0,0,0,4.83-2.977,3.914,3.914,0,0,0,.553-3.574c-.094-.346-.207-.686-.327-1.082.478-.148.944-.326,1.425-.436a12.635,12.635,0,0,1,7.387.432,5.575,5.575,0,0,1,3.219,2.8,3.229,3.229,0,0,1-1.232,4.382,2.745,2.745,0,0,0-.444.3.436.436,0,0,0-.1.337c.011.062.174.139.268.138a2.449,2.449,0,0,0,1.362-.563,4.2,4.2,0,0,0,1.936-2.923l.032-.094-.039-.819c-.016-.047.012-.094.008-.13A6.422,6.422,0,0,0,61.655,46.1,9.554,9.554,0,0,0,56,44.2a12.763,12.763,0,0,0-4.907.755c-.451.163-.9.357-1.351.539-.061-.11-.126-.216-.18-.325a9.183,9.183,0,0,1-1.154-2.955,6.616,6.616,0,0,1-.013-2.318c.177-.738.409-1.464.626-2.192a.534.534,0,0,0-.325-.754,1.434,1.434,0,0,0-.395-.13,6.083,6.083,0,0,0-2.6.193.744.744,0,0,0-.587.59c-.038.191-.116.375-.17.564a14.1,14.1,0,0,1-.74,2.334c-.9,1.877-1.93,3.683-2.984,5.475-.114.193-.234.383-.378.618a8.1,8.1,0,0,1-.884-2.282,7,7,0,0,1-.013-2.753c.17-.681.393-1.35.6-2.022a.468.468,0,0,0-.237-.656,1.4,1.4,0,0,0-.476-.185,5.85,5.85,0,0,0-2.69.22.727.727,0,0,0-.5.546,21.062,21.062,0,0,1-.8,2.47c-1.394,3.2-2.828,6.375-4.26,9.553-.3.664-.649,1.3-.986,1.951a4.528,4.528,0,0,1-.317.462.377.377,0,0,1-.118-.24,6.616,6.616,0,0,1,.032-1.224c.236-1.195.507-2.383.793-3.567.236-.978.511-1.947.773-2.918a.916.916,0,0,0-.144-.9,1.349,1.349,0,0,0-1.7-.206l-.215.122.042-.347a5.4,5.4,0,0,0-.081-2.216,1.763,1.763,0,0,0-1.852-1.408,3.978,3.978,0,0,0-1.313.25,9.929,9.929,0,0,0-4.163,3.3,1.3,1.3,0,0,1-.38.329c-1.454.806-2.912,1.6-4.369,2.4l-1.622.889c-.435-.415-.831-.846-1.279-1.211-1.37-1.117-2.763-2.207-4.142-3.312a16.327,16.327,0,0,1-3.314-3.3A5.9,5.9,0,0,1,6.08,37.124a7.542,7.542,0,0,1,1.152-4.2,16.118,16.118,0,0,1,3.824-4.184A35.429,35.429,0,0,1,16.085,25.4,37.932,37.932,0,0,1,23.8,22a21.315,21.315,0,0,1,8.524-.969,8.759,8.759,0,0,1,3.28.952,3.383,3.383,0,0,1,1.722,1.867,4.669,4.669,0,0,1,.081,2.615,9.982,9.982,0,0,1-2.61,4.547,17.64,17.64,0,0,1-7.211,4.568,19.836,19.836,0,0,1-4.907,1.047,9.24,9.24,0,0,1-4.012-.483,5.219,5.219,0,0,1-2.21-1.5c-.108-.126-.245-.262-.446-.144a.381.381,0,0,0-.165.492,4.818,4.818,0,0,0,.383.924,5.26,5.26,0,0,0,1.75,1.657,8.562,8.562,0,0,0,4.351,1.194,21.89,21.89,0,0,0,6.861-.874,16.831,16.831,0,0,0,8.232-4.966A12.645,12.645,0,0,0,40.9,25.679a7.013,7.013,0,0,0-.655-3.992,7.215,7.215,0,0,0-3.148-3.078A13.327,13.327,0,0,0,30.9,17H28.732a22.416,22.416,0,0,0-7.609,1.645,52.268,52.268,0,0,0-5.461,2.363A35.3,35.3,0,0,0,5.254,28.461a15.544,15.544,0,0,0-3.433,5.422c-.21.606-.408,1.256-.558,1.882m13.988,18.1a7.986,7.986,0,0,1-2.842,5.528,6.466,6.466,0,0,1-3.251,1.623A2.386,2.386,0,0,1,7.8,60.916,1.381,1.381,0,0,1,7.025,59.5,5.115,5.115,0,0,1,7.79,56.9a9.314,9.314,0,0,1,2.382-2.616,36.506,36.506,0,0,1,4.657-3.138l.122-.05a8.173,8.173,0,0,1,.3,2.767Zm12.641-9.737a16.9,16.9,0,0,1-.475,2.125,62.643,62.643,0,0,1-2.654,7.021,12.111,12.111,0,0,1-.69,1.214.848.848,0,0,1-.142.168c-.29.287-.566.272-.712-.1a7.911,7.911,0,0,1-.366-1.365,7.231,7.231,0,0,1-.065-.953,11.947,11.947,0,0,1,1.877-6.22,5.816,5.816,0,0,1,1.808-2.037,3.15,3.15,0,0,1,.8-.355c.427-.12.689.077.619.505ZM36.516,55.11l3.1-3.619C39.744,52.835,37.46,55.518,36.516,55.11Zm9.9-2.435c-.219.126-.458.216-.682.332-.205.107-.273,0-.279-.178a1.2,1.2,0,0,1,.047-.362,7.792,7.792,0,0,1,2.335-3.761l.08-.041a3.321,3.321,0,0,1-1.5,4.011Z" transform="translate(-1.219 -17)" fill="#cb6699" fill-rule="evenodd"/>
+                                            </svg>
+                                            
+                                            
+      
+                                            <svg class="icon icon-js" id="javascript-original" xmlns="http://www.w3.org/2000/svg" width="47.31" height="47.31" viewBox="0 0 47.31 47.31">
+                                              <path id="Path_47" data-name="Path 47" d="M1.408,1.408h47.31v47.31H1.408Z" transform="translate(-1.408 -1.408)" fill="#f0db4f"/>
+                                              <path id="Path_48" data-name="Path 48" d="M66.565,73.351c-.361-2.245-1.825-4.132-6.162-5.89-1.507-.692-3.186-1.188-3.687-2.33a2.541,2.541,0,0,1-.089-1.441c.323-1.305,1.881-1.712,3.116-1.338a3.429,3.429,0,0,1,2,1.857c2.124-1.375,2.12-1.366,3.6-2.312a9.209,9.209,0,0,0-1.188-1.59c-1.277-1.427-3.018-2.162-5.8-2.105l-1.45.188a6.58,6.58,0,0,0-3.49,2.058,6.444,6.444,0,0,0,1.17,9.175c2.793,2.1,6.9,2.573,7.421,4.534.51,2.4-1.764,3.177-4.024,2.9a5.274,5.274,0,0,1-3.593-2.732c-1.843,1.067-1.843,1.067-3.738,2.157a8.319,8.319,0,0,0,1.675,2.278c3.565,3.616,12.487,3.439,14.088-2.035A6.77,6.77,0,0,0,66.565,73.351ZM48.131,58.491h-4.6l-.019,11.9c0,2.531.131,4.852-.281,5.563-.674,1.4-2.419,1.226-3.214.954a3.95,3.95,0,0,1-1.7-1.763,2.319,2.319,0,0,0-.262-.421L34.31,77.019a7.4,7.4,0,0,0,2.714,3.107,8.936,8.936,0,0,0,6.578.81,5.81,5.81,0,0,0,3.715-2.91c1.048-1.932.823-4.272.814-6.859C48.154,66.945,48.131,62.725,48.131,58.491Z" transform="translate(-23.284 -37.78)" fill="#323330"/>
+                                            </svg>
+                                            
+                                           
+                                            
+                                  </div>
+                              </div>
+                              <div class="skills-modal skills-modal__1">
+                                <h3 class="modal-1__title">Html5</h3>
+                                <p class="modal-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
+                              </div> 
+                           </div>
+                                              
+                           <div class="skills-box">
+                            <div class="skills-block">
+                                    <header class="skills-block__title">
+                                        <h3>Tools</h3>
+                                    </header>
+                                    <div class="skills-block__icons">
+                                            <svg class="icon icon-vscode" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.335" viewBox="0 0 47.182 47.335">
+                                                <path id="visualstudio-plain" d="M37.982,2.3l11.7,4.718V44.879L37.906,49.635,19.11,30.954,7.218,40.2,2.5,37.821V14.115l4.718-2.263L19.11,21.173ZM7.218,18.948V33.333l7.1-7.288Zm18.451,7.1,12.237,9.628V16.378Z" transform="translate(-2.5 -2.3)" fill="#3678ab"/>
+                                              </svg>
+                                              
+      
+                                              <svg class="icon icon-xd" id="Adobe_XD_CC_icon" xmlns="http://www.w3.org/2000/svg" width="48.392" height="47.182" viewBox="0 0 48.392 47.182">
+                                                <path id="Path_55" data-name="Path 55" d="M39.822,47.182H8.569A8.562,8.562,0,0,1,0,38.612V8.569A8.562,8.562,0,0,1,8.569,0H39.822a8.562,8.562,0,0,1,8.569,8.569V38.612A8.562,8.562,0,0,1,39.822,47.182Z" fill="#ff26be"/>
+                                                <path id="Path_56" data-name="Path 56" d="M47.184,53.321H17.348A7.36,7.36,0,0,1,10,45.972V17.348A7.36,7.36,0,0,1,17.348,10H47.164a7.347,7.347,0,0,1,7.348,7.348v28.6A7.335,7.335,0,0,1,47.184,53.321Z" transform="translate(-8.07 -8.07)" fill="#2e001f"/>
+                                                <path id="Path_57" data-name="Path 57" d="M54.477,67.054,59.882,77.44c.1.154.039.309-.116.309H56.407A.379.379,0,0,1,56,77.5c-1.236-2.548-2.49-5.1-3.784-7.838H52.18c-1.158,2.587-2.432,5.309-3.668,7.857a.371.371,0,0,1-.347.212H44.979c-.193,0-.212-.154-.116-.27l5.29-10.077L45.037,57.19a.156.156,0,0,1,.116-.27h3.32a.3.3,0,0,1,.347.212c1.216,2.548,2.452,5.174,3.61,7.741h.039c1.12-2.548,2.355-5.193,3.552-7.722.1-.154.154-.251.347-.251h3.108c.154,0,.212.116.116.27ZM60.828,70.2c0-4.5,2.992-8.012,7.741-8.012a8.561,8.561,0,0,1,1,.039V57.112a.193.193,0,0,1,.193-.193h3.05c.154,0,.193.058.193.154V74.8a13.75,13.75,0,0,0,.1,1.892c0,.116-.039.154-.154.212a11.5,11.5,0,0,1-4.942,1.12C63.821,78.039,60.828,75.452,60.828,70.2Zm8.745-4.942a2.919,2.919,0,0,0-1.12-.193c-2.432,0-4.131,1.873-4.131,4.981,0,3.552,1.737,4.981,3.919,4.981a3.642,3.642,0,0,0,1.332-.212Z" transform="translate(-35.168 -44.998)" fill="#ffd9f2"/>
+                                              </svg>
+                                              
+                                              
+      
+                                              <svg class="icon icon-figma" xmlns="http://www.w3.org/2000/svg" width="31.455" height="47.182" viewBox="0 0 31.455 47.182">
+                                                <g id="figma-1" transform="translate(0)">
+                                                  <path id="path0_fill" d="M7.536,215.072a7.539,7.539,0,0,0,7.536-7.536V200H7.536a7.536,7.536,0,0,0,0,15.072Z" transform="translate(0 -167.89)" fill="#0acf83"/>
+                                                  <path id="path1_fill" d="M0,107.536A7.539,7.539,0,0,1,7.536,100h7.536v15.072H7.536A7.539,7.539,0,0,1,0,107.536Z" transform="translate(0 -83.945)" fill="#a259ff"/>
+                                                  <path id="path1_fill_1_" d="M0,7.536A7.539,7.539,0,0,1,7.536,0h7.536V15.072H7.536A7.539,7.539,0,0,1,0,7.536Z" fill="#f24e1e"/>
+                                                  <path id="path2_fill" d="M100,0h7.536a7.536,7.536,0,0,1,0,15.072H100Z" transform="translate(-83.617)" fill="#ff7262"/>
+                                                  <path id="path3_fill" d="M115.072,107.536A7.536,7.536,0,1,1,107.536,100,7.539,7.539,0,0,1,115.072,107.536Z" transform="translate(-83.617 -83.945)" fill="#1abcfe"/>
+                                                </g>
+                                              </svg>
+                                              
+      
+                                    </div>
+                                </div>  
+                                <div class="skills-modal skills-modal__2">
+                                    <h3 class="modal-2__title">Html5</h3>
+                                    <p class="modal-2__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
+                                  </div> 
+                           </div>
+                                              
+                           <div class="skills-box">  
+                                <div class="skills-block">
+                                        <header class="skills-block__title">
+                                            <h3>Other usefull</h3>
+                                        </header>
+                                        <div class="skills-block__icons">
+                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
+                                                    <path id="git-original" d="M47.175,22.373l-20.6-20.6a3.039,3.039,0,0,0-4.3,0L18,6.051l5.426,5.426a3.608,3.608,0,0,1,4.57,4.6l5.23,5.23a3.611,3.611,0,1,1-2.166,2.038l-4.877-4.877V31.3A3.609,3.609,0,1,1,23.21,31.2V18.245A3.618,3.618,0,0,1,21.248,13.5L15.9,8.153,1.773,22.278a3.04,3.04,0,0,0,0,4.3l20.6,20.6a3.04,3.04,0,0,0,4.3,0l20.5-20.5a3.041,3.041,0,0,0,0-4.3Z" transform="translate(-0.883 -0.884)" fill="#f34f29"/>
+                                                  </svg>
+                                                  
+      
+                                                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="47.182" height="19.406" viewBox="0 0 47.182 19.406">
+                                                    <path id="npm-original-wordmark" d="M2,38.5H49.182V55.132H25.591v2.774H15.1V55.132H2ZM4.622,52.362H9.865V44.044h2.622v8.318h2.622V41.274H4.622Zm13.1-11.088V55.132h5.243v-2.77h5.243V41.274Zm5.243,2.774h2.622v5.54H22.969Zm7.865-2.774V52.362h5.243V44.044H38.7v8.318h2.622V44.044h2.622v8.318h2.622V41.274Z" transform="translate(-2 -38.5)" fill="#cb3837"/>
+                                                  </svg>
+                                                  
                                                    
-                                                    
-                                          </div>
-                                      </div>
-                                      <div class="skills-modal skills-modal__1">
-                                        <h3 class="modal-1__title">Html5</h3>
-                                        <p class="modal-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
+                                                  <svg class="icon" id="jquery-original-wordmark" xmlns="http://www.w3.org/2000/svg" width="44.663" height="47.182" viewBox="0 0 44.663 47.182">
+                                                    <path id="Path_51" data-name="Path 51" d="M24.512,9.021c-2.826,4.154-2.474,9.559-.315,13.974l.158.314.1.2.063.114.113.206c.067.121.136.241.206.361l.118.2q.117.192.239.383l.1.161c.113.172.228.343.346.512l.01.013.058.081c.1.145.208.288.316.43l.119.155c.1.123.193.245.292.367l.111.136c.133.16.268.319.406.475l.008.009.016.018c.135.151.273.3.413.445l.132.136c.108.112.219.221.33.331l.135.131c.149.143.3.284.452.421l.007.006.079.068q.2.18.411.355l.17.139c.113.092.227.184.342.274l.183.142q.19.143.384.282l.14.1.039.028c.122.087.248.169.373.252l.161.11c.192.124.387.247.584.366l.161.093c.145.085.291.169.438.251l.243.128.314.167.072.036.128.063c.164.08.33.159.5.236l.1.048q.287.129.58.247l.141.057c.18.072.363.141.547.207l.069.024c.2.072.405.139.61.2l.147.045a5.852,5.852,0,0,0,.63.182c13.666,2.549,17.635-8.4,17.635-8.4-3.334,4.443-9.251,5.615-14.858,4.31-.213-.049-.419-.117-.626-.179l-.156-.049q-.3-.095-.6-.2l-.083-.03c-.179-.064-.355-.132-.531-.2l-.149-.06c-.193-.078-.384-.159-.573-.244l-.115-.052c-.163-.075-.324-.151-.484-.23l-.14-.069c-.126-.063-.25-.129-.374-.195l-.249-.134c-.152-.083-.3-.169-.449-.257l-.151-.086q-.3-.179-.584-.366l-.158-.107c-.14-.092-.279-.186-.416-.283l-.134-.1c-.132-.1-.263-.192-.393-.29l-.174-.135c-.119-.093-.238-.187-.354-.283l-.158-.13q-.224-.188-.442-.381l-.048-.041c-.157-.141-.312-.286-.464-.432l-.131-.129c-.113-.11-.224-.221-.334-.335l-.131-.134q-.209-.218-.409-.443l-.02-.022c-.141-.158-.28-.32-.415-.483l-.109-.132c-.1-.124-.2-.251-.3-.378l-.11-.14c-.118-.156-.233-.312-.345-.47C25.348,17.07,24.229,11.079,26.717,6.16m6.565-.639a10.247,10.247,0,0,0-.338,10.216,13.334,13.334,0,0,0,.9,1.543A7.283,7.283,0,0,0,34.9,18.624c.147.166.3.328.459.487l.121.122c.153.151.308.3.468.445l.019.017,0,0c.178.159.361.312.547.463l.124.1c.187.146.377.29.572.427l.017.013.261.176.124.084q.209.137.424.266l.06.036c.124.073.249.144.375.214l.133.071.262.139.04.018c.18.09.362.178.547.261l.121.051c.148.064.3.127.449.186l.192.072c.137.052.274.1.412.147l.186.061a4.545,4.545,0,0,0,.6.176C51.964,24.448,54.4,16.138,54.4,16.138c-2.2,3.235-6.448,4.778-10.985,3.574q-.3-.081-.6-.177l-.18-.059c-.14-.046-.28-.1-.418-.147l-.189-.072q-.227-.09-.45-.186l-.121-.052q-.28-.124-.55-.262l-.276-.144-.159-.084c-.118-.065-.234-.133-.349-.2l-.083-.048c-.143-.085-.284-.173-.423-.264l-.128-.087-.274-.186c-.194-.137-.384-.281-.57-.427l-.128-.1A13.014,13.014,0,0,1,34.21,10.93a9.947,9.947,0,0,1,.744-7.821m5.707-.2a6.414,6.414,0,0,0-.487,6.069,8.434,8.434,0,0,0,4.8,4.585l.262.092.115.038a3.148,3.148,0,0,0,.376.111c5.826,1.152,7.406-3.058,7.827-3.678-1.384,2.039-3.71,2.528-6.565,1.819a7.121,7.121,0,0,1-.69-.218,8.287,8.287,0,0,1-2.258-1.246C41.482,8.5,39.9,4.714,41.562,1.634" transform="translate(-16.111 -1.634)" fill="#0868ac"/>
+                                                    <path id="Path_52" data-name="Path 52" d="M29.517,93.127H27.883a.216.216,0,0,0-.2.164L27.1,96.02l-.58,2.729a.215.215,0,0,1-.2.164H25.165c-1.145,0-1.012-.8-.778-1.907l.007-.033.026-.139,0-.026.052-.283.056-.3.06-.309.264-1.31.264-1.31a.132.132,0,0,0-.132-.165H23.311a.214.214,0,0,0-.2.164l-.361,1.739-.361,1.74v0l-.033.162c-.415,1.928-.306,3.767,1.953,3.825h3.61a.215.215,0,0,0,.2-.164l.764-3.652.764-3.653A.13.13,0,0,0,29.517,93.127ZM12.01,93.108H10.215a.218.218,0,0,0-.2.164l-.17.764-.17.764a.128.128,0,0,0,.129.164h1.809a.216.216,0,0,0,.2-.164l.164-.763.164-.763A.129.129,0,0,0,12.01,93.108Zm-.521,2.376H9.68a.218.218,0,0,0-.2.164l-.254,1.144-.254,1.144-.071.328-.244,1.168L8.412,100.6c-.019.09-.058.236-.087.323,0,0-.338,1.022-.906,1.01l-.071,0-.492-.009h0a.217.217,0,0,0-.2.16l-.188.8-.187.8a.128.128,0,0,0,.126.165c.322,0,1.044.012,1.481.012,1.419,0,2.168-.8,2.647-3.1l.561-2.64.526-2.476a.129.129,0,0,0-.13-.163ZM44.8,94.866l-.075-.315-.074-.322-.038-.163c-.147-.581-.578-.915-1.515-.915l-1.458,0-1.343,0H38.789a.215.215,0,0,0-.2.164l-.067.321-.079.379-.022.107-.68,3.24-.646,3.075a.73.73,0,0,0-.015.246c.011.045.185.082.276.082H38.72a.843.843,0,0,0,.255-.037c.05-.02.123-.2.141-.292l.242-1.218.243-1.219v0l.032-.162.294-1.4.26-1.236a.215.215,0,0,1,.2-.164l4.29,0a.126.126,0,0,0,.128-.163Zm5.522-2.847h-1.7a.348.348,0,0,0-.258.139L45.328,96.68c-.051.076-.109.065-.13-.024l-.224-1a.218.218,0,0,0-.2-.164H42.822a.119.119,0,0,0-.12.161l.875,3.114a.75.75,0,0,1,0,.324L43.2,100.6a.123.123,0,0,0,.124.162h1.929a.225.225,0,0,0,.206-.162L45.84,99.1a1,1,0,0,1,.14-.3l4.929-6.649c.055-.074.025-.134-.065-.133Zm-15.507,3.9v0a.2.2,0,0,1-.193.173H32.151a.107.107,0,0,1-.116-.132l0-.006h0v-.008l.011-.043a1.551,1.551,0,0,1,1.622-1.058c1.019,0,1.218.505,1.149,1.074Zm-.726-2.9c-3.176,0-3.929,1.96-4.352,3.938-.422,2.016-.386,3.9,2.9,3.9h.922c.868,0,1.739-.01,2.091-.013a.215.215,0,0,0,.2-.165l.133-.661.026-.129.159-.789a.131.131,0,0,0-.132-.164H33.083c-1.176,0-1.525-.317-1.4-1.251h4.727a.2.2,0,0,0,.172-.124l.011-.042h0c.7-2.689.5-4.5-2.5-4.5ZM19.079,95.909l-.045.161h0l-.357,1.285-.357,1.285a.231.231,0,0,1-.21.162H16.223c-1.432,0-1.781-1.139-1.432-2.818.349-1.717,1.032-2.785,2.442-2.893,1.927-.148,2.312,1.229,1.846,2.818Zm1.3,2.794a21.767,21.767,0,0,0,1.092-3.466,3.492,3.492,0,0,0-3.793-4.162c-3.213,0-4.609,2.352-5.141,4.909-.532,2.575.165,4.833,3.36,4.815l2.521-.009,2.356-.009a.229.229,0,0,0,.207-.163l.41-1.591a.124.124,0,0,0-.123-.164l-.393,0-.393,0a.1.1,0,0,1-.112-.119Zm15.907-1.471a.108.108,0,1,1-.108-.11A.109.109,0,0,1,36.281,97.231Z" transform="translate(-6.274 -56.681)" fill="#d1d1d1"/>
+                                                  </svg>
+                                                  
+      
+                                                  <svg class="icon" id="bootstrap-4" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
+                                                    <path id="Path_60" data-name="Path 60" d="M0,41.1a6.084,6.084,0,0,0,6.084,6.084H41.1A6.084,6.084,0,0,0,47.182,41.1V6.084A6.084,6.084,0,0,0,41.1,0H6.084A6.084,6.084,0,0,0,0,6.084V41.1Z" fill="#563d7c"/>
+                                                    <path id="Path_61" data-name="Path 61" d="M78.2,62.248V55.459H83.94a8.578,8.578,0,0,1,1.581.142,3.846,3.846,0,0,1,1.347.508,2.664,2.664,0,0,1,.937,1.016,3.491,3.491,0,0,1,.351,1.667A3.129,3.129,0,0,1,87.1,61.435a4.28,4.28,0,0,1-2.693.813ZM72.075,50.5V79.524h13.5a13.712,13.712,0,0,0,3.649-.488,9.582,9.582,0,0,0,3.161-1.5,7.325,7.325,0,0,0,2.205-2.622,9.2,9.2,0,0,0-.449-8.455,6.7,6.7,0,0,0-3.845-2.7,7.015,7.015,0,0,0,2.83-2.4,6.556,6.556,0,0,0,.956-3.658,8.064,8.064,0,0,0-.644-3.414,5.523,5.523,0,0,0-1.815-2.215,7.665,7.665,0,0,0-2.81-1.2,16.681,16.681,0,0,0-3.63-.366ZM78.2,74.564V66.6h6.674a5.017,5.017,0,0,1,3.2.955,3.83,3.83,0,0,1,1.21,3.191,4.129,4.129,0,0,1-.371,1.87,3.029,3.029,0,0,1-1,1.159,4.122,4.122,0,0,1-1.444.61,7.88,7.88,0,0,1-1.717.183Z" transform="translate(-58.456 -41.421)" fill="#fff"/>
+                                                  </svg>
+        
+                                        </div>
+                                    </div>  
+                                    <div class="skills-modal skills-modal__3">
+                                        <h3 class="modal-3__title">Html5</h3>
+                                        <p class="modal-3__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
                                       </div> 
-                                   </div>
-                                                      
-                                   <div class="skills-box">
+                           </div>
+                                              
+                           <div class="skills-box"> 
                                     <div class="skills-block">
                                             <header class="skills-block__title">
-                                                <h3>Tools</h3>
+                                                <h3>Learning at the moment</h3>
                                             </header>
                                             <div class="skills-block__icons">
-                                                    <svg class="icon icon-vscode" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.335" viewBox="0 0 47.182 47.335">
-                                                        <path id="visualstudio-plain" d="M37.982,2.3l11.7,4.718V44.879L37.906,49.635,19.11,30.954,7.218,40.2,2.5,37.821V14.115l4.718-2.263L19.11,21.173ZM7.218,18.948V33.333l7.1-7.288Zm18.451,7.1,12.237,9.628V16.378Z" transform="translate(-2.5 -2.3)" fill="#3678ab"/>
+      
+                                                    <svg class="icon" id="react-original" xmlns="http://www.w3.org/2000/svg" width="52.837" height="47.182" viewBox="0 0 52.837 47.182">
+                                                        <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="4.482" cy="4.482" rx="4.482" ry="4.482" transform="translate(21.936 19.109)" fill="#61dafb"/>
+                                                        <path id="Path_36" data-name="Path 36" d="M46.092,23.757c-.928-.338-1.9-.675-2.912-.971.253-1.013.464-2.026.633-3,.886-5.571-.084-9.5-2.785-11.015a5.242,5.242,0,0,0-2.7-.675c-2.954,0-6.71,2.195-10.508,5.866C24.02,10.295,20.264,8.1,17.31,8.1a5.242,5.242,0,0,0-2.7.675c-2.7,1.561-3.672,5.486-2.785,11.015.169.971.38,1.984.633,3a29.431,29.431,0,0,0-2.912.971C4.27,25.783,1.4,28.568,1.4,31.691S4.312,37.6,9.545,39.625c.928.338,1.9.675,2.912.971-.253,1.013-.464,2.026-.633,3-.886,5.571.084,9.5,2.785,11.015a5.242,5.242,0,0,0,2.7.675c3,0,6.752-2.195,10.508-5.866,3.8,3.672,7.554,5.866,10.508,5.866a5.242,5.242,0,0,0,2.7-.675c2.7-1.561,3.672-5.486,2.785-11.015-.169-.971-.38-1.984-.633-3a29.429,29.429,0,0,0,2.912-.971c5.275-2.026,8.145-4.811,8.145-7.934S51.367,25.783,46.092,23.757ZM39.846,10.885c1.73,1.013,2.321,4.136,1.6,8.567a25.412,25.412,0,0,1-.591,2.785A50.137,50.137,0,0,0,33.9,21.183,60.89,60.89,0,0,0,29.507,15.7c3.123-3.081,6.288-5.191,8.862-5.191a2.851,2.851,0,0,1,1.477.38ZM35.119,35.911c-.76,1.35-1.646,2.7-2.574,4.051-1.561.127-3.123.169-4.727.169-1.646,0-3.207-.042-4.727-.169Q21.7,37.937,20.56,35.911c-.8-1.393-1.561-2.828-2.237-4.22.675-1.393,1.435-2.828,2.237-4.22.76-1.35,1.646-2.7,2.574-4.051,1.561-.127,3.123-.169,4.727-.169,1.646,0,3.207.042,4.727.169q1.393,2.026,2.532,4.051c.8,1.393,1.561,2.828,2.237,4.22C36.639,33.084,35.921,34.476,35.119,35.911Zm3.5-1.393c.633,1.477,1.139,2.912,1.6,4.347-1.435.338-2.954.591-4.558.8.506-.8,1.055-1.646,1.519-2.532C37.694,36.249,38.158,35.363,38.622,34.519Zm-10.8,11.437c-1.013-1.1-1.983-2.279-2.912-3.5.971.042,1.941.084,2.912.084s1.941-.042,2.912-.084C29.8,43.676,28.831,44.858,27.818,45.955Zm-7.85-6.33c-1.6-.211-3.123-.464-4.558-.8.464-1.393.971-2.87,1.6-4.347.464.844.928,1.73,1.435,2.574.506.928,1.013,1.73,1.519,2.574ZM17.015,28.863c-.633-1.477-1.139-2.912-1.6-4.347,1.435-.338,2.954-.591,4.558-.8-.506.8-1.055,1.646-1.519,2.532C17.943,27.133,17.479,28.019,17.015,28.863Zm10.8-11.437c1.013,1.1,1.983,2.279,2.912,3.5-.971-.042-1.941-.084-2.912-.084s-1.941.042-2.912.084C25.835,19.706,26.806,18.524,27.818,17.427Zm9.369,8.862-1.519-2.532c1.6.211,3.123.464,4.558.8-.464,1.393-.971,2.87-1.6,4.347C38.158,28.019,37.694,27.133,37.187,26.289Zm-23-6.837c-.717-4.431-.127-7.554,1.6-8.567a2.851,2.851,0,0,1,1.477-.38c2.532,0,5.7,2.068,8.862,5.191a55.476,55.476,0,0,0-4.389,5.486,57.376,57.376,0,0,0-6.963,1.055C14.525,21.267,14.356,20.339,14.187,19.452ZM3.763,31.691c0-1.984,2.406-4.094,6.626-5.655a25.3,25.3,0,0,1,2.7-.886,61.513,61.513,0,0,0,2.532,6.584,53.179,53.179,0,0,0-2.532,6.541c-5.824-1.688-9.327-4.22-9.327-6.584ZM15.791,52.5c-1.73-1.013-2.321-4.136-1.6-8.567a25.412,25.412,0,0,1,.591-2.785A50.137,50.137,0,0,0,21.741,42.2a60.891,60.891,0,0,0,4.389,5.486c-3.123,3.081-6.288,5.191-8.862,5.191a2.851,2.851,0,0,1-1.477-.38ZM41.45,43.93c.717,4.431.127,7.554-1.6,8.567a2.851,2.851,0,0,1-1.477.38c-2.532,0-5.7-2.068-8.862-5.191A55.476,55.476,0,0,0,33.9,42.2a57.375,57.375,0,0,0,6.963-1.055C41.112,42.115,41.281,43.043,41.45,43.93Zm3.8-6.584a25.3,25.3,0,0,1-2.7.886,61.512,61.512,0,0,0-2.532-6.584,53.179,53.179,0,0,0,2.532-6.541c5.824,1.688,9.327,4.22,9.327,6.584C51.874,33.675,49.426,35.785,45.248,37.346Z" transform="translate(-1.4 -8.1)" fill="#61dafb"/>
+                                                      </svg>
+      
+                                                    <svg class="icon" id="redux-original" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
+                                                        <path id="Path_53" data-name="Path 53" d="M0,0H47.182V47.182H0Z" fill="none"/>
+                                                        <path id="Path_54" data-name="Path 54" d="M32.694,34.413a23.058,23.058,0,0,1-16.812,12.8,14.694,14.694,0,0,1-3.6.419c-4.423,0-8.478-1.836-10.446-4.845C-.809,38.78-1.709,30.284,7.005,24a31.421,31.421,0,0,0,.778,3.052,14.059,14.059,0,0,0-4.1,4.786,8.763,8.763,0,0,0,.479,9.274,8.41,8.41,0,0,0,6.13,3.544,16.268,16.268,0,0,0,9.787-1.836c4.685-2.454,7.807-5.385,9.849-9.392a3.417,3.417,0,0,1-.962-2.2,3.355,3.355,0,0,1,3.236-3.464h.125a3.36,3.36,0,0,1,.369,6.7Zm10.568-7.419c4.5,5.083,4.622,11.067,2.883,14.538-1.622,3.17-5.9,6.343-11.648,6.343a18.661,18.661,0,0,1-7.741-1.855c.844-.6,2.042-1.557,2.7-2.156a15.358,15.358,0,0,0,5.9,1.256,8.815,8.815,0,0,0,8.224-4.9,8.266,8.266,0,0,0,.122-7.059A16.031,16.031,0,0,0,37.334,25.5a22.911,22.911,0,0,0-12.805-3.89h-1.08A3.4,3.4,0,0,1,20.5,23.643h-.114a3.353,3.353,0,0,1-.111-6.7H20.4a3.319,3.319,0,0,1,2.949,1.8h.962c7.667,0,14.4,2.931,18.954,8.257Zm-30.5,8.448a2.677,2.677,0,0,1,.42-1.737c-3.362-5.8-5.161-13.16-2.4-20.818C12.759,7.13,17.743,3.24,23.147,3.24c5.765,0,11.77,5.028,12.488,14.718-.9-.3-2.212-.735-3-.9-.2-3.17-2.883-11.067-9.248-10.949-2.282.062-5.643,1.139-7.372,3.35a16.014,16.014,0,0,0-3.553,9.274,21.832,21.832,0,0,0,3.122,13.281,1.017,1.017,0,0,1,.42-.059h.118a3.35,3.35,0,1,1,.122,6.7h-.122a3.371,3.371,0,0,1-3.362-3.229Z" transform="translate(-0.002 -1.966)" fill="#764abc"/>
                                                       </svg>
                                                       
-            
-                                                      <svg class="icon icon-xd" id="Adobe_XD_CC_icon" xmlns="http://www.w3.org/2000/svg" width="48.392" height="47.182" viewBox="0 0 48.392 47.182">
-                                                        <path id="Path_55" data-name="Path 55" d="M39.822,47.182H8.569A8.562,8.562,0,0,1,0,38.612V8.569A8.562,8.562,0,0,1,8.569,0H39.822a8.562,8.562,0,0,1,8.569,8.569V38.612A8.562,8.562,0,0,1,39.822,47.182Z" fill="#ff26be"/>
-                                                        <path id="Path_56" data-name="Path 56" d="M47.184,53.321H17.348A7.36,7.36,0,0,1,10,45.972V17.348A7.36,7.36,0,0,1,17.348,10H47.164a7.347,7.347,0,0,1,7.348,7.348v28.6A7.335,7.335,0,0,1,47.184,53.321Z" transform="translate(-8.07 -8.07)" fill="#2e001f"/>
-                                                        <path id="Path_57" data-name="Path 57" d="M54.477,67.054,59.882,77.44c.1.154.039.309-.116.309H56.407A.379.379,0,0,1,56,77.5c-1.236-2.548-2.49-5.1-3.784-7.838H52.18c-1.158,2.587-2.432,5.309-3.668,7.857a.371.371,0,0,1-.347.212H44.979c-.193,0-.212-.154-.116-.27l5.29-10.077L45.037,57.19a.156.156,0,0,1,.116-.27h3.32a.3.3,0,0,1,.347.212c1.216,2.548,2.452,5.174,3.61,7.741h.039c1.12-2.548,2.355-5.193,3.552-7.722.1-.154.154-.251.347-.251h3.108c.154,0,.212.116.116.27ZM60.828,70.2c0-4.5,2.992-8.012,7.741-8.012a8.561,8.561,0,0,1,1,.039V57.112a.193.193,0,0,1,.193-.193h3.05c.154,0,.193.058.193.154V74.8a13.75,13.75,0,0,0,.1,1.892c0,.116-.039.154-.154.212a11.5,11.5,0,0,1-4.942,1.12C63.821,78.039,60.828,75.452,60.828,70.2Zm8.745-4.942a2.919,2.919,0,0,0-1.12-.193c-2.432,0-4.131,1.873-4.131,4.981,0,3.552,1.737,4.981,3.919,4.981a3.642,3.642,0,0,0,1.332-.212Z" transform="translate(-35.168 -44.998)" fill="#ffd9f2"/>
+                                                      
+                                                      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="41.751" height="47.182" viewBox="0 0 41.751 47.182">
+                                                        <path id="nodejs-original" d="M50.1,14,32.894,4A3.711,3.711,0,0,0,29.3,4L11.912,14A3.738,3.738,0,0,0,10,17.146V37.1a3.77,3.77,0,0,0,1.933,3.154l4.595,2.61A7.369,7.369,0,0,0,20.5,43.946c3.251,0,5.109-1.966,5.109-5.4v-19.7c0-.278-.145-.692-.418-.692H23c-.278,0-.9.414-.9.692v19.7c0,1.52-1.375,3.033-3.945,1.748L13.4,37.562a.539.539,0,0,1-.282-.461V17.146c0-.188.217-.377.383-.473L30.839,6.7a.607.607,0,0,1,.561,0L48.523,16.67c.164.1.106.282.106.476V37.1c0,.19.071.376-.091.467l-17.2,9.98a.489.489,0,0,1-.492,0l-4.412-2.633a.425.425,0,0,0-.419-.034,11.483,11.483,0,0,1-2.605,1.187c-.283.1-.7.27.16.753l5.774,3.416a3.639,3.639,0,0,0,3.634,0L50.1,40.255A3.515,3.515,0,0,0,51.751,37.1V17.146A3.5,3.5,0,0,0,50.1,14ZM36.5,33.939c-4.575,0-5.583-1.262-5.919-3.538-.039-.245-.247-.538-.5-.538H27.846c-.277,0-.5.336-.5.611,0,2.913,1.584,6.443,9.151,6.443,5.478,0,8.619-2.129,8.619-5.9,0-3.735-2.523-4.715-7.836-5.418-5.37-.71-5.915-1.068-5.915-2.326,0-1.037.462-2.42,4.438-2.42,3.553,0,4.862.762,5.4,3.157a.493.493,0,0,0,.484.387h2.245a.513.513,0,0,0,.367-.155.5.5,0,0,0,.131-.382c-.348-4.124-3.087-6.045-8.628-6.045-4.929,0-7.869,2.081-7.869,5.57,0,3.784,2.925,4.83,7.656,5.3,5.66.555,6.1,1.382,6.1,2.5C41.691,33.115,40.139,33.939,36.5,33.939Z" transform="translate(-10 -3.541)" fill="#83cd29"/>
                                                       </svg>
                                                       
+      
                                                       
-            
-                                                      <svg class="icon icon-figma" xmlns="http://www.w3.org/2000/svg" width="31.455" height="47.182" viewBox="0 0 31.455 47.182">
-                                                        <g id="figma-1" transform="translate(0)">
-                                                          <path id="path0_fill" d="M7.536,215.072a7.539,7.539,0,0,0,7.536-7.536V200H7.536a7.536,7.536,0,0,0,0,15.072Z" transform="translate(0 -167.89)" fill="#0acf83"/>
-                                                          <path id="path1_fill" d="M0,107.536A7.539,7.539,0,0,1,7.536,100h7.536v15.072H7.536A7.539,7.539,0,0,1,0,107.536Z" transform="translate(0 -83.945)" fill="#a259ff"/>
-                                                          <path id="path1_fill_1_" d="M0,7.536A7.539,7.539,0,0,1,7.536,0h7.536V15.072H7.536A7.539,7.539,0,0,1,0,7.536Z" fill="#f24e1e"/>
-                                                          <path id="path2_fill" d="M100,0h7.536a7.536,7.536,0,0,1,0,15.072H100Z" transform="translate(-83.617)" fill="#ff7262"/>
-                                                          <path id="path3_fill" d="M115.072,107.536A7.536,7.536,0,1,1,107.536,100,7.539,7.539,0,0,1,115.072,107.536Z" transform="translate(-83.617 -83.945)" fill="#1abcfe"/>
-                                                        </g>
-                                                      </svg>
-                                                      
-            
+                                                          
                                             </div>
-                                        </div>  
-                                        <div class="skills-modal skills-modal__2">
-                                            <h3 class="modal-2__title">Html5</h3>
-                                            <p class="modal-2__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
-                                          </div> 
-                                   </div>
-                                                      
-                                   <div class="skills-box">  
-                                        <div class="skills-block">
-                                                <header class="skills-block__title">
-                                                    <h3>Other usefull</h3>
-                                                </header>
-                                                <div class="skills-block__icons">
-                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
-                                                            <path id="git-original" d="M47.175,22.373l-20.6-20.6a3.039,3.039,0,0,0-4.3,0L18,6.051l5.426,5.426a3.608,3.608,0,0,1,4.57,4.6l5.23,5.23a3.611,3.611,0,1,1-2.166,2.038l-4.877-4.877V31.3A3.609,3.609,0,1,1,23.21,31.2V18.245A3.618,3.618,0,0,1,21.248,13.5L15.9,8.153,1.773,22.278a3.04,3.04,0,0,0,0,4.3l20.6,20.6a3.04,3.04,0,0,0,4.3,0l20.5-20.5a3.041,3.041,0,0,0,0-4.3Z" transform="translate(-0.883 -0.884)" fill="#f34f29"/>
-                                                          </svg>
-                                                          
-        
-                                                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="47.182" height="19.406" viewBox="0 0 47.182 19.406">
-                                                            <path id="npm-original-wordmark" d="M2,38.5H49.182V55.132H25.591v2.774H15.1V55.132H2ZM4.622,52.362H9.865V44.044h2.622v8.318h2.622V41.274H4.622Zm13.1-11.088V55.132h5.243v-2.77h5.243V41.274Zm5.243,2.774h2.622v5.54H22.969Zm7.865-2.774V52.362h5.243V44.044H38.7v8.318h2.622V44.044h2.622v8.318h2.622V41.274Z" transform="translate(-2 -38.5)" fill="#cb3837"/>
-                                                          </svg>
-                                                          
-                                                           
-                                                          <svg class="icon" id="jquery-original-wordmark" xmlns="http://www.w3.org/2000/svg" width="44.663" height="47.182" viewBox="0 0 44.663 47.182">
-                                                            <path id="Path_51" data-name="Path 51" d="M24.512,9.021c-2.826,4.154-2.474,9.559-.315,13.974l.158.314.1.2.063.114.113.206c.067.121.136.241.206.361l.118.2q.117.192.239.383l.1.161c.113.172.228.343.346.512l.01.013.058.081c.1.145.208.288.316.43l.119.155c.1.123.193.245.292.367l.111.136c.133.16.268.319.406.475l.008.009.016.018c.135.151.273.3.413.445l.132.136c.108.112.219.221.33.331l.135.131c.149.143.3.284.452.421l.007.006.079.068q.2.18.411.355l.17.139c.113.092.227.184.342.274l.183.142q.19.143.384.282l.14.1.039.028c.122.087.248.169.373.252l.161.11c.192.124.387.247.584.366l.161.093c.145.085.291.169.438.251l.243.128.314.167.072.036.128.063c.164.08.33.159.5.236l.1.048q.287.129.58.247l.141.057c.18.072.363.141.547.207l.069.024c.2.072.405.139.61.2l.147.045a5.852,5.852,0,0,0,.63.182c13.666,2.549,17.635-8.4,17.635-8.4-3.334,4.443-9.251,5.615-14.858,4.31-.213-.049-.419-.117-.626-.179l-.156-.049q-.3-.095-.6-.2l-.083-.03c-.179-.064-.355-.132-.531-.2l-.149-.06c-.193-.078-.384-.159-.573-.244l-.115-.052c-.163-.075-.324-.151-.484-.23l-.14-.069c-.126-.063-.25-.129-.374-.195l-.249-.134c-.152-.083-.3-.169-.449-.257l-.151-.086q-.3-.179-.584-.366l-.158-.107c-.14-.092-.279-.186-.416-.283l-.134-.1c-.132-.1-.263-.192-.393-.29l-.174-.135c-.119-.093-.238-.187-.354-.283l-.158-.13q-.224-.188-.442-.381l-.048-.041c-.157-.141-.312-.286-.464-.432l-.131-.129c-.113-.11-.224-.221-.334-.335l-.131-.134q-.209-.218-.409-.443l-.02-.022c-.141-.158-.28-.32-.415-.483l-.109-.132c-.1-.124-.2-.251-.3-.378l-.11-.14c-.118-.156-.233-.312-.345-.47C25.348,17.07,24.229,11.079,26.717,6.16m6.565-.639a10.247,10.247,0,0,0-.338,10.216,13.334,13.334,0,0,0,.9,1.543A7.283,7.283,0,0,0,34.9,18.624c.147.166.3.328.459.487l.121.122c.153.151.308.3.468.445l.019.017,0,0c.178.159.361.312.547.463l.124.1c.187.146.377.29.572.427l.017.013.261.176.124.084q.209.137.424.266l.06.036c.124.073.249.144.375.214l.133.071.262.139.04.018c.18.09.362.178.547.261l.121.051c.148.064.3.127.449.186l.192.072c.137.052.274.1.412.147l.186.061a4.545,4.545,0,0,0,.6.176C51.964,24.448,54.4,16.138,54.4,16.138c-2.2,3.235-6.448,4.778-10.985,3.574q-.3-.081-.6-.177l-.18-.059c-.14-.046-.28-.1-.418-.147l-.189-.072q-.227-.09-.45-.186l-.121-.052q-.28-.124-.55-.262l-.276-.144-.159-.084c-.118-.065-.234-.133-.349-.2l-.083-.048c-.143-.085-.284-.173-.423-.264l-.128-.087-.274-.186c-.194-.137-.384-.281-.57-.427l-.128-.1A13.014,13.014,0,0,1,34.21,10.93a9.947,9.947,0,0,1,.744-7.821m5.707-.2a6.414,6.414,0,0,0-.487,6.069,8.434,8.434,0,0,0,4.8,4.585l.262.092.115.038a3.148,3.148,0,0,0,.376.111c5.826,1.152,7.406-3.058,7.827-3.678-1.384,2.039-3.71,2.528-6.565,1.819a7.121,7.121,0,0,1-.69-.218,8.287,8.287,0,0,1-2.258-1.246C41.482,8.5,39.9,4.714,41.562,1.634" transform="translate(-16.111 -1.634)" fill="#0868ac"/>
-                                                            <path id="Path_52" data-name="Path 52" d="M29.517,93.127H27.883a.216.216,0,0,0-.2.164L27.1,96.02l-.58,2.729a.215.215,0,0,1-.2.164H25.165c-1.145,0-1.012-.8-.778-1.907l.007-.033.026-.139,0-.026.052-.283.056-.3.06-.309.264-1.31.264-1.31a.132.132,0,0,0-.132-.165H23.311a.214.214,0,0,0-.2.164l-.361,1.739-.361,1.74v0l-.033.162c-.415,1.928-.306,3.767,1.953,3.825h3.61a.215.215,0,0,0,.2-.164l.764-3.652.764-3.653A.13.13,0,0,0,29.517,93.127ZM12.01,93.108H10.215a.218.218,0,0,0-.2.164l-.17.764-.17.764a.128.128,0,0,0,.129.164h1.809a.216.216,0,0,0,.2-.164l.164-.763.164-.763A.129.129,0,0,0,12.01,93.108Zm-.521,2.376H9.68a.218.218,0,0,0-.2.164l-.254,1.144-.254,1.144-.071.328-.244,1.168L8.412,100.6c-.019.09-.058.236-.087.323,0,0-.338,1.022-.906,1.01l-.071,0-.492-.009h0a.217.217,0,0,0-.2.16l-.188.8-.187.8a.128.128,0,0,0,.126.165c.322,0,1.044.012,1.481.012,1.419,0,2.168-.8,2.647-3.1l.561-2.64.526-2.476a.129.129,0,0,0-.13-.163ZM44.8,94.866l-.075-.315-.074-.322-.038-.163c-.147-.581-.578-.915-1.515-.915l-1.458,0-1.343,0H38.789a.215.215,0,0,0-.2.164l-.067.321-.079.379-.022.107-.68,3.24-.646,3.075a.73.73,0,0,0-.015.246c.011.045.185.082.276.082H38.72a.843.843,0,0,0,.255-.037c.05-.02.123-.2.141-.292l.242-1.218.243-1.219v0l.032-.162.294-1.4.26-1.236a.215.215,0,0,1,.2-.164l4.29,0a.126.126,0,0,0,.128-.163Zm5.522-2.847h-1.7a.348.348,0,0,0-.258.139L45.328,96.68c-.051.076-.109.065-.13-.024l-.224-1a.218.218,0,0,0-.2-.164H42.822a.119.119,0,0,0-.12.161l.875,3.114a.75.75,0,0,1,0,.324L43.2,100.6a.123.123,0,0,0,.124.162h1.929a.225.225,0,0,0,.206-.162L45.84,99.1a1,1,0,0,1,.14-.3l4.929-6.649c.055-.074.025-.134-.065-.133Zm-15.507,3.9v0a.2.2,0,0,1-.193.173H32.151a.107.107,0,0,1-.116-.132l0-.006h0v-.008l.011-.043a1.551,1.551,0,0,1,1.622-1.058c1.019,0,1.218.505,1.149,1.074Zm-.726-2.9c-3.176,0-3.929,1.96-4.352,3.938-.422,2.016-.386,3.9,2.9,3.9h.922c.868,0,1.739-.01,2.091-.013a.215.215,0,0,0,.2-.165l.133-.661.026-.129.159-.789a.131.131,0,0,0-.132-.164H33.083c-1.176,0-1.525-.317-1.4-1.251h4.727a.2.2,0,0,0,.172-.124l.011-.042h0c.7-2.689.5-4.5-2.5-4.5ZM19.079,95.909l-.045.161h0l-.357,1.285-.357,1.285a.231.231,0,0,1-.21.162H16.223c-1.432,0-1.781-1.139-1.432-2.818.349-1.717,1.032-2.785,2.442-2.893,1.927-.148,2.312,1.229,1.846,2.818Zm1.3,2.794a21.767,21.767,0,0,0,1.092-3.466,3.492,3.492,0,0,0-3.793-4.162c-3.213,0-4.609,2.352-5.141,4.909-.532,2.575.165,4.833,3.36,4.815l2.521-.009,2.356-.009a.229.229,0,0,0,.207-.163l.41-1.591a.124.124,0,0,0-.123-.164l-.393,0-.393,0a.1.1,0,0,1-.112-.119Zm15.907-1.471a.108.108,0,1,1-.108-.11A.109.109,0,0,1,36.281,97.231Z" transform="translate(-6.274 -56.681)" fill="#d1d1d1"/>
-                                                          </svg>
-                                                          
-    
-                                                          <svg class="icon" id="bootstrap-4" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
-                                                            <path id="Path_60" data-name="Path 60" d="M0,41.1a6.084,6.084,0,0,0,6.084,6.084H41.1A6.084,6.084,0,0,0,47.182,41.1V6.084A6.084,6.084,0,0,0,41.1,0H6.084A6.084,6.084,0,0,0,0,6.084V41.1Z" fill="#563d7c"/>
-                                                            <path id="Path_61" data-name="Path 61" d="M78.2,62.248V55.459H83.94a8.578,8.578,0,0,1,1.581.142,3.846,3.846,0,0,1,1.347.508,2.664,2.664,0,0,1,.937,1.016,3.491,3.491,0,0,1,.351,1.667A3.129,3.129,0,0,1,87.1,61.435a4.28,4.28,0,0,1-2.693.813ZM72.075,50.5V79.524h13.5a13.712,13.712,0,0,0,3.649-.488,9.582,9.582,0,0,0,3.161-1.5,7.325,7.325,0,0,0,2.205-2.622,9.2,9.2,0,0,0-.449-8.455,6.7,6.7,0,0,0-3.845-2.7,7.015,7.015,0,0,0,2.83-2.4,6.556,6.556,0,0,0,.956-3.658,8.064,8.064,0,0,0-.644-3.414,5.523,5.523,0,0,0-1.815-2.215,7.665,7.665,0,0,0-2.81-1.2,16.681,16.681,0,0,0-3.63-.366ZM78.2,74.564V66.6h6.674a5.017,5.017,0,0,1,3.2.955,3.83,3.83,0,0,1,1.21,3.191,4.129,4.129,0,0,1-.371,1.87,3.029,3.029,0,0,1-1,1.159,4.122,4.122,0,0,1-1.444.61,7.88,7.88,0,0,1-1.717.183Z" transform="translate(-58.456 -41.421)" fill="#fff"/>
-                                                          </svg>
-                
-                                                </div>
-                                            </div>  
-                                            <div class="skills-modal skills-modal__3">
-                                                <h3 class="modal-3__title">Html5</h3>
-                                                <p class="modal-3__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
-                                              </div> 
-                                   </div>
-                                                      
-                                   <div class="skills-box"> 
-                                            <div class="skills-block">
-                                                    <header class="skills-block__title">
-                                                        <h3>Learning at the moment</h3>
-                                                    </header>
-                                                    <div class="skills-block__icons">
-    
-                                                            <svg class="icon" id="react-original" xmlns="http://www.w3.org/2000/svg" width="52.837" height="47.182" viewBox="0 0 52.837 47.182">
-                                                                <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="4.482" cy="4.482" rx="4.482" ry="4.482" transform="translate(21.936 19.109)" fill="#61dafb"/>
-                                                                <path id="Path_36" data-name="Path 36" d="M46.092,23.757c-.928-.338-1.9-.675-2.912-.971.253-1.013.464-2.026.633-3,.886-5.571-.084-9.5-2.785-11.015a5.242,5.242,0,0,0-2.7-.675c-2.954,0-6.71,2.195-10.508,5.866C24.02,10.295,20.264,8.1,17.31,8.1a5.242,5.242,0,0,0-2.7.675c-2.7,1.561-3.672,5.486-2.785,11.015.169.971.38,1.984.633,3a29.431,29.431,0,0,0-2.912.971C4.27,25.783,1.4,28.568,1.4,31.691S4.312,37.6,9.545,39.625c.928.338,1.9.675,2.912.971-.253,1.013-.464,2.026-.633,3-.886,5.571.084,9.5,2.785,11.015a5.242,5.242,0,0,0,2.7.675c3,0,6.752-2.195,10.508-5.866,3.8,3.672,7.554,5.866,10.508,5.866a5.242,5.242,0,0,0,2.7-.675c2.7-1.561,3.672-5.486,2.785-11.015-.169-.971-.38-1.984-.633-3a29.429,29.429,0,0,0,2.912-.971c5.275-2.026,8.145-4.811,8.145-7.934S51.367,25.783,46.092,23.757ZM39.846,10.885c1.73,1.013,2.321,4.136,1.6,8.567a25.412,25.412,0,0,1-.591,2.785A50.137,50.137,0,0,0,33.9,21.183,60.89,60.89,0,0,0,29.507,15.7c3.123-3.081,6.288-5.191,8.862-5.191a2.851,2.851,0,0,1,1.477.38ZM35.119,35.911c-.76,1.35-1.646,2.7-2.574,4.051-1.561.127-3.123.169-4.727.169-1.646,0-3.207-.042-4.727-.169Q21.7,37.937,20.56,35.911c-.8-1.393-1.561-2.828-2.237-4.22.675-1.393,1.435-2.828,2.237-4.22.76-1.35,1.646-2.7,2.574-4.051,1.561-.127,3.123-.169,4.727-.169,1.646,0,3.207.042,4.727.169q1.393,2.026,2.532,4.051c.8,1.393,1.561,2.828,2.237,4.22C36.639,33.084,35.921,34.476,35.119,35.911Zm3.5-1.393c.633,1.477,1.139,2.912,1.6,4.347-1.435.338-2.954.591-4.558.8.506-.8,1.055-1.646,1.519-2.532C37.694,36.249,38.158,35.363,38.622,34.519Zm-10.8,11.437c-1.013-1.1-1.983-2.279-2.912-3.5.971.042,1.941.084,2.912.084s1.941-.042,2.912-.084C29.8,43.676,28.831,44.858,27.818,45.955Zm-7.85-6.33c-1.6-.211-3.123-.464-4.558-.8.464-1.393.971-2.87,1.6-4.347.464.844.928,1.73,1.435,2.574.506.928,1.013,1.73,1.519,2.574ZM17.015,28.863c-.633-1.477-1.139-2.912-1.6-4.347,1.435-.338,2.954-.591,4.558-.8-.506.8-1.055,1.646-1.519,2.532C17.943,27.133,17.479,28.019,17.015,28.863Zm10.8-11.437c1.013,1.1,1.983,2.279,2.912,3.5-.971-.042-1.941-.084-2.912-.084s-1.941.042-2.912.084C25.835,19.706,26.806,18.524,27.818,17.427Zm9.369,8.862-1.519-2.532c1.6.211,3.123.464,4.558.8-.464,1.393-.971,2.87-1.6,4.347C38.158,28.019,37.694,27.133,37.187,26.289Zm-23-6.837c-.717-4.431-.127-7.554,1.6-8.567a2.851,2.851,0,0,1,1.477-.38c2.532,0,5.7,2.068,8.862,5.191a55.476,55.476,0,0,0-4.389,5.486,57.376,57.376,0,0,0-6.963,1.055C14.525,21.267,14.356,20.339,14.187,19.452ZM3.763,31.691c0-1.984,2.406-4.094,6.626-5.655a25.3,25.3,0,0,1,2.7-.886,61.513,61.513,0,0,0,2.532,6.584,53.179,53.179,0,0,0-2.532,6.541c-5.824-1.688-9.327-4.22-9.327-6.584ZM15.791,52.5c-1.73-1.013-2.321-4.136-1.6-8.567a25.412,25.412,0,0,1,.591-2.785A50.137,50.137,0,0,0,21.741,42.2a60.891,60.891,0,0,0,4.389,5.486c-3.123,3.081-6.288,5.191-8.862,5.191a2.851,2.851,0,0,1-1.477-.38ZM41.45,43.93c.717,4.431.127,7.554-1.6,8.567a2.851,2.851,0,0,1-1.477.38c-2.532,0-5.7-2.068-8.862-5.191A55.476,55.476,0,0,0,33.9,42.2a57.375,57.375,0,0,0,6.963-1.055C41.112,42.115,41.281,43.043,41.45,43.93Zm3.8-6.584a25.3,25.3,0,0,1-2.7.886,61.512,61.512,0,0,0-2.532-6.584,53.179,53.179,0,0,0,2.532-6.541c5.824,1.688,9.327,4.22,9.327,6.584C51.874,33.675,49.426,35.785,45.248,37.346Z" transform="translate(-1.4 -8.1)" fill="#61dafb"/>
-                                                              </svg>
-    
-                                                            <svg class="icon" id="redux-original" xmlns="http://www.w3.org/2000/svg" width="47.182" height="47.182" viewBox="0 0 47.182 47.182">
-                                                                <path id="Path_53" data-name="Path 53" d="M0,0H47.182V47.182H0Z" fill="none"/>
-                                                                <path id="Path_54" data-name="Path 54" d="M32.694,34.413a23.058,23.058,0,0,1-16.812,12.8,14.694,14.694,0,0,1-3.6.419c-4.423,0-8.478-1.836-10.446-4.845C-.809,38.78-1.709,30.284,7.005,24a31.421,31.421,0,0,0,.778,3.052,14.059,14.059,0,0,0-4.1,4.786,8.763,8.763,0,0,0,.479,9.274,8.41,8.41,0,0,0,6.13,3.544,16.268,16.268,0,0,0,9.787-1.836c4.685-2.454,7.807-5.385,9.849-9.392a3.417,3.417,0,0,1-.962-2.2,3.355,3.355,0,0,1,3.236-3.464h.125a3.36,3.36,0,0,1,.369,6.7Zm10.568-7.419c4.5,5.083,4.622,11.067,2.883,14.538-1.622,3.17-5.9,6.343-11.648,6.343a18.661,18.661,0,0,1-7.741-1.855c.844-.6,2.042-1.557,2.7-2.156a15.358,15.358,0,0,0,5.9,1.256,8.815,8.815,0,0,0,8.224-4.9,8.266,8.266,0,0,0,.122-7.059A16.031,16.031,0,0,0,37.334,25.5a22.911,22.911,0,0,0-12.805-3.89h-1.08A3.4,3.4,0,0,1,20.5,23.643h-.114a3.353,3.353,0,0,1-.111-6.7H20.4a3.319,3.319,0,0,1,2.949,1.8h.962c7.667,0,14.4,2.931,18.954,8.257Zm-30.5,8.448a2.677,2.677,0,0,1,.42-1.737c-3.362-5.8-5.161-13.16-2.4-20.818C12.759,7.13,17.743,3.24,23.147,3.24c5.765,0,11.77,5.028,12.488,14.718-.9-.3-2.212-.735-3-.9-.2-3.17-2.883-11.067-9.248-10.949-2.282.062-5.643,1.139-7.372,3.35a16.014,16.014,0,0,0-3.553,9.274,21.832,21.832,0,0,0,3.122,13.281,1.017,1.017,0,0,1,.42-.059h.118a3.35,3.35,0,1,1,.122,6.7h-.122a3.371,3.371,0,0,1-3.362-3.229Z" transform="translate(-0.002 -1.966)" fill="#764abc"/>
-                                                              </svg>
-                                                              
-                                                              
-                                                              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="41.751" height="47.182" viewBox="0 0 41.751 47.182">
-                                                                <path id="nodejs-original" d="M50.1,14,32.894,4A3.711,3.711,0,0,0,29.3,4L11.912,14A3.738,3.738,0,0,0,10,17.146V37.1a3.77,3.77,0,0,0,1.933,3.154l4.595,2.61A7.369,7.369,0,0,0,20.5,43.946c3.251,0,5.109-1.966,5.109-5.4v-19.7c0-.278-.145-.692-.418-.692H23c-.278,0-.9.414-.9.692v19.7c0,1.52-1.375,3.033-3.945,1.748L13.4,37.562a.539.539,0,0,1-.282-.461V17.146c0-.188.217-.377.383-.473L30.839,6.7a.607.607,0,0,1,.561,0L48.523,16.67c.164.1.106.282.106.476V37.1c0,.19.071.376-.091.467l-17.2,9.98a.489.489,0,0,1-.492,0l-4.412-2.633a.425.425,0,0,0-.419-.034,11.483,11.483,0,0,1-2.605,1.187c-.283.1-.7.27.16.753l5.774,3.416a3.639,3.639,0,0,0,3.634,0L50.1,40.255A3.515,3.515,0,0,0,51.751,37.1V17.146A3.5,3.5,0,0,0,50.1,14ZM36.5,33.939c-4.575,0-5.583-1.262-5.919-3.538-.039-.245-.247-.538-.5-.538H27.846c-.277,0-.5.336-.5.611,0,2.913,1.584,6.443,9.151,6.443,5.478,0,8.619-2.129,8.619-5.9,0-3.735-2.523-4.715-7.836-5.418-5.37-.71-5.915-1.068-5.915-2.326,0-1.037.462-2.42,4.438-2.42,3.553,0,4.862.762,5.4,3.157a.493.493,0,0,0,.484.387h2.245a.513.513,0,0,0,.367-.155.5.5,0,0,0,.131-.382c-.348-4.124-3.087-6.045-8.628-6.045-4.929,0-7.869,2.081-7.869,5.57,0,3.784,2.925,4.83,7.656,5.3,5.66.555,6.1,1.382,6.1,2.5C41.691,33.115,40.139,33.939,36.5,33.939Z" transform="translate(-10 -3.541)" fill="#83cd29"/>
-                                                              </svg>
-                                                              
-    
-                                                              
-                                                                  
-                                                    </div>
-                                                </div> 
-                                                <div class="skills-modal skills-modal__4">
-                                                    <h3 class="modal-4__title">Html5</h3>
-                                                    <p class="modal-4__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
-                                                  </div>  
-                                                </div>
-
-
-                                </div>
-                                <!-- <div class="skills-container__right">                     
-                                            <div class="skill-description-card__html">
+                                        </div> 
+                                        <div class="skills-modal skills-modal__4">
+                                            <h3 class="modal-4__title">Html5</h3>
+                                            <p class="modal-4__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum ex reprehenderit distinctio magnam? Beatae quia aspernatur dolorum numquam excepturi, voluptate officiis asperiores placeat commodi quaerat magni laboriosam debitis quibusdam blanditiis voluptatem esse tenetur repellat quas, tempore minima dolores corrupti.</p>
+                                          </div>  
+                                        </div>
+      
+      
+                        </div>
+                        <!-- <div class="skills-container__right">                     
+                                    <div class="skill-description-card__html">
+                                        <h2 class="skill-description-title">HTML 5</h2>  
+                                        <p class="skill-description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores maiores, nihil sapiente excepturi at laboriosam consectetur atque quas cumque repudiandae architecto vel, odit voluptatibus tenetur accusantium facere eveniet voluptatem officiis voluptatum sed quos? Perspiciatis incidunt ipsam reiciendis eius quia, dolor tenetur, optio error laudantium ipsa voluptate cupiditate quasi quaerat?</p>  
+                                    </div>  
+                                    <div class="skill-description-card__css3">
+                                            <h2 class="skill-description-title">HTML 5</h2>  
+                                            <p class="skill-description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores maiores, nihil sapiente excepturi at laboriosam consectetur atque quas cumque repudiandae architecto vel, odit voluptatibus tenetur accusantium facere eveniet voluptatem officiis voluptatum sed quos? Perspiciatis incidunt ipsam reiciendis eius quia, dolor tenetur, optio error laudantium ipsa voluptate cupiditate quasi quaerat?</p>  
+                                        </div> 
+                                        <div class="skill-description-card__javascript">
                                                 <h2 class="skill-description-title">HTML 5</h2>  
                                                 <p class="skill-description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores maiores, nihil sapiente excepturi at laboriosam consectetur atque quas cumque repudiandae architecto vel, odit voluptatibus tenetur accusantium facere eveniet voluptatem officiis voluptatum sed quos? Perspiciatis incidunt ipsam reiciendis eius quia, dolor tenetur, optio error laudantium ipsa voluptate cupiditate quasi quaerat?</p>  
-                                            </div>  
-                                            <div class="skill-description-card__css3">
-                                                    <h2 class="skill-description-title">HTML 5</h2>  
-                                                    <p class="skill-description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores maiores, nihil sapiente excepturi at laboriosam consectetur atque quas cumque repudiandae architecto vel, odit voluptatibus tenetur accusantium facere eveniet voluptatem officiis voluptatum sed quos? Perspiciatis incidunt ipsam reiciendis eius quia, dolor tenetur, optio error laudantium ipsa voluptate cupiditate quasi quaerat?</p>  
-                                                </div> 
-                                                <div class="skill-description-card__javascript">
-                                                        <h2 class="skill-description-title">HTML 5</h2>  
-                                                        <p class="skill-description-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores maiores, nihil sapiente excepturi at laboriosam consectetur atque quas cumque repudiandae architecto vel, odit voluptatibus tenetur accusantium facere eveniet voluptatem officiis voluptatum sed quos? Perspiciatis incidunt ipsam reiciendis eius quia, dolor tenetur, optio error laudantium ipsa voluptate cupiditate quasi quaerat?</p>  
-                                                    </div>      
-                                </div>                           -->
-                                
-                            </div>
-
-                        </section>
-
+                                            </div>      
+                        </div>                           -->
                         
-                        
-                        <section id="projects-section" class="section section-projects">
-        
-        
-                            <div class="projects-gallery">
-                                <div class="projects-gallery__item container">
-                                    <img class="image" src="./img/project-1.png" alt="first project">
-                                    <div class="image-overlay">
-                                            <h4 class="image-overlay__title">Prywatne Portfolio</h4>
-                                        <p class="image-overlay__description" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam mollitia provident amet dolorem asperiores error id nulla saepe sunt ipsa?</p>
-                                        <h5 class="image-overlay__h5" >Technologies used:</h5>
-                                        <div class="image-overlay__tech-container">
-                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="41.603" height="47.182" viewBox="0 0 41.603 47.182">
-                                                    <g id="html5-original" transform="translate(0)">
-                                                      <path id="Path_37" data-name="Path 37" d="M12.818,44.127,9.032,1.661h41.6L46.845,44.12,29.808,48.843Z" transform="translate(-9.032 -1.661)" fill="#e44d26"/>
-                                                      <path id="Path_38" data-name="Path 38" d="M64,50.66l14.3-3.791,3.365-36.033H64Z" transform="translate(-44.009 -7.229)" fill="#f16529"/>
-                                                      <path id="Path_39" data-name="Path 39" d="M43.058,34.894H35.9L35.4,29.685h7.655V24.6H29.489l.13,1.365,1.33,14.017h12.11Zm0,13.21-.024.006-6.026-1.53-.385-4.056H31.19l.758,7.986L43.033,53.4l.025-.006Z" transform="translate(-21.886 -15.58)" fill="#ebebeb"/>
-                                                      <path id="Path_40" data-name="Path 40" d="M63.952,34.894v5.087h6.663l-.628,6.6-6.035,1.531V53.4l11.094-2.89.081-.859L76.4,36.26l.132-1.366H63.952Zm0-10.3v5.086H77.023l.109-1.143.247-2.579.129-1.364Z" transform="translate(-43.539 -15.58)" fill="#fff"/>
-                                                    </g>
-                                                  </svg>
-                                                  
-        
-                                                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="41.602" height="47.182" viewBox="0 0 41.602 47.182">
-                                                    <g id="css3-original" transform="translate(0)">
-                                                      <path id="Path_41" data-name="Path 41" d="M12.546,43.817,8.76,1.352h41.6l-3.79,42.459L29.536,48.534l-16.99-4.717Z" transform="translate(-8.76 -1.352)" fill="#1572b6"/>
-                                                      <path id="Path_42" data-name="Path 42" d="M64,50.359l14.374-3.787,3.382-36H64V50.359Z" transform="translate(-44.118 -6.947)" fill="#33a9dc"/>
-                                                      <path id="Path_43" data-name="Path 43" d="M64,34.442h7.2l.5-5.569H64V23.435H77.637l-.131,1.459L76.17,39.88H64V34.442Z" transform="translate(-43.62 -15.303)" fill="#fff"/>
-                                                      <path id="Path_44" data-name="Path 44" d="M45.678,78.142l-.024.007L39.6,76.514l-.387-4.337H33.752l.762,8.539,11.139,3.092.025-.007Z" transform="translate(-24.498 -45.871)" fill="#ebebeb"/>
-                                                      <path id="Path_45" data-name="Path 45" d="M70.755,64.675,70.1,71.958l-6.065,1.637v5.658l11.148-3.09.082-.919.946-10.569H70.755Z" transform="translate(-43.578 -41.273)" fill="#fff"/>
-                                                      <path id="Path_46" data-name="Path 46" d="M43.024,23.435v5.438H29.889l-.109-1.222-.248-2.757-.13-1.459Zm-.018,11.007v5.438h-5.98l-.109-1.222L36.669,35.9l-.13-1.459Z" transform="translate(-21.786 -15.303)" fill="#ebebeb"/>
-                                                    </g>
-                                                  </svg>
-    
-                                                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="63.086" height="47.182" viewBox="0 0 63.086 47.182">
-                                                    <path id="sass-original" d="M1.219,36.674a2.782,2.782,0,0,0,.162.813,9.991,9.991,0,0,0,2.165,3.892,25.66,25.66,0,0,0,4.8,4.212c1.5,1.079,3.033,2.134,4.541,3.206.259.184.5.4.784.621-.242.131-.443.246-.652.352a34.881,34.881,0,0,0-5.667,3.51,11.591,11.591,0,0,0-2.817,2.851,6.133,6.133,0,0,0-.711,5.909,3.488,3.488,0,0,0,1.189,1.534,1.758,1.758,0,0,0,.584.3c.532.125,1.073.207,1.611.306H8.733A9.481,9.481,0,0,0,13.339,62.5a10.106,10.106,0,0,0,4.254-6.073,10.72,10.72,0,0,0-.063-5.6c-.05-.173-.113-.342-.178-.509s-.142-.33-.233-.539l3.455-1.987.052.044c-.063.206-.13.411-.186.618a13.992,13.992,0,0,0-.585,4.581,8.791,8.791,0,0,0,1.538,4.6,2.228,2.228,0,0,0,3.489.038,8.047,8.047,0,0,0,.8-1.263c.563-1.163,1.085-2.347,1.623-3.523l.094-.215c-.039.557-.084,1.046-.1,1.535a5.85,5.85,0,0,0,.274,2.251,1.554,1.554,0,0,0,1.316,1.169,1.655,1.655,0,0,0,1.234-.45,5.217,5.217,0,0,0,1.352-1.607c.955-1.754,1.936-3.5,2.8-5.3.937-1.945,1.756-3.947,2.625-5.925l.144-.351c.206.807.349,1.6.612,2.347a22.182,22.182,0,0,0,1.1,2.541.76.76,0,0,1-.1.969c-1.134,1.367-2.247,2.75-3.362,4.132a9.282,9.282,0,0,0-.7.949,1.86,1.86,0,0,0-.241.685.873.873,0,0,0,.695.99,4.854,4.854,0,0,0,1.361.1,7.97,7.97,0,0,0,4.218-1.586,4.422,4.422,0,0,0,1.746-4.774,11.091,11.091,0,0,0-.476-1.545.571.571,0,0,1,.062-.6,49.165,49.165,0,0,0,3.427-5.813,1.2,1.2,0,0,1,.154-.242,15.1,15.1,0,0,0,1.733,4.92c-.458.442-.912.842-1.322,1.283a8.847,8.847,0,0,0-2.1,3.314,3.915,3.915,0,0,0-.233,1.711,1.442,1.442,0,0,0,1.78,1.308,8.09,8.09,0,0,0,4.83-2.977,3.914,3.914,0,0,0,.553-3.574c-.094-.346-.207-.686-.327-1.082.478-.148.944-.326,1.425-.436a12.635,12.635,0,0,1,7.387.432,5.575,5.575,0,0,1,3.219,2.8,3.229,3.229,0,0,1-1.232,4.382,2.745,2.745,0,0,0-.444.3.436.436,0,0,0-.1.337c.011.062.174.139.268.138a2.449,2.449,0,0,0,1.362-.563,4.2,4.2,0,0,0,1.936-2.923l.032-.094-.039-.819c-.016-.047.012-.094.008-.13A6.422,6.422,0,0,0,61.655,46.1,9.554,9.554,0,0,0,56,44.2a12.763,12.763,0,0,0-4.907.755c-.451.163-.9.357-1.351.539-.061-.11-.126-.216-.18-.325a9.183,9.183,0,0,1-1.154-2.955,6.616,6.616,0,0,1-.013-2.318c.177-.738.409-1.464.626-2.192a.534.534,0,0,0-.325-.754,1.434,1.434,0,0,0-.395-.13,6.083,6.083,0,0,0-2.6.193.744.744,0,0,0-.587.59c-.038.191-.116.375-.17.564a14.1,14.1,0,0,1-.74,2.334c-.9,1.877-1.93,3.683-2.984,5.475-.114.193-.234.383-.378.618a8.1,8.1,0,0,1-.884-2.282,7,7,0,0,1-.013-2.753c.17-.681.393-1.35.6-2.022a.468.468,0,0,0-.237-.656,1.4,1.4,0,0,0-.476-.185,5.85,5.85,0,0,0-2.69.22.727.727,0,0,0-.5.546,21.062,21.062,0,0,1-.8,2.47c-1.394,3.2-2.828,6.375-4.26,9.553-.3.664-.649,1.3-.986,1.951a4.528,4.528,0,0,1-.317.462.377.377,0,0,1-.118-.24,6.616,6.616,0,0,1,.032-1.224c.236-1.195.507-2.383.793-3.567.236-.978.511-1.947.773-2.918a.916.916,0,0,0-.144-.9,1.349,1.349,0,0,0-1.7-.206l-.215.122.042-.347a5.4,5.4,0,0,0-.081-2.216,1.763,1.763,0,0,0-1.852-1.408,3.978,3.978,0,0,0-1.313.25,9.929,9.929,0,0,0-4.163,3.3,1.3,1.3,0,0,1-.38.329c-1.454.806-2.912,1.6-4.369,2.4l-1.622.889c-.435-.415-.831-.846-1.279-1.211-1.37-1.117-2.763-2.207-4.142-3.312a16.327,16.327,0,0,1-3.314-3.3A5.9,5.9,0,0,1,6.08,37.124a7.542,7.542,0,0,1,1.152-4.2,16.118,16.118,0,0,1,3.824-4.184A35.429,35.429,0,0,1,16.085,25.4,37.932,37.932,0,0,1,23.8,22a21.315,21.315,0,0,1,8.524-.969,8.759,8.759,0,0,1,3.28.952,3.383,3.383,0,0,1,1.722,1.867,4.669,4.669,0,0,1,.081,2.615,9.982,9.982,0,0,1-2.61,4.547,17.64,17.64,0,0,1-7.211,4.568,19.836,19.836,0,0,1-4.907,1.047,9.24,9.24,0,0,1-4.012-.483,5.219,5.219,0,0,1-2.21-1.5c-.108-.126-.245-.262-.446-.144a.381.381,0,0,0-.165.492,4.818,4.818,0,0,0,.383.924,5.26,5.26,0,0,0,1.75,1.657,8.562,8.562,0,0,0,4.351,1.194,21.89,21.89,0,0,0,6.861-.874,16.831,16.831,0,0,0,8.232-4.966A12.645,12.645,0,0,0,40.9,25.679a7.013,7.013,0,0,0-.655-3.992,7.215,7.215,0,0,0-3.148-3.078A13.327,13.327,0,0,0,30.9,17H28.732a22.416,22.416,0,0,0-7.609,1.645,52.268,52.268,0,0,0-5.461,2.363A35.3,35.3,0,0,0,5.254,28.461a15.544,15.544,0,0,0-3.433,5.422c-.21.606-.408,1.256-.558,1.882m13.988,18.1a7.986,7.986,0,0,1-2.842,5.528,6.466,6.466,0,0,1-3.251,1.623A2.386,2.386,0,0,1,7.8,60.916,1.381,1.381,0,0,1,7.025,59.5,5.115,5.115,0,0,1,7.79,56.9a9.314,9.314,0,0,1,2.382-2.616,36.506,36.506,0,0,1,4.657-3.138l.122-.05a8.173,8.173,0,0,1,.3,2.767Zm12.641-9.737a16.9,16.9,0,0,1-.475,2.125,62.643,62.643,0,0,1-2.654,7.021,12.111,12.111,0,0,1-.69,1.214.848.848,0,0,1-.142.168c-.29.287-.566.272-.712-.1a7.911,7.911,0,0,1-.366-1.365,7.231,7.231,0,0,1-.065-.953,11.947,11.947,0,0,1,1.877-6.22,5.816,5.816,0,0,1,1.808-2.037,3.15,3.15,0,0,1,.8-.355c.427-.12.689.077.619.505ZM36.516,55.11l3.1-3.619C39.744,52.835,37.46,55.518,36.516,55.11Zm9.9-2.435c-.219.126-.458.216-.682.332-.205.107-.273,0-.279-.178a1.2,1.2,0,0,1,.047-.362,7.792,7.792,0,0,1,2.335-3.761l.08-.041a3.321,3.321,0,0,1-1.5,4.011Z" transform="translate(-1.219 -17)" fill="#cb6699" fill-rule="evenodd"/>
-                                                  </svg>
-                                                  
-        
-                                                  <svg class="icon" id="javascript-original" xmlns="http://www.w3.org/2000/svg" width="47.31" height="47.31" viewBox="0 0 47.31 47.31">
-                                                    <path id="Path_47" data-name="Path 47" d="M1.408,1.408h47.31v47.31H1.408Z" transform="translate(-1.408 -1.408)" fill="#f0db4f"/>
-                                                    <path id="Path_48" data-name="Path 48" d="M66.565,73.351c-.361-2.245-1.825-4.132-6.162-5.89-1.507-.692-3.186-1.188-3.687-2.33a2.541,2.541,0,0,1-.089-1.441c.323-1.305,1.881-1.712,3.116-1.338a3.429,3.429,0,0,1,2,1.857c2.124-1.375,2.12-1.366,3.6-2.312a9.209,9.209,0,0,0-1.188-1.59c-1.277-1.427-3.018-2.162-5.8-2.105l-1.45.188a6.58,6.58,0,0,0-3.49,2.058,6.444,6.444,0,0,0,1.17,9.175c2.793,2.1,6.9,2.573,7.421,4.534.51,2.4-1.764,3.177-4.024,2.9a5.274,5.274,0,0,1-3.593-2.732c-1.843,1.067-1.843,1.067-3.738,2.157a8.319,8.319,0,0,0,1.675,2.278c3.565,3.616,12.487,3.439,14.088-2.035A6.77,6.77,0,0,0,66.565,73.351ZM48.131,58.491h-4.6l-.019,11.9c0,2.531.131,4.852-.281,5.563-.674,1.4-2.419,1.226-3.214.954a3.95,3.95,0,0,1-1.7-1.763,2.319,2.319,0,0,0-.262-.421L34.31,77.019a7.4,7.4,0,0,0,2.714,3.107,8.936,8.936,0,0,0,6.578.81,5.81,5.81,0,0,0,3.715-2.91c1.048-1.932.823-4.272.814-6.859C48.154,66.945,48.131,62.725,48.131,58.491Z" transform="translate(-23.284 -37.78)" fill="#323330"/>
-                                                  </svg>
-    
-                                                  <svg class="icon" id="Adobe_XD_CC_icon" xmlns="http://www.w3.org/2000/svg" width="48.392" height="47.182" viewBox="0 0 48.392 47.182">
-                                                    <path id="Path_55" data-name="Path 55" d="M39.822,47.182H8.569A8.562,8.562,0,0,1,0,38.612V8.569A8.562,8.562,0,0,1,8.569,0H39.822a8.562,8.562,0,0,1,8.569,8.569V38.612A8.562,8.562,0,0,1,39.822,47.182Z" fill="#ff26be"/>
-                                                    <path id="Path_56" data-name="Path 56" d="M47.184,53.321H17.348A7.36,7.36,0,0,1,10,45.972V17.348A7.36,7.36,0,0,1,17.348,10H47.164a7.347,7.347,0,0,1,7.348,7.348v28.6A7.335,7.335,0,0,1,47.184,53.321Z" transform="translate(-8.07 -8.07)" fill="#2e001f"/>
-                                                    <path id="Path_57" data-name="Path 57" d="M54.477,67.054,59.882,77.44c.1.154.039.309-.116.309H56.407A.379.379,0,0,1,56,77.5c-1.236-2.548-2.49-5.1-3.784-7.838H52.18c-1.158,2.587-2.432,5.309-3.668,7.857a.371.371,0,0,1-.347.212H44.979c-.193,0-.212-.154-.116-.27l5.29-10.077L45.037,57.19a.156.156,0,0,1,.116-.27h3.32a.3.3,0,0,1,.347.212c1.216,2.548,2.452,5.174,3.61,7.741h.039c1.12-2.548,2.355-5.193,3.552-7.722.1-.154.154-.251.347-.251h3.108c.154,0,.212.116.116.27ZM60.828,70.2c0-4.5,2.992-8.012,7.741-8.012a8.561,8.561,0,0,1,1,.039V57.112a.193.193,0,0,1,.193-.193h3.05c.154,0,.193.058.193.154V74.8a13.75,13.75,0,0,0,.1,1.892c0,.116-.039.154-.154.212a11.5,11.5,0,0,1-4.942,1.12C63.821,78.039,60.828,75.452,60.828,70.2Zm8.745-4.942a2.919,2.919,0,0,0-1.12-.193c-2.432,0-4.131,1.873-4.131,4.981,0,3.552,1.737,4.981,3.919,4.981a3.642,3.642,0,0,0,1.332-.212Z" transform="translate(-35.168 -44.998)" fill="#ffd9f2"/>
-                                                  </svg>
-                                        </div>
-                                        <div class="image-overlay__link-box">
-                            <a href="#contact-section" class="btn btn-cta__git"><span>Github</span></a>
-                            <a href="#contact-section" class="btn btn-cta__live"><span>Live</span></a>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="projects-gallery__item container">
-                                    <img class="image" src="./img/project-2.png" alt="first project">
-                                    <div class="image-overlay">
-                                            <h4 class="image-overlay__title">2nd project</h4>
-                                          </div>
-                                </div>
-                                <div class="projects-gallery__item container">
-                                    <img class="image" src="./img/project-3.png" alt="first project">
-                                    <div class="image-overlay">
-                                            <h4 class="image-overlay__title">3rd project</h4>
-                                          </div>
-                                </div>
-                                <div class="projects-gallery__item container">
-                                    <img class="image" src="./img/project-4.png" alt="first project">
-                                    <div class="image-overlay">
-                                            <h4 class="image-overlay__title">4th project</h4>
-                                          </div>
-                                </div>
-                                <div class="projects-gallery__item container">
-                                    <img class="image" src="./img/project-5.png" alt="first project">
-                                    <div class="image-overlay">
-                                            <h4 class="image-overlay__title">5th project</h4>
-                                          </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="contact-section" class="section section-contact">
-                           
-                           <div class="address">
-                                <h4 class="address-primary">Current location:&nbsp; </h4> 
-                                <p class="address-secondary">Poznań, Poland ( I don't mind relocating if neccessary :) )</p>
-                              </div>
-                            <ul class=" menu menu-contact">
-                                <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i
-                                            class="fab fa-github-square"></i><span class="contact-link">Github</span></a>
-                                </li>
-                                <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i class="fab fa-linkedin"></i><span class="contact-link">LinkedIn</span></a>
-                                </li>
-                                <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i
-                                  class="fas fa-envelope"></i><span class="contact-link">Email</span></a>
-                      </li>
-                                <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i
-                                            class="fab fa-facebook-square"></i><span class="contact-link">Facebook</span></a>
-                                </li>
-                                
-                
-                            </ul>
-                        </section> 
-        </main>
-        <aside class="side-bars">
-            <div class="menu side-bars__menu">
-                <div class="side-bars__item"></div>
-                <div class="side-bars__item"></div>
-                <div class="side-bars__item"></div>
-                <div class="side-bars__item"></div>
-                <div class="side-bars__item"></div>
+                    </div>
+      
+                </section>
+
+
+      <section id="projects-section" class="section section-projects">
+
+
+        <div class="projects-gallery">
+          <div class="projects-gallery__item">
+            <img class="image" src="./img/project-1.png" alt="first project">
+            <div class="image-overlay">
+              <h4 class="image-overlay__title image-overlay__item">Prywatne Portfolio</h4>
+              <p class="image-overlay__description image-overlay__item">Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Numquam
+                mollitia provident amet dolorem asperiores error id nulla saepe sunt ipsa?</p>
+              <h5 class="image-overlay__h5 image-overlay__item">Technologies used:</h5>
+              <div class="image-overlay__tech-container image-overlay__item">
+                <svg id="html5-original" xmlns="http://www.w3.org/2000/svg" width="24.382" height="27.652"
+                  viewBox="0 0 24.382 27.652">
+                  <path id="Path_37" data-name="Path 37"
+                    d="M11.251,26.549,9.032,1.661H33.414L31.193,26.545l-9.985,2.768Z"
+                    transform="translate(-9.032 -1.661)" fill="#e44d26" />
+                  <path id="Path_38" data-name="Path 38" d="M64,34.175l8.383-2.222,1.972-21.118H64Z"
+                    transform="translate(-52.284 -8.722)" fill="#f16529" />
+                  <path id="Path_39" data-name="Path 39"
+                    d="M37.441,30.633h-4.2l-.29-3.053h4.486V24.6H29.489l.076.8.779,8.215h7.1Zm0,7.742-.014,0-3.532-.9L33.67,35.1H30.486l.444,4.681,6.5,1.7.015,0Z"
+                    transform="translate(-25.033 -19.313)" fill="#ebebeb" />
+                  <path id="Path_40" data-name="Path 40"
+                    d="M63.952,30.633v2.981h3.905l-.368,3.866-3.537.9v3.1l6.5-1.694.048-.5.745-7.848.077-.8H63.952Zm0-6.034V27.58h7.66l.064-.67.145-1.511.076-.8Z"
+                    transform="translate(-51.989 -19.313)" fill="#fff" />
+                </svg>
+                <svg id="css3-original" xmlns="http://www.w3.org/2000/svg" width="24.382" height="27.651"
+                  viewBox="0 0 24.382 27.651">
+                  <path id="Path_41" data-name="Path 41"
+                    d="M10.979,26.239,8.76,1.352H33.142L30.921,26.235,20.936,29l-9.957-2.764Z"
+                    transform="translate(-8.76 -1.352)" fill="#1572b6" />
+                  <path id="Path_42" data-name="Path 42" d="M64,33.89l8.424-2.219,1.982-21.1H64Z"
+                    transform="translate(-52.348 -8.447)" fill="#33a9dc" />
+                  <path id="Path_43" data-name="Path 43"
+                    d="M64,29.886h4.217l.291-3.264H64V23.435h7.992l-.076.855-.783,8.783H64Z"
+                    transform="translate(-52.056 -18.669)" fill="#fff" />
+                  <path id="Path_44" data-name="Path 44"
+                    d="M40.741,75.673l-.014,0-3.549-.958-.227-2.542h-3.2l.446,5,6.528,1.812.015,0Z"
+                    transform="translate(-28.329 -56.76)" fill="#ebebeb" />
+                  <path id="Path_45" data-name="Path 45"
+                    d="M67.974,64.675l-.384,4.268-3.555.96v3.316l6.534-1.811.048-.539.554-6.194Z"
+                    transform="translate(-52.046 -50.96)" fill="#fff" />
+                  <path id="Path_46" data-name="Path 46"
+                    d="M37.385,23.435v3.187h-7.7l-.064-.716-.145-1.616-.076-.855Zm-.011,6.451v3.187h-3.5l-.064-.716-.145-1.616-.076-.855Z"
+                    transform="translate(-24.938 -18.669)" fill="#ebebeb" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36.972" height="27.652" viewBox="0 0 36.972 27.652">
+                  <path id="sass-original"
+                    d="M1.219,28.53a1.631,1.631,0,0,0,.1.476,5.855,5.855,0,0,0,1.269,2.281A15.038,15.038,0,0,0,5.4,33.756c.88.633,1.778,1.251,2.661,1.879.152.108.3.232.46.364-.142.077-.259.144-.382.206a20.443,20.443,0,0,0-3.321,2.057,6.793,6.793,0,0,0-1.651,1.671A3.594,3.594,0,0,0,2.746,43.4a2.044,2.044,0,0,0,.7.9,1.03,1.03,0,0,0,.342.177c.312.073.629.121.944.179h.893a5.557,5.557,0,0,0,2.7-.987A5.923,5.923,0,0,0,10.815,40.1a6.283,6.283,0,0,0-.037-3.284c-.029-.1-.066-.2-.1-.3s-.083-.193-.136-.316l2.025-1.164.03.026c-.037.12-.076.241-.109.362a8.2,8.2,0,0,0-.343,2.685,5.152,5.152,0,0,0,.9,2.693,1.306,1.306,0,0,0,2.045.022,4.716,4.716,0,0,0,.468-.74c.33-.682.636-1.375.951-2.065l.055-.126c-.023.326-.049.613-.061.9a3.429,3.429,0,0,0,.16,1.319.911.911,0,0,0,.772.685.97.97,0,0,0,.723-.264,3.058,3.058,0,0,0,.792-.942c.56-1.028,1.135-2.05,1.642-3.1.549-1.14,1.029-2.313,1.539-3.472l.084-.206c.12.473.2.937.359,1.375a13,13,0,0,0,.644,1.489.445.445,0,0,1-.057.568c-.664.8-1.317,1.612-1.971,2.421a5.44,5.44,0,0,0-.409.556,1.09,1.09,0,0,0-.141.4.512.512,0,0,0,.407.58,2.845,2.845,0,0,0,.8.057,4.671,4.671,0,0,0,2.472-.93,2.592,2.592,0,0,0,1.023-2.8,6.5,6.5,0,0,0-.279-.905.334.334,0,0,1,.036-.353A28.815,28.815,0,0,0,27.1,31.872a.7.7,0,0,1,.09-.142,8.846,8.846,0,0,0,1.016,2.883c-.269.259-.534.494-.775.752A5.185,5.185,0,0,0,26.2,37.308a2.294,2.294,0,0,0-.136,1,.845.845,0,0,0,1.043.767,4.742,4.742,0,0,0,2.83-1.745,2.294,2.294,0,0,0,.324-2.095c-.055-.2-.121-.4-.192-.634.28-.087.553-.191.835-.256a7.4,7.4,0,0,1,4.329.253,3.267,3.267,0,0,1,1.886,1.641A1.892,1.892,0,0,1,36.4,38.81a1.609,1.609,0,0,0-.26.178.256.256,0,0,0-.06.2c.006.036.1.082.157.081a1.435,1.435,0,0,0,.8-.33,2.459,2.459,0,0,0,1.135-1.713l.019-.055-.023-.48c-.009-.028.007-.055,0-.076a3.764,3.764,0,0,0-1.535-2.558,5.6,5.6,0,0,0-3.313-1.115,7.48,7.48,0,0,0-2.876.443c-.264.1-.526.209-.792.316-.036-.064-.074-.126-.105-.19a5.382,5.382,0,0,1-.676-1.732,3.877,3.877,0,0,1-.007-1.358c.1-.433.239-.858.367-1.284a.313.313,0,0,0-.19-.442.84.84,0,0,0-.231-.076,3.565,3.565,0,0,0-1.523.113.436.436,0,0,0-.344.346c-.022.112-.068.22-.1.33a8.263,8.263,0,0,1-.434,1.368c-.528,1.1-1.131,2.158-1.749,3.209-.067.113-.137.225-.221.362A4.747,4.747,0,0,1,23.926,33a4.1,4.1,0,0,1-.007-1.613c.1-.4.23-.791.35-1.185a.275.275,0,0,0-.139-.384.817.817,0,0,0-.279-.108,3.429,3.429,0,0,0-1.577.129.426.426,0,0,0-.293.32,12.343,12.343,0,0,1-.468,1.447c-.817,1.873-1.657,3.736-2.5,5.6-.175.389-.38.764-.578,1.143a2.654,2.654,0,0,1-.186.271.221.221,0,0,1-.069-.14,3.877,3.877,0,0,1,.019-.717c.138-.7.3-1.4.465-2.09.138-.573.3-1.141.453-1.71a.537.537,0,0,0-.085-.529.791.791,0,0,0-1-.12l-.126.071.024-.2a3.165,3.165,0,0,0-.047-1.3,1.033,1.033,0,0,0-1.085-.825,2.331,2.331,0,0,0-.769.146,5.819,5.819,0,0,0-2.44,1.934.763.763,0,0,1-.223.193c-.852.472-1.706.939-2.561,1.407l-.951.521c-.255-.243-.487-.5-.75-.71-.8-.655-1.619-1.294-2.428-1.941a9.568,9.568,0,0,1-1.942-1.932,3.458,3.458,0,0,1-.674-1.883,4.42,4.42,0,0,1,.675-2.462A9.446,9.446,0,0,1,6.984,23.88a20.764,20.764,0,0,1,2.947-1.955,22.231,22.231,0,0,1,4.519-1.995,12.492,12.492,0,0,1,5-.568,5.133,5.133,0,0,1,1.922.558,1.983,1.983,0,0,1,1.009,1.094,2.736,2.736,0,0,1,.048,1.532,5.85,5.85,0,0,1-1.53,2.665,10.338,10.338,0,0,1-4.226,2.677,11.625,11.625,0,0,1-2.876.613,5.415,5.415,0,0,1-2.351-.283,3.059,3.059,0,0,1-1.3-.88c-.063-.074-.144-.153-.261-.085a.223.223,0,0,0-.1.288,2.824,2.824,0,0,0,.224.541,3.083,3.083,0,0,0,1.026.971,5.018,5.018,0,0,0,2.55.7,12.829,12.829,0,0,0,4.021-.512,9.864,9.864,0,0,0,4.825-2.911,7.411,7.411,0,0,0,2.038-4.246,4.11,4.11,0,0,0-.384-2.339,4.229,4.229,0,0,0-1.845-1.8A7.81,7.81,0,0,0,18.613,17H17.343a13.137,13.137,0,0,0-4.459.964,30.633,30.633,0,0,0-3.2,1.385,20.691,20.691,0,0,0-6.1,4.368,9.11,9.11,0,0,0-2.012,3.177c-.123.355-.239.736-.327,1.1m8.2,10.6a4.68,4.68,0,0,1-1.666,3.24,3.789,3.789,0,0,1-1.906.951,1.4,1.4,0,0,1-.793-.055.81.81,0,0,1-.456-.829,3,3,0,0,1,.448-1.527,5.459,5.459,0,0,1,1.4-1.533A21.4,21.4,0,0,1,9.2,37.01l.072-.029A4.79,4.79,0,0,1,9.442,38.6ZM16.851,32.9a9.907,9.907,0,0,1-.278,1.245,36.712,36.712,0,0,1-1.555,4.115,7.1,7.1,0,0,1-.4.712.5.5,0,0,1-.083.1c-.17.168-.332.159-.418-.061a4.636,4.636,0,0,1-.215-.8,4.238,4.238,0,0,1-.038-.559A7,7,0,0,1,14.959,34a3.409,3.409,0,0,1,1.06-1.194,1.846,1.846,0,0,1,.47-.208c.25-.07.4.045.362.3Zm5.054,6.44,1.817-2.121C23.8,38,22.458,39.574,21.905,39.335Zm5.8-1.427c-.128.074-.268.127-.4.195s-.16,0-.164-.1a.7.7,0,0,1,.027-.212,4.567,4.567,0,0,1,1.368-2.2l.047-.024a1.946,1.946,0,0,1-.879,2.35Z"
+                    transform="translate(-1.219 -17)" fill="#cb6699" fill-rule="evenodd" />
+                </svg>
+                <svg id="javascript-original" xmlns="http://www.w3.org/2000/svg" width="27.727" height="27.727"
+                  viewBox="0 0 27.727 27.727">
+                  <path id="Path_47" data-name="Path 47" d="M1.408,1.408H29.135V29.135H1.408Z"
+                    transform="translate(-1.408 -1.408)" fill="#f0db4f" />
+                  <path id="Path_48" data-name="Path 48"
+                    d="M53.214,67.079C53,65.763,52.144,64.657,49.6,63.627c-.883-.406-1.867-.7-2.161-1.366a1.489,1.489,0,0,1-.052-.845,1.388,1.388,0,0,1,1.826-.784,2.009,2.009,0,0,1,1.174,1.089c1.245-.806,1.242-.8,2.111-1.355a5.4,5.4,0,0,0-.7-.932A4.067,4.067,0,0,0,48.4,58.2l-.85.11a3.856,3.856,0,0,0-2.046,1.206,3.776,3.776,0,0,0,.686,5.377c1.637,1.229,4.042,1.508,4.349,2.657.3,1.407-1.034,1.862-2.358,1.7a3.091,3.091,0,0,1-2.106-1.6c-1.08.625-1.08.625-2.191,1.264a4.875,4.875,0,0,0,.982,1.335c2.09,2.119,7.318,2.015,8.256-1.193A3.967,3.967,0,0,0,53.214,67.079ZM42.41,58.37h-2.7L39.7,65.346a11.41,11.41,0,0,1-.165,3.26,1.516,1.516,0,0,1-1.884.559,2.315,2.315,0,0,1-1-1.033,1.359,1.359,0,0,0-.154-.247L34.31,69.228a4.335,4.335,0,0,0,1.59,1.821,5.237,5.237,0,0,0,3.855.474,3.4,3.4,0,0,0,2.177-1.705c.614-1.133.483-2.5.477-4.02C42.424,63.325,42.41,60.851,42.41,58.37Z"
+                    transform="translate(-27.848 -46.232)" fill="#323330" />
+                </svg>
+                <svg id="jquery-original-wordmark" xmlns="http://www.w3.org/2000/svg" width="26.176" height="27.652"
+                  viewBox="0 0 26.176 27.652">
+                  <path id="Path_51" data-name="Path 51"
+                    d="M23.672,5.963a8.2,8.2,0,0,0-.185,8.19l.093.184.059.117.037.067.066.121c.039.071.08.141.121.212l.069.116q.069.113.14.224l.06.094c.066.1.133.2.2.3l.006.008.034.047c.06.085.122.169.185.252l.07.091c.056.072.113.144.171.215l.065.08c.078.094.157.187.238.278l0,.005.009.01c.079.088.16.175.242.261l.077.08c.064.065.128.13.193.194l.079.077c.087.084.175.166.265.247l0,0,.046.04q.119.105.241.208l.1.081c.066.054.133.108.2.16l.107.083q.112.084.225.165l.082.059.023.017c.072.051.145.1.219.148l.095.065c.113.073.227.145.342.214l.095.055c.085.05.17.1.257.147l.142.075.184.1.042.021.075.037c.1.047.193.093.291.138l.062.028q.168.075.34.145l.083.033c.106.042.213.083.321.121l.04.014c.118.042.237.081.357.12l.086.026a3.43,3.43,0,0,0,.369.106c8.009,1.494,10.335-4.923,10.335-4.923-1.954,2.6-5.422,3.291-8.708,2.526-.125-.029-.245-.069-.367-.105l-.091-.029q-.178-.056-.353-.118l-.048-.018c-.1-.038-.208-.077-.311-.118l-.087-.035c-.113-.046-.225-.093-.336-.143l-.067-.031c-.1-.044-.19-.088-.284-.135L30,16.673c-.074-.037-.146-.076-.219-.114l-.146-.079c-.089-.048-.176-.1-.263-.151l-.089-.05q-.173-.1-.342-.215L28.85,16c-.082-.054-.163-.109-.244-.166l-.079-.056c-.077-.056-.154-.113-.23-.17l-.1-.079c-.07-.055-.139-.11-.208-.166l-.093-.076q-.131-.11-.259-.223l-.028-.024c-.092-.083-.183-.168-.272-.253l-.077-.076c-.066-.064-.132-.129-.2-.2l-.077-.078q-.122-.128-.24-.259l-.012-.013c-.083-.093-.164-.187-.243-.283l-.064-.077c-.059-.073-.118-.147-.175-.221l-.064-.082c-.069-.091-.136-.183-.2-.275a8.8,8.8,0,0,1-1.022-8.94m3.848-.375a6.005,6.005,0,0,0-.2,5.987,7.814,7.814,0,0,0,.53.9,4.268,4.268,0,0,0,.617.788c.086.1.177.192.269.285l.071.072c.089.089.18.176.274.261l.011.01,0,0c.1.093.212.183.321.271l.073.058c.109.086.221.17.335.25l.01.008.153.1.073.049q.123.081.249.156l.035.021c.073.043.146.085.22.126l.078.041.154.082.023.011c.106.053.212.1.321.153l.071.03c.087.038.175.074.263.109l.113.042c.08.03.16.058.241.086l.109.036a2.664,2.664,0,0,0,.349.1c6.184,1.048,7.611-3.822,7.611-3.822a5.8,5.8,0,0,1-6.438,2.094q-.177-.048-.35-.1l-.105-.035c-.082-.027-.164-.056-.245-.086l-.111-.042q-.133-.053-.264-.109l-.071-.031q-.164-.073-.323-.153l-.162-.084-.093-.049c-.069-.038-.137-.078-.2-.118l-.049-.028c-.084-.05-.166-.1-.248-.155l-.075-.051-.16-.109c-.114-.08-.225-.165-.334-.25l-.075-.061a7.627,7.627,0,0,1-2.525-3.682A5.83,5.83,0,0,1,29.792,2.5m3.345-.119a3.759,3.759,0,0,0-.285,3.557,4.943,4.943,0,0,0,2.811,2.687l.154.054.068.022a1.845,1.845,0,0,0,.22.065A3.8,3.8,0,0,0,40.69,6.609C39.879,7.8,38.516,8.09,36.843,7.675a4.173,4.173,0,0,1-.4-.128,4.856,4.856,0,0,1-1.323-.73c-1.5-1.162-2.427-3.378-1.45-5.183"
+                    transform="translate(-18.749 -1.634)" fill="#0868ac" />
+                  <path id="Path_52" data-name="Path 52"
+                    d="M19.9,92.278h-.958a.126.126,0,0,0-.117.1l-.34,1.6-.34,1.6a.126.126,0,0,1-.117.1h-.678c-.671,0-.593-.472-.456-1.118l0-.02.015-.082,0-.015.031-.166.033-.178.035-.181.155-.768.155-.768a.077.077,0,0,0-.077-.1h-.983a.125.125,0,0,0-.117.1l-.212,1.019-.211,1.02h0l-.019.095c-.243,1.13-.179,2.208,1.144,2.241H18.96a.126.126,0,0,0,.117-.1l.448-2.14.448-2.141A.076.076,0,0,0,19.9,92.278Zm-10.26-.011H8.584a.128.128,0,0,0-.118.1l-.1.447-.1.448a.075.075,0,0,0,.075.1H9.4a.127.127,0,0,0,.117-.1l.1-.447.1-.447A.076.076,0,0,0,9.636,92.267ZM9.33,93.659H8.27a.128.128,0,0,0-.118.1L8,94.426l-.149.67-.041.192-.143.684-.143.685c-.011.053-.034.138-.051.189,0,0-.2.6-.531.592H6.9l-.288-.005h0a.127.127,0,0,0-.119.094l-.11.47-.11.47a.075.075,0,0,0,.074.1c.189,0,.612.007.868.007.832,0,1.271-.468,1.551-1.816L9.1,95.206l.309-1.451A.076.076,0,0,0,9.33,93.659ZM28.855,93.3l-.044-.185-.043-.189-.022-.1c-.086-.34-.339-.536-.888-.536H25.33a.126.126,0,0,0-.117.1l-.039.188-.046.222-.013.062-.4,1.9-.379,1.8a.428.428,0,0,0-.009.144c.006.027.109.048.162.048h.8a.494.494,0,0,0,.15-.022c.029-.012.072-.118.083-.171l.142-.714.142-.714h0l.019-.1.172-.82.152-.724a.126.126,0,0,1,.117-.1H28.78A.074.074,0,0,0,28.855,93.3Zm3.236-1.668h-1a.2.2,0,0,0-.151.081l-1.78,2.65c-.03.045-.064.038-.076-.014l-.131-.584a.128.128,0,0,0-.118-.1H27.693a.07.07,0,0,0-.07.094l.513,1.825a.44.44,0,0,1,0,.19l-.223.883a.072.072,0,0,0,.073.1h1.131a.132.132,0,0,0,.121-.1l.224-.883a.585.585,0,0,1,.082-.174l2.889-3.9c.032-.043.015-.079-.038-.078ZM23,93.914h0a.117.117,0,0,1-.113.1h-1.45a.063.063,0,0,1-.068-.077v0h0v0l.007-.025a.909.909,0,0,1,.951-.62c.6,0,.714.3.673.63Zm-.426-1.7c-1.862,0-2.3,1.148-2.55,2.308-.247,1.182-.226,2.286,1.7,2.286h.54c.509,0,1.019-.006,1.226-.008a.126.126,0,0,0,.115-.1l.078-.387.015-.075.093-.462a.077.077,0,0,0-.077-.1H21.986c-.689,0-.893-.186-.818-.733h2.77a.114.114,0,0,0,.1-.073l.007-.024h0c.411-1.576.293-2.637-1.468-2.638Zm-8.8,1.7L13.752,94h0l-.209.753-.209.753a.136.136,0,0,1-.123.095H12.1c-.839,0-1.044-.667-.839-1.651.2-1.007.6-1.632,1.431-1.7,1.129-.087,1.355.72,1.082,1.652Zm.759,1.637a12.757,12.757,0,0,0,.64-2.031,2.047,2.047,0,0,0-2.223-2.439c-1.883,0-2.7,1.378-3.013,2.877s.1,2.833,1.969,2.822l1.477-.006,1.38-.005a.134.134,0,0,0,.121-.1l.241-.932a.073.073,0,0,0-.072-.1H14.6a.06.06,0,0,1-.066-.07Zm9.323-.862a.063.063,0,1,1-.063-.064A.064.064,0,0,1,23.86,94.683Z"
+                    transform="translate(-6.274 -70.918)" fill="#d1d1d1" />
+                </svg>
+                <svg id="Adobe_XD_CC_icon" xmlns="http://www.w3.org/2000/svg" width="28.361" height="27.652"
+                  viewBox="0 0 28.361 27.652">
+                  <path id="Path_55" data-name="Path 55"
+                    d="M23.338,27.652H5.022A5.018,5.018,0,0,1,0,22.629V5.022A5.018,5.018,0,0,1,5.022,0H23.338a5.018,5.018,0,0,1,5.022,5.022V22.629A5.018,5.018,0,0,1,23.338,27.652Z"
+                    fill="#ff26be" />
+                  <path id="Path_56" data-name="Path 56"
+                    d="M31.792,35.389H14.306A4.314,4.314,0,0,1,10,31.082V14.307A4.314,4.314,0,0,1,14.306,10H31.78a4.306,4.306,0,0,1,4.306,4.307V31.07A4.3,4.3,0,0,1,31.792,35.389Z"
+                    transform="translate(-8.869 -8.869)" fill="#2e001f" />
+                  <path id="Path_57" data-name="Path 57"
+                    d="M50.474,62.851l3.168,6.087c.057.09.023.181-.068.181H51.605a.222.222,0,0,1-.238-.147c-.724-1.493-1.459-2.987-2.218-4.593h-.023c-.679,1.516-1.426,3.111-2.15,4.6a.217.217,0,0,1-.2.124H44.907c-.113,0-.124-.091-.068-.158l3.1-5.906-3-5.974a.091.091,0,0,1,.068-.158h1.946a.178.178,0,0,1,.2.124c.713,1.493,1.437,3.032,2.116,4.537H49.3c.656-1.493,1.38-3.043,2.082-4.526.057-.091.091-.147.2-.147H53.4c.091,0,.124.068.068.158ZM54.2,64.7A4.426,4.426,0,0,1,58.733,60a5.017,5.017,0,0,1,.588.023v-3a.113.113,0,0,1,.113-.113h1.788c.091,0,.113.034.113.091V67.388a8.058,8.058,0,0,0,.057,1.109c0,.068-.023.091-.091.124a6.739,6.739,0,0,1-2.9.656C55.95,69.289,54.2,67.773,54.2,64.7Zm5.125-2.9a1.711,1.711,0,0,0-.656-.113c-1.426,0-2.421,1.1-2.421,2.919,0,2.082,1.018,2.919,2.3,2.919a2.134,2.134,0,0,0,.781-.124Z"
+                    transform="translate(-39.158 -49.925)" fill="#ffd9f2" />
+                </svg>
+
+              </div>
+              <div class="image-overlay__link-box image-overlay__item">
+                <a href="#contact-section" class="btn btn-cta__git"><span>Github</span></a>
+                <a href="#contact-section" class="btn btn-cta__live"><span>Live</span></a>
+
+              </div>
             </div>
-        </aside>
+          </div>
+          <!-- <div class="projects-gallery__item container">
+            <img class="image" src="./img/project-2.png" alt="first project">
+            <div class="image-overlay">
+              <h4 class="image-overlay__title">2nd project</h4>
+            </div>
+          </div> -->
+          <!-- <div class="projects-gallery__item container">
+            <img class="image" src="./img/project-3.png" alt="first project">
+            <div class="image-overlay">
+              <h4 class="image-overlay__title">3rd project</h4>
+            </div>
+          </div>
+          <div class="projects-gallery__item container">
+            <img class="image" src="./img/project-4.png" alt="first project">
+            <div class="image-overlay">
+              <h4 class="image-overlay__title">4th project</h4>
+            </div>
+          </div>
+          <div class="projects-gallery__item container">
+            <img class="image" src="./img/project-5.png" alt="first project">
+            <div class="image-overlay">
+              <h4 class="image-overlay__title">5th project</h4>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section id="contact-section" class="section section-contact">
 
-        <footer class="footer">
-            <!-- <ul class="menu menu-social">
+        <div class="address">
+          <h4 class="address-primary">Current location:&nbsp; </h4>
+          <p class="address-secondary">Poznań, Poland ( I don't mind relocating if neccessary :) )</p>
+        </div>
+        <ul class=" menu menu-contact">
+          <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i
+                class="fab fa-github-square"></i><span class="contact-link">Github</span></a>
+          </li>
+          <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i class="fab fa-linkedin"></i><span
+                class="contact-link">LinkedIn</span></a>
+          </li>
+          <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i class="fas fa-envelope"></i><span
+                class="contact-link">Email</span></a>
+          </li>
+          <li class="menu-contact__item btn"><a href="#" class="menu-contact__link"><i
+                class="fab fa-facebook-square"></i><span class="contact-link">Facebook</span></a>
+          </li>
+
+
+        </ul>
+      </section>
+    </main>
+    <aside class="side-bars">
+      <div class="menu side-bars__menu">
+        <div class="side-bars__item"></div>
+        <div class="side-bars__item"></div>
+        <div class="side-bars__item"></div>
+        <div class="side-bars__item"></div>
+        <div class="side-bars__item"></div>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <!-- <ul class="menu menu-social">
                 <li class="menu__item"><a href="#" class="menu-social__link"><i class="fab fa-github-square"></i></a>
                 </li>
                 <li class="menu__item"><a href="#" class="menu-social__link"><i class="fab fa-linkedin"></i></a>
@@ -397,23 +431,23 @@
                 </li>
 
             </ul> -->
-            <div class="footer__navigation">
-                <i class="btn-arrow fas fa-angle-left"></i>
-                <div class="current-full">
-                    <span class="current-view">01&nbsp</span><span class="current-title">/ 04 HOME</span>
-                </div>
-                <i class="btn-arrow fas fa-angle-right"></i>
-            </div>
-            <!-- <div class="footer__copyright"><i class="copyright__icon far fa-copyright"></i>
+      <div class="footer__navigation">
+        <i class="btn-arrow fas fa-angle-left"></i>
+        <div class="current-full">
+          <span class="current-view">01&nbsp</span><span class="current-title">/ 04 HOME</span>
+        </div>
+        <i class="btn-arrow fas fa-angle-right"></i>
+      </div>
+      <!-- <div class="footer__copyright"><i class="copyright__icon far fa-copyright"></i>
                 <span>&nbsp Michał Stępień 2019</span>
             </div> -->
-        </footer>
+    </footer>
 
 
 
 
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

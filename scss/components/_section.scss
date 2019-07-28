@@ -2,8 +2,13 @@
     min-height: 100%;
     display: flex;
     justify-content: center;
-    padding: 1.5rem .5rem 10rem;
+    padding: 1.5rem .5rem;
     overflow: hidden;
+    margin-bottom: 5rem;
+
+    // &.most-visible {
+    //     background-color: red;
+    // }
 
     //     ///home 
     &-home {
@@ -230,16 +235,23 @@
             overflow: hidden;
             background-position: center;
             height: auto;
+            max-height: 85vw;
 
             &:hover .image-overlay {
                 bottom: 0;
 
                 background-color: rgba(#22455c, $alpha: .9);
 
-                &__title {
-                    padding-bottom: 1.6rem;
+                // &__title {
+                //     padding-bottom: 1.6rem;
 
-                    transition: all .8s ease-in-out;
+                //     transition: all .8s ease-in-out;
+                // }
+
+                &__item {
+                    padding-bottom: 1.5rem;
+                    // transform: translate3d(0, 0, 0);
+                    // @include easeOut;
                 }
             }
 
@@ -271,7 +283,7 @@
         padding: 2rem;
         position: absolute;
         width: 100%;
-        bottom: -75%;
+        bottom: -80%;
         left: 0;
         background-color: rgba(#0e212e, $alpha: .7);
         transition: all .4s cubic-bezier(.66, .01, .44, .99);
@@ -283,7 +295,7 @@
         }
 
         &__description {
-            padding: 2rem 0 2.5rem;
+            padding: 1.5rem 0 2rem;
             font-size: 1.2rem;
         }
 
@@ -293,17 +305,22 @@
         }
 
         &__tech-container {
-            padding: .7rem 0;
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
 
-            & .icon {
-                transform: scale(.5);
-                margin-right: .2rem;
-            }
         }
 
         &__link-box {
             display: flex;
             justify-content: space-evenly;
+        }
+
+        &__item {
+            padding-bottom: 20rem;
+            @include easeOut;
+
+
         }
 
 
@@ -333,6 +350,13 @@
     }
 
 
+}
+
+
+@for $x from 1 through 5 {
+    .image-overlay__item:nth-child(#{$x}) {
+        transition-delay: $x * .1s;
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////

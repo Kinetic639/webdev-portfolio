@@ -41,7 +41,7 @@ html {
 .main {
     flex: 1;
     height: 1000px;
-    overflow: auto;
+    overflow: scroll;
     scroll-behavior: smooth;
 }
 
