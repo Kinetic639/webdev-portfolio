@@ -120,7 +120,7 @@
 
     .skills {
         &-box {
-            margin-bottom: 5rem;
+            // margin-bottom: 5rem;
             height: auto;
         }
 
@@ -208,6 +208,7 @@
                 visibility: visible;
                 max-height: 1000px;
                 opacity: 1;
+                margin: 0 2rem 7rem;
                 // transition: opacity 0.2s linear 2s, all 2.5s;
                 @include easeInFast;
 
