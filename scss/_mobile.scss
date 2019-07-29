@@ -1,5 +1,5 @@
 // Smartphones
-@include mediaSm {
+@include mediaXs {
     .section {
         &-home {
             &__left {
@@ -21,7 +21,37 @@
 
         }
 
+        .projects-gallery {
+            &__item {
+                margin: 0 auto;
+            }
+
+        }
+
     }
+}
+
+// Tablets & Small Laptops
+@include mediaSm {
+    .section {
+        padding: 1.5rem 5rem;
+
+        .skills {
+            &-box {
+                // margin-bottom: 5rem;
+                height: auto;
+            }
+
+
+        }
+
+        .menu-contact__item {
+            flex: 34%;
+            margin: 3rem;
+
+        }
+    }
+
 
 }
 

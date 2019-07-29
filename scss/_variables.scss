@@ -5,14 +5,20 @@ $fourth-color: #0e2d3f;
 
 // $padding-aside: 10rem;
 
-@mixin mediaSm {
+@mixin mediaXs {
     @media screen and (min-width: 520px) {
         @content;
     }
 }
 
-@mixin mediaMd {
+@mixin mediaSm {
     @media screen and (min-width: 620px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (min-width: 769px) {
         @content;
     }
 }
