@@ -234,6 +234,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1.5rem;
+        justify-items: center;
 
         &__item {
             border: 2px solid $secondary-color;
@@ -241,8 +242,8 @@
             position: relative;
             overflow: hidden;
             background-position: center;
-            height: calc(85vw);
-            max-height: 350px;
+            max-height: calc(90vw);
+            width: 100%;
             max-width: 350px;
 
             &:hover .image-overlay {

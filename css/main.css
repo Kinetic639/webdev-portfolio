@@ -347,15 +347,16 @@ body {
     padding: 1.5rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1.5rem; }
+    grid-gap: 1.5rem;
+    justify-items: center; }
     .section .projects-gallery__item {
       border: 2px solid #9e9e9e;
       border-radius: 5px;
       position: relative;
       overflow: hidden;
       background-position: center;
-      height: calc(85vw);
-      max-height: 350px;
+      max-height: calc(90vw);
+      width: 100%;
       max-width: 350px; }
       .section .projects-gallery__item:hover .image-overlay {
         bottom: 0;
@@ -462,13 +463,13 @@ body {
   padding: .6rem 3rem; }
 
 .btn-arrow {
-  flex: 1;
   text-align: center;
   background-color: rgba(194, 194, 194, 0.151);
   border-radius: 5px;
   margin: 0 1.5rem;
   line-height: 4rem;
-  font-size: 4rem; }
+  font-size: 4rem;
+  width: 10%; }
 
 @media screen and (min-width: 520px) {
   .section-home__left {
@@ -489,3 +490,10 @@ body {
     .section .menu-contact__item {
       flex: 34%;
       margin: 3rem; } }
+
+@media screen and (min-width: 769px) {
+  .section .projects-gallery {
+    grid-template-columns: repeat(2, 1fr); }
+    .section .projects-gallery__item {
+      margin: 0;
+      max-height: calc(30vw); } }

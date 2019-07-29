@@ -56,7 +56,18 @@
 }
 
 // Tablets & Small Laptops
-@include mediaMd {}
+@include mediaMd {
+    .section {
+        .projects-gallery {
+            grid-template-columns: repeat(2, 1fr);
+
+            &__item {
+                margin: 0;
+                max-height: calc(30vw);
+            }
+        }
+    }
+}
 
 // Desktops & Laptops
 @include mediaLg {}
