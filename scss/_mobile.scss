@@ -138,6 +138,66 @@
         }
 
     }
+
+    .header {
+        padding: 4rem 10rem;
+    }
+
+    .menu {
+
+        overflow: hidden;
+
+        // &-wrapper {
+        //     visibility: hidden;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100vh;
+        //     z-index: 3;
+
+        //     &.show {
+
+        //         visibility: visible;
+        //     }
+        // }
+
+        // &-branding,
+        &-nav {
+            visibility: visible;
+            left: 0;
+            // top: 0;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: transparent;
+            width: auto;
+        }
+
+        &__item {
+            transform: translate3d(0, 0, 0);
+            // border: 1px solid greenyellow;
+            // padding: 0 3rem;
+            display: block;
+            width: 100%;
+        }
+
+        &-btn {
+
+            display: none;
+        }
+    }
+
+    .menu__link {
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        // background-color: #fff;
+    }
+
+
 }
 
 

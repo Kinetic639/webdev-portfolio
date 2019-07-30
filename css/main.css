@@ -38,7 +38,9 @@ body {
   padding: 2rem 0;
   text-decoration: none;
   color: #fff;
-  width: 100%; }
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500; }
   .menu__link:hover {
     color: #FF7F00; }
 
@@ -518,4 +520,28 @@ body {
     display: grid;
     grid-gap: 40px;
     grid-template-areas: 'bio-image bio bio' 'col-1 col-2 col-3 ';
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .header {
+    padding: 4rem 10rem; }
+  .menu {
+    overflow: hidden; }
+    .menu-nav {
+      visibility: visible;
+      left: 0;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-color: transparent;
+      width: auto; }
+    .menu__item {
+      transform: translate3d(0, 0, 0);
+      display: block;
+      width: 100%; }
+    .menu-btn {
+      display: none; }
+  .menu__link {
+    padding: 1rem 3rem;
+    font-size: 2rem; } }
