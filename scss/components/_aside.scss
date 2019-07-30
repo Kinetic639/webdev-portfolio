@@ -2,29 +2,38 @@
 ///////////////////////////////////////////////pierwsza wersja////////////////////
 
 
-// .side-bars {
-//     &__menu {
-//         flex-direction: column;
-//         height: 100%;
-//         padding: 15rem 1rem 15rem $padding-aside;
-//     }
+.side-bars {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    display: flex;
+    height: 100%;
+    align-items: center;
 
-//     &__item {
-//         background-color: $secondary-color;
-//         flex: 1;
-//         width: 4px;
-//         border-radius: 3px;
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        justify-content: center;
+        // padding: 15rem 1rem 15rem $padding-aside;
+    }
 
-//         &:not(:last-child) {
-//             margin: 0 0 40px 0;
+    &__item {
+        background-color: $secondary-color;
+        flex: 1;
+        width: 7px;
+        border-radius: 3px;
 
-//         }
+        &:not(:last-child) {
+            margin: 0 0 40px 0;
 
-//         &.active {
-//             background-color: $primary-color;
-//         }
-//     }
-// }
+        }
+
+        &.active {
+            background-color: $primary-color;
+        }
+    }
+}
 
 
 /////////////////////////////////////////////////////////////////////////////////////
