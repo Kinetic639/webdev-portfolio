@@ -566,4 +566,12 @@ body {
       display: none; }
   .menu__link {
     padding: 1rem 3rem;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .section {
+    padding: 1.5rem 8rem; }
+    .section .projects-gallery {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem; }
+      .section .projects-gallery__item {
+        margin: 0;
+        max-height: calc(25vw); } }

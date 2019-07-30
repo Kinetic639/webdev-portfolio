@@ -199,7 +199,19 @@
         // background-color: #fff;
     }
 
+    .section {
+        padding: 1.5rem 8rem;
 
+        .projects-gallery {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+
+            &__item {
+                margin: 0;
+                max-height: calc(25vw);
+            }
+        }
+    }
 }
 
 
