@@ -66,11 +66,11 @@
             display: grid;
             grid-gap: 50px;
             grid-template-areas:
-                'bio__image'
+                'bio-image'
                 'bio'
-                'about__col-1 '
-                'about__col-2 '
-                'about__col-3 '
+                'col-1 '
+                'col-2 '
+                'col-3 '
                 // grid-template-columns: repeat(1, 1fr);
 
         }
@@ -80,7 +80,7 @@
     }
 
     .bio-image {
-        grid-area: 'bio__image';
+        grid-area: 'bio-image';
         margin: auto;
         border-radius: 50%;
         border: 3px solid $secondary-color;
@@ -89,22 +89,22 @@
     }
 
     .bio {
-        grid-area: "bio";
+        grid-area: bio;
         align-self: center;
     }
 
 
 
     .about__col-1 {
-        grid-area: 'about__col-1';
+        grid-area: 'col-1';
     }
 
     .about__col-2 {
-        grid-area: 'about__col-2';
+        grid-area: 'col-2';
     }
 
     .about__col-3 {
-        grid-area: 'about__col-3';
+        grid-area: 'col-3';
     }
 
     .about__col,

@@ -50,6 +50,25 @@
             margin: 3rem;
 
         }
+
+        &-home {
+
+            &__left {
+
+                height: 50vh;
+                transform: translate(-50%, -60%);
+            }
+
+
+            &__title {
+                & h1 {
+                    font-size: 7rem;
+                }
+
+            }
+
+
+        }
     }
 
 
@@ -58,6 +77,8 @@
 // Tablets & Small Laptops
 @include mediaMd {
     .section {
+        padding: 1.5rem 8rem;
+
         .projects-gallery {
             grid-template-columns: repeat(2, 1fr);
 
@@ -66,11 +87,58 @@
                 max-height: calc(30vw);
             }
         }
+
+        &-home {
+
+            &__left {
+
+                height: 55vh;
+                transform: translate(-50%, -55%);
+            }
+
+
+            &__title {
+                & h1 {
+                    font-size: 8rem;
+                }
+
+                & h2 {
+                    font-size: 2.5rem;
+                }
+            }
+
+
+        }
     }
+
+
 }
 
 // Desktops & Laptops
-@include mediaLg {}
+@include mediaLg {
+    .section {
+        .section-about {
+
+
+
+
+            &__info {
+                padding: 0 2rem;
+                display: grid;
+                grid-gap: 40px;
+                grid-template-areas:
+                    'bio-image bio bio'
+                    'col-1 col-2 col-3 ';
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+
+
+        }
+
+    }
+}
 
 
 // Widescreens

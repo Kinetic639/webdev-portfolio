@@ -272,23 +272,23 @@ body {
     padding: 0 2rem;
     display: grid;
     grid-gap: 50px;
-    grid-template-areas: "bio__image" "bio" "about__col-1 " "about__col-2 " "about__col-3 "; }
+    grid-template-areas: "bio-image" "bio" "col-1 " "col-2 " "col-3 "; }
   .section .bio-image {
-    grid-area: 'bio__image';
+    grid-area: 'bio-image';
     margin: auto;
     border-radius: 50%;
     border: 3px solid #9e9e9e;
     max-width: 200px;
     height: auto; }
   .section .bio {
-    grid-area: "bio";
+    grid-area: bio;
     align-self: center; }
   .section .about__col-1 {
-    grid-area: 'about__col-1'; }
+    grid-area: 'col-1'; }
   .section .about__col-2 {
-    grid-area: 'about__col-2'; }
+    grid-area: 'col-2'; }
   .section .about__col-3 {
-    grid-area: 'about__col-3'; }
+    grid-area: 'col-3'; }
   .section .about__col,
   .section .bio {
     background-color: rgba(158, 158, 158, 0.1);
@@ -489,11 +489,33 @@ body {
       height: auto; }
     .section .menu-contact__item {
       flex: 34%;
-      margin: 3rem; } }
+      margin: 3rem; }
+    .section-home__left {
+      height: 50vh;
+      transform: translate(-50%, -60%); }
+    .section-home__title h1 {
+      font-size: 7rem; } }
 
 @media screen and (min-width: 769px) {
-  .section .projects-gallery {
-    grid-template-columns: repeat(2, 1fr); }
-    .section .projects-gallery__item {
-      margin: 0;
-      max-height: calc(30vw); } }
+  .section {
+    padding: 1.5rem 8rem; }
+    .section .projects-gallery {
+      grid-template-columns: repeat(2, 1fr); }
+      .section .projects-gallery__item {
+        margin: 0;
+        max-height: calc(30vw); }
+    .section-home__left {
+      height: 55vh;
+      transform: translate(-50%, -55%); }
+    .section-home__title h1 {
+      font-size: 8rem; }
+    .section-home__title h2 {
+      font-size: 2.5rem; } }
+
+@media screen and (min-width: 1080px) {
+  .section .section-about__info {
+    padding: 0 2rem;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas: 'bio-image bio bio' 'col-1 col-2 col-3 ';
+    grid-template-columns: repeat(3, 1fr); } }
