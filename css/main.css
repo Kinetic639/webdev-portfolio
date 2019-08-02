@@ -1,3 +1,14 @@
+.anim {
+  opacity: 0; }
+
+@keyframes anim1 {
+  from {
+    transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
@@ -5,6 +16,9 @@ html {
 
 body {
   font-size: 1.6rem; }
+
+.header__title {
+  text-transform: uppercase; }
 
 .section h1 {
   font-size: 4rem;
@@ -125,6 +139,10 @@ html {
   display: flex;
   align-items: center; }
 
+.footer__copyright,
+.side-bars {
+  display: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -143,6 +161,8 @@ body {
 
 .menu {
   overflow: hidden; }
+  .menu-social {
+    display: none; }
   .menu-branding, .menu-nav {
     display: flex;
     flex-direction: column;
@@ -477,7 +497,7 @@ body {
   position: absolute;
   top: 0;
   right: 5%;
-  display: flex;
+  display: none;
   height: 100%;
   align-items: center; }
   .side-bars__menu {

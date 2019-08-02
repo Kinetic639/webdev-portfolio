@@ -114,32 +114,93 @@ $(".skills-modal").click(function() {
   $(this).removeClass("show");
 });
 
-document.getElementById("main").addEventListener("scroll", myFunction);
+//////intersection observer
 
-function myFunction() {
-  if (bounding.bottom >= 600) {
-    console.log("In the home!");
-  } else {
-    console.log("Not in the viewport... whomp whomp");
+const images = document.querySelectorAll(".section");
+
+let observers = [];
+
+startup();
+
+function startup() {
+  let wrapper = document.querySelector(".wrapper");
+
+  // Options for the observers
+
+  let observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: []
+  };
+
+  let thresholdSets = [
+    [],
+
+    [],
+    [],
+    [],
+    []
+    // [0, 0.25, 0.5, 0.75, 1.0]
+  ];
+
+  for (let i = 0; i <= 1.0; i += 0.01) {
+    thresholdSets[0].push(i);
+
+    thresholdSets[1].push(i);
+
+    thresholdSets[2].push(i);
+
+    thresholdSets[3].push(i);
+
+    thresholdSets[4].push(i);
   }
+
+  // Add each box, creating a new observer for each
+
+  for (let i = 0; i < 5; i++) {
+    // let template = document
+    //   .querySelector("#boxTemplate")
+    //   .content.cloneNode(true);
+    let boxID = "section" + (i + 1);
+    // template.querySelector(".sampleBox").id = boxID;
+    // wrapper.appendChild(document.importNode(template, true));
+
+    // Set up the observer for this box
+
+    observerOptions.threshold = thresholdSets[i];
+    observers[i] = new IntersectionObserver(
+      intersectionCallback,
+      observerOptions
+    );
+    observers[i].observe(document.querySelector("." + boxID));
+  }
+
+  // Scroll to the starting position
+
+  document.scrollingElement.scrollTop =
+    wrapper.firstElementChild.getBoundingClientRect().top + window.scrollY;
+  document.scrollingElement.scrollLeft = 750;
 }
 
-var home = document.querySelector(".section-home");
-var about = document.querySelector(".section-about");
-var skills = document.querySelector(".section-skills");
-var projects = document.querySelector(".section-projects");
-var contact = document.querySelector(".section-contact");
+function intersectionCallback(entries) {
+  entries.forEach(function(entry) {
+    //   let box = entry.target;
+    let visiblePct = Math.floor(entry.intersectionRatio * 100) + "%";
+    const name = document.querySelector(".header__title");
+    //   box.querySelector(".topLeft").innerHTML = visiblePct;
+    //   box.querySelector(".topRight").innerHTML = visiblePct;
+    //   box.querySelector(".bottomLeft").innerHTML = visiblePct;
+    //   box.querySelector(".bottomRight").innerHTML =
+    //     box.id + " " + box.id.entry.intersectionRatio;
 
-// Get it's position in the viewport
-var bounding = home.getBoundingClientRect();
-var bounding = about.getBoundingClientRect();
-var bounding = skills.getBoundingClientRect();
-var bounding = projects.getBoundingClientRect();
-var bounding = contact.getBoundingClientRect();
+    //   for (let i = 0; i < 2; i++) {
+    //     let boxID = "box" + (i + 1);
+    //   }
+    // console.log(visiblePct + " " + entry.target.id);
 
-// Log the results
-console.log(home.getBoundingClientRect());
-console.log(about.getBoundingClientRect());
-console.log(skills.getBoundingClientRect());
-console.log(projects.getBoundingClientRect());
-console.log(contact.getBoundingClientRect());
+    if (entry.intersectionRatio > 0.5) {
+      // console.log(entry.target.id + " ponad 50%! " + visiblePct);
+      name.innerHTML = entry.target.dataset.title;
+    }
+  });
+}

@@ -8,6 +8,11 @@ body {
     font-size: 1.6rem;
 }
 
+.header {
+    &__title {
+        text-transform: uppercase;
+    }
+}
 
 .section {
     & h1 {

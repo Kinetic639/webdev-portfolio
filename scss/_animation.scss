@@ -9,3 +9,21 @@
 @mixin easeOutFast {
     transition: all .4s ease-out;
 }
+
+
+
+.anim {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
