@@ -8,11 +8,6 @@ body {
     font-size: 1.6rem;
 }
 
-.header {
-    &__title {
-        text-transform: uppercase;
-    }
-}
 
 .section {
     & h1 {
@@ -164,8 +159,9 @@ body {
 
 .header {
     &__title {
-        font-size: 2.5rem;
+        font-size: 3.2rem;
         font-weight: 700;
+        text-transform: uppercase;
     }
 }
 
@@ -179,7 +175,7 @@ body {
     }
 
     &__copyright {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 

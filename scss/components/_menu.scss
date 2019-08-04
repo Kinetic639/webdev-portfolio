@@ -3,6 +3,23 @@
 .menu {
     &-social {
         display: none;
+        font-size: 3.5rem;
+
+        &__link {
+
+            & i {
+                color: $primary-color;
+                margin: 0 1.5rem;
+
+                &:hover {
+                    // border: 3px solid $primary-color;
+                    // background-color: #08141b;
+                    transform: scale(.9);
+                    color: $third-color;
+                    transition: all .2s ease-in-out;
+                }
+            }
+        }
     }
 
     overflow: hidden;
