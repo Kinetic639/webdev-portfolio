@@ -105,19 +105,20 @@ html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  position: relative; }
-
-.header,
-.footer {
-  left: 0;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  position: relative;
   align-items: center; }
 
 .header {
   top: 0;
   padding: 2.5rem 2.5rem 1.5rem; }
+
+.header,
+.footer {
+  left: 0;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center; }
 
 .main {
   flex: 1;
@@ -129,6 +130,7 @@ html {
   bottom: 0; }
   .footer__navigation {
     padding: 1.4rem .4rem;
+    flex: 2;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -263,7 +265,8 @@ body {
   justify-content: center;
   padding: 1.5rem .5rem;
   overflow: hidden;
-  margin-bottom: 5rem; }
+  margin: 0 auto 5rem;
+  max-width: 1000px; }
   .section-home {
     display: flex;
     flex-direction: column;
@@ -284,7 +287,12 @@ body {
       transform: translate(-50%, -60%); }
     .section-home__right {
       height: 50vh;
-      opacity: .2; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      opacity: .2;
+      width: fit-content; }
     .section-home__img {
       height: 100%;
       width: auto; }
@@ -497,13 +505,13 @@ body {
   position: absolute;
   top: 0;
   right: 5%;
-  display: none;
+  display: flex;
   height: 100%;
   align-items: center; }
   .side-bars__menu {
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 70%;
     justify-content: center; }
   .side-bars__item {
     background-color: #9e9e9e;
@@ -528,7 +536,7 @@ body {
 
 @media screen and (min-width: 620px) {
   .section {
-    padding: 1.5rem 5rem; }
+    width: 80vw; }
     .section .skills-box {
       height: auto; }
     .section .menu-contact__item {
@@ -541,30 +549,20 @@ body {
       font-size: 7rem; } }
 
 @media screen and (min-width: 769px) {
-  .section {
-    padding: 1.5rem 8rem; }
-    .section .projects-gallery {
-      grid-template-columns: repeat(2, 1fr); }
-      .section .projects-gallery__item {
-        margin: 0;
-        max-height: calc(30vw); }
-    .section-home__left {
-      height: 55vh;
-      transform: translate(-50%, -55%); }
-    .section-home__title h1 {
-      font-size: 8rem; }
-    .section-home__title h2 {
-      font-size: 2.5rem; } }
+  .section .projects-gallery {
+    grid-template-columns: repeat(2, 1fr); }
+    .section .projects-gallery__item {
+      margin: 0;
+      max-height: calc(30vw); }
+  .section-home__left {
+    height: 55vh;
+    transform: translate(-50%, -55%); }
+  .section-home__title h1 {
+    font-size: 8rem; }
+  .section-home__title h2 {
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 1080px) {
-  .section .section-about__info {
-    padding: 0 2rem;
-    display: grid;
-    grid-gap: 40px;
-    grid-template-areas: 'bio-image bio bio' 'col-1 col-2 col-3 ';
-    grid-template-columns: repeat(3, 1fr); }
-  .header {
-    padding: 4rem 10rem; }
   .menu {
     overflow: hidden; }
     .menu-nav {
@@ -588,10 +586,56 @@ body {
     padding: 1rem 3rem;
     font-size: 2rem; }
   .section {
-    padding: 1.5rem 8rem; }
+    width: 75vw; }
     .section .projects-gallery {
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 3rem; }
+      grid-gap: 7rem; }
       .section .projects-gallery__item {
         margin: 0;
-        max-height: calc(25vw); } }
+        max-height: calc(25vw); }
+    .section .section-about__info {
+      padding: 0 2rem;
+      display: grid;
+      grid-gap: 40px;
+      grid-template-areas: 'bio-image bio bio' 'col-1 col-2 col-3 ';
+      grid-template-columns: repeat(3, 1fr); }
+    .section-home {
+      flex-direction: row; }
+      .section-home__left {
+        flex: 4;
+        position: relative;
+        top: 0;
+        left: 0;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        transform: translate(0, 0);
+        height: 40vh; }
+      .section-home__right {
+        height: 60vh;
+        flex: 2;
+        padding-left: 3rem;
+        justify-content: flex-start; }
+      .section-home__title {
+        padding-right: 3rem;
+        border-right: 5px solid #fff;
+        text-align: right; }
+        .section-home__title h1 {
+          font-size: 5.5rem; }
+        .section-home__title h2 {
+          font-size: 2rem; }
+      .section-home__img {
+        height: 100%;
+        width: auto; }
+  .btn-cta__contact {
+    margin-right: 3rem; }
+  .footer__copyright,
+  .side-bars,
+  .menu-social {
+    display: flex; } }
+
+@media screen and (min-width: 1310px) {
+  .section-home__title h1 {
+    font-size: 7rem; }
+  .section-home__title h2 {
+    font-size: 2.5rem; } }

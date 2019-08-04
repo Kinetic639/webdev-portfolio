@@ -19,23 +19,29 @@ html {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
+
 }
 
-.header,
-.footer {
-    // position: absolute;
-    left: 0;
-    // padding-right: calc((#{$padding-aside} * 1.2) + 6px);
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .header {
     top: 0;
 
     padding: 2.5rem 2.5rem 1.5rem;
+}
+
+.header,
+.footer {
+
+
+    // position: absolute;
+    left: 0;
+    // padding-right: calc((#{$padding-aside} * 1.2) + 6px);
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main {
@@ -51,7 +57,7 @@ html {
     &__navigation {
         padding: 1.4rem .4rem;
 
-
+        flex: 2;
         width: 100%;
         display: flex;
         justify-content: space-evenly;

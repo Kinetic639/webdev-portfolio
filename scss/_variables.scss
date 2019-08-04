@@ -30,7 +30,7 @@ $padding-aside: 10rem;
 }
 
 @mixin mediaXl {
-    @media screen and (min-width: 1081px) {
+    @media screen and (min-width: 1310px) {
         @content;
     }
 }

@@ -34,7 +34,8 @@
 // Tablets & Small Laptops
 @include mediaSm {
     .section {
-        padding: 1.5rem 5rem;
+        // padding: 1.5rem 5rem;
+        width: 80vw;
 
         .skills {
             &-box {
@@ -77,7 +78,7 @@
 // Tablets & Small Laptops
 @include mediaMd {
     .section {
-        padding: 1.5rem 8rem;
+
 
         .projects-gallery {
             grid-template-columns: repeat(2, 1fr);
@@ -116,34 +117,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
-    .section {
-        .section-about {
 
 
 
 
-            &__info {
-                padding: 0 2rem;
-                display: grid;
-                grid-gap: 40px;
-                grid-template-areas:
-                    'bio-image bio bio'
-                    'col-1 col-2 col-3 ';
-                grid-template-columns: repeat(3, 1fr);
-
-            }
-
-
-
-        }
-
-    }
-
-
-
-    .header {
-        padding: 4rem 10rem;
-    }
+    // .header {
+    //     padding: 4rem 10rem;
+    // }
 
     .menu {
 
@@ -200,23 +180,136 @@
     }
 
     .section {
-        padding: 1.5rem 8rem;
+        // padding: 1.5rem 8rem;
+        width: 75vw;
 
         .projects-gallery {
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 3rem;
+            grid-gap: 7rem;
 
             &__item {
                 margin: 0;
                 max-height: calc(25vw);
             }
         }
+
+        .section-about {
+
+
+
+
+            &__info {
+                padding: 0 2rem;
+                display: grid;
+                grid-gap: 40px;
+                grid-template-areas:
+                    'bio-image bio bio'
+                    'col-1 col-2 col-3 ';
+                grid-template-columns: repeat(3, 1fr);
+
+            }
+
+
+
+        }
+
+        &-home {
+            flex-direction: row;
+
+            &__left {
+                flex: 4;
+                position: relative;
+                top: 0;
+                left: 0;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 100%;
+                transform: translate(0, 0);
+
+                height: 40vh;
+            }
+
+
+            // &__left,
+            // &__right {
+            //     height: auto;
+            //     max-height: 80%;
+            // }
+
+            &__right {
+                height: 60vh;
+                flex: 2;
+                padding-left: 3rem;
+                justify-content: flex-start;
+            }
+
+
+            &__title {
+
+                padding-right: 3rem;
+                border-right: 5px solid $primary-color;
+                text-align: right;
+
+                & h1 {
+                    font-size: 5.5rem;
+                }
+
+                & h2 {
+                    font-size: 2rem;
+                }
+            }
+
+            &__img {
+                // width: 100%;
+                // height: auto;  
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    .btn-cta__contact {
+        margin-right: 3rem;
+    }
+
+    .footer__copyright,
+    .side-bars,
+    .menu-social {
+        display: flex;
     }
 }
 
 
 // Widescreens
-@include mediaXl {}
+@include mediaXl {
+
+    // .header,
+    // .footer {
+
+    //     padding-left: 20vw;
+    // }
+
+    .section {
+
+        &-home {
+
+
+            &__title {
+
+                & h1 {
+                    font-size: 7rem;
+                }
+
+                & h2 {
+                    font-size: 2.5rem;
+                }
+            }
+
+
+        }
+    }
+
+}
 
 /////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////pierwsza wersja////////////////////
