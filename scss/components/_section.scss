@@ -52,6 +52,10 @@
 
         &__title {
             text-align: center;
+
+            & h2 {
+                margin-top: 3rem;
+            }
         }
     }
 

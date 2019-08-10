@@ -119,7 +119,10 @@
 @include mediaLg {
 
 
-
+    .header,
+    .footer {
+        width: 70%;
+    }
 
     // .header {
     //     padding: 4rem 10rem;
@@ -266,6 +269,10 @@
                 width: auto;
             }
         }
+
+        & .skills-container {
+            width: 80%;
+        }
     }
 
     .btn-cta__contact {
@@ -307,6 +314,8 @@
 
 
         }
+
+
     }
 
 }
