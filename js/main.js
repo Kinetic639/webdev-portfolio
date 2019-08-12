@@ -39,7 +39,7 @@ function closeMenu() {
   showMenu = false;
 }
 
-const logo = document.querySelectorAll("#logo path");
+const logo = document.querySelectorAll(".logo path");
 for (let i = 0; i < logo.length; i++) {
   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 }
@@ -209,3 +209,15 @@ function intersectionCallback(entries) {
     }
   });
 }
+
+///preloader
+window.addEventListener("load", () => {
+  const preloader = document.querySelector(".preloader");
+  const body = document.querySelectorAll(".anim-paused");
+
+  preloader.classList.add("preload-finish");
+
+  setTimeout(function() {
+    body.forEach(item => item.classList.remove("anim-paused"));
+  }, 200);
+});
