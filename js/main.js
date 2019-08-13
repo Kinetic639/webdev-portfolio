@@ -39,44 +39,6 @@ function closeMenu() {
   showMenu = false;
 }
 
-const logo = document.querySelectorAll(".logo path");
-for (let i = 0; i < logo.length; i++) {
-  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-}
-
-//skills script
-
-// const icon = document.querySelector(".icon");
-// const iconHtml = document.querySelector(".icon-html");
-// const modal = document.querySelector(".skills-modal");
-// const iconCss = document.querySelector(".icon-css");
-// const iconSass = document.querySelector(".icon-sass");
-// const iconJs = document.querySelector(".icon-js");
-
-// let showModal = false;
-
-// icon.addEventListener("click", toggleModal);
-
-// function toggleModal() {
-//   if (!showModal) {
-//     // console.log(this.classList);
-
-//     modal.classList.add("show");
-//     // Set Menu State
-//     showModal = true;
-//   } else {
-//     // Set Menu State
-//     modal.classList.remove("show");
-//     showModal = false;
-//   }
-// }
-
-// modal.addEventListener("click", closeModal);
-
-// function closeModal() {
-//   modal.classList.remove("show");
-//   showModal = false;
-// }
 const htmlInfo =
   "HTML5 – język wykorzystywany do tworzenia i prezentowania stron internetowych www. Jest rozwinięciem języka HTML 4 i jego XML-owej odmiany (XHTML 1), opracowywane w ramach prac grupy roboczej WHATWG (Web Hypertext Application Technology Working Group) i W3C[1].";
 const cssInfo =
@@ -121,8 +83,6 @@ $(".skills-modal").click(function() {
 
 //////intersection observer
 
-const images = document.querySelectorAll(".section");
-
 let observers = [];
 
 startup();
@@ -140,7 +100,6 @@ function startup() {
 
   let thresholdSets = [
     [],
-
     [],
     [],
     [],
@@ -150,27 +109,16 @@ function startup() {
 
   for (let i = 0; i <= 1.0; i += 0.01) {
     thresholdSets[0].push(i);
-
     thresholdSets[1].push(i);
-
     thresholdSets[2].push(i);
-
     thresholdSets[3].push(i);
-
     thresholdSets[4].push(i);
   }
 
   // Add each box, creating a new observer for each
 
   for (let i = 0; i < 5; i++) {
-    // let template = document
-    //   .querySelector("#boxTemplate")
-    //   .content.cloneNode(true);
     let boxID = "section" + (i + 1);
-    // template.querySelector(".sampleBox").id = boxID;
-    // wrapper.appendChild(document.importNode(template, true));
-
-    // Set up the observer for this box
 
     observerOptions.threshold = thresholdSets[i];
     observers[i] = new IntersectionObserver(
@@ -179,33 +127,17 @@ function startup() {
     );
     observers[i].observe(document.querySelector("." + boxID));
   }
-
-  // Scroll to the starting position
-
-  document.scrollingElement.scrollTop =
-    wrapper.firstElementChild.getBoundingClientRect().top + window.scrollY;
-  document.scrollingElement.scrollLeft = 750;
 }
 
 function intersectionCallback(entries) {
   entries.forEach(function(entry) {
-    //   let box = entry.target;
     let visiblePct = Math.floor(entry.intersectionRatio * 100) + "%";
     const name = document.querySelector(".header__title");
-    //   box.querySelector(".topLeft").innerHTML = visiblePct;
-    //   box.querySelector(".topRight").innerHTML = visiblePct;
-    //   box.querySelector(".bottomLeft").innerHTML = visiblePct;
-    //   box.querySelector(".bottomRight").innerHTML =
-    //     box.id + " " + box.id.entry.intersectionRatio;
-
-    //   for (let i = 0; i < 2; i++) {
-    //     let boxID = "box" + (i + 1);
-    //   }
-    // console.log(visiblePct + " " + entry.target.id);
 
     if (entry.intersectionRatio > 0.5) {
       // console.log(entry.target.id + " ponad 50%! " + visiblePct);
       name.innerHTML = entry.target.dataset.title;
+      // navTitle.innerHTML = "/ 04 " + entry.target.dataset.title;
     }
   });
 }
@@ -214,10 +146,12 @@ function intersectionCallback(entries) {
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".preloader");
   const body = document.querySelectorAll(".anim-paused");
+  const transElements = document.querySelectorAll(".preload");
 
   preloader.classList.add("preload-finish");
 
   setTimeout(function() {
     body.forEach(item => item.classList.remove("anim-paused"));
+    transElements.forEach(item => item.classList.remove("preload"));
   }, 200);
 });

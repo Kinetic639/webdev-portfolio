@@ -1,3 +1,12 @@
+.anim-paused {
+  opacity: 0;
+  animation-play-state: paused !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 .anim {
   opacity: 0; }
 
@@ -8,6 +17,20 @@
   to {
     transform: translateY(0);
     opacity: 1; } }
+
+.header__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 1;
+  transition: all .4s ease 2.5s; }
+  .header__title.preload {
+    opacity: 0;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important; }
 
 html {
   font-family: 'Montserrat', sans-serif;
@@ -54,6 +77,8 @@ body {
   font-weight: 500; }
   .menu__link:hover {
     color: #FF7F00; }
+  .menu__link.active {
+    color: #FF7F00; }
 
 .menu-branding__title h1 {
   font-size: 3.6rem;
@@ -70,11 +95,6 @@ body {
 
 .address-secondary {
   font-size: 1.4rem; }
-
-.header__title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  text-transform: uppercase; }
 
 .footer__navigation {
   font-size: 2rem;
@@ -108,7 +128,8 @@ html {
 
 .header {
   top: 0;
-  padding: 2.5rem 2.5rem 1.5rem; }
+  padding: 2.5rem 2.5rem 1.5rem;
+  overflow: hidden; }
 
 .header,
 .footer {
@@ -400,7 +421,7 @@ body {
     opacity: 0;
     border-bottom: 2px solid #9e9e9e;
     border-top: 2px solid #9e9e9e;
-    transition: all .4s ease-out; }
+    transition: all .4s ease; }
     .section .skills-modal h3 {
       font-size: 1.8rem;
       margin-bottom: 1rem; }
@@ -711,9 +732,6 @@ body {
     font-size: 7rem; }
   .section-home__title h2 {
     font-size: 2.5rem; } }
-
-.anim-paused {
-  animation-play-state: paused !important; }
 
 .logo path:nth-child(1) {
   stroke-dasharray: 357.39666748046875;

@@ -55,6 +55,7 @@
 
             & h2 {
                 margin-top: 3rem;
+
             }
         }
     }
@@ -198,8 +199,8 @@
             border-bottom: 2px solid $secondary-color;
 
             border-top: 2px solid $secondary-color;
-            // transition: opacity 0.2s linear 2s, all 2.5s;
-            @include easeOutFast;
+            transition: all .4s ease;
+
 
             & h3 {
                 font-size: 1.8rem;
