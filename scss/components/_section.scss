@@ -235,47 +235,57 @@
 
 
     .projects-gallery {
-        // border: 1px solid red;
-        width: 90%;
-        padding: 1.5rem;
+        width: 95%;
 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1.5rem;
         justify-items: center;
+        grid-auto-rows: min-content;
 
         &__item {
             border: 2px solid $secondary-color;
             border-radius: 5px;
             position: relative;
             overflow: hidden;
+            max-width: 500px;
             background-position: center;
-            max-height: calc(90vw);
             width: 100%;
-            max-width: 350px;
+            // height: auto;
+            // height: 250px;
+            height: fit-content;
+            transition: all .8s ease-in-out;
+
+            &:hover {
+                height: 50vh;
+                transition: all .8s ease-in-out;
+            }
 
             &:hover .image-overlay {
                 bottom: 0;
 
                 background-color: rgba(#22455c, $alpha: .9);
 
-                // &__title {
-                //     padding-bottom: 1.6rem; test
-
-                //     transition: all .8s ease-in-out;
-                // }
+                &__title {
+                    padding-bottom: 1.6rem;
+                    transition: all .8s ease-in-out;
+                }
 
                 &__item {
-                    // padding-bottom: 1.5rem;
+                    padding-bottom: 1.5rem;
                     transform: translate3d(0, 0, 0);
-                    // @include easeOut;
+                    @include easeOut;
                 }
             }
+
 
             &:hover .image {
                 transform: scale(1.1);
                 filter: blur(10px);
+                height: 100%;
+                width: auto;
             }
+
 
         }
     }
@@ -284,10 +294,8 @@
 
     .image {
         display: block;
-        width: auto;
-        height: 100%;
-        transform: scale(1);
-        filter: blur(0px);
+        width: 100%;
+        height: auto;
         text-align: center;
         overflow-x: hidden;
         transition: all .8s ease-in-out;
@@ -295,7 +303,7 @@
     }
 
     .image-overlay {
-        // border: 1px solid red;
+        //     // border: 1px solid red;
         height: 100%;
         padding: 2rem;
         position: absolute;
@@ -340,6 +348,7 @@
         }
 
         &__item {
+
             transform: translate3d(0, 1000px, 0);
             @include easeOut;
 

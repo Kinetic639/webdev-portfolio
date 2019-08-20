@@ -83,10 +83,7 @@
         .projects-gallery {
             grid-template-columns: repeat(2, 1fr);
 
-            &__item {
-                margin: 0;
-                max-height: 100px;
-            }
+
         }
 
         &-home {
@@ -186,15 +183,15 @@
         // padding: 1.5rem 8rem;
         width: 75vw;
 
-        .projects-gallery {
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 7rem;
+        // .projects-gallery {
+        //     grid-template-columns: repeat(3, 1fr);
+        //     grid-gap: 7rem;
 
-            &__item {
-                margin: 0;
-                max-height: 30%;
-            }
-        }
+        //     //     &__item {
+        //     //         margin: 0;
+        //     //         max-height: 30%;
+        //     //     }
+        // }
 
         .section-about {
 

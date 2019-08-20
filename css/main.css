@@ -436,35 +436,44 @@ body {
   .section .skill-description-title {
     padding-bottom: 2rem; }
   .section .projects-gallery {
-    width: 90%;
-    padding: 1.5rem;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
-    justify-items: center; }
+    justify-items: center;
+    grid-auto-rows: min-content; }
     .section .projects-gallery__item {
       border: 2px solid #9e9e9e;
       border-radius: 5px;
       position: relative;
       overflow: hidden;
+      max-width: 500px;
       background-position: center;
-      max-height: calc(90vw);
       width: 100%;
-      max-width: 350px; }
+      height: fit-content;
+      transition: all .8s ease-in-out; }
+      .section .projects-gallery__item:hover {
+        height: 50vh;
+        transition: all .8s ease-in-out; }
       .section .projects-gallery__item:hover .image-overlay {
         bottom: 0;
         background-color: rgba(34, 69, 92, 0.9); }
+        .section .projects-gallery__item:hover .image-overlay__title {
+          padding-bottom: 1.6rem;
+          transition: all .8s ease-in-out; }
         .section .projects-gallery__item:hover .image-overlay__item {
-          transform: translate3d(0, 0, 0); }
+          padding-bottom: 1.5rem;
+          transform: translate3d(0, 0, 0);
+          transition: all .8s ease-out; }
       .section .projects-gallery__item:hover .image {
         transform: scale(1.1);
-        filter: blur(10px); }
+        filter: blur(10px);
+        height: 100%;
+        width: auto; }
   .section .image {
     display: block;
-    width: auto;
-    height: 100%;
-    transform: scale(1);
-    filter: blur(0px);
+    width: 100%;
+    height: auto;
     text-align: center;
     overflow-x: hidden;
     transition: all .8s ease-in-out; }
@@ -639,9 +648,6 @@ body {
 @media screen and (min-width: 769px) {
   .section .projects-gallery {
     grid-template-columns: repeat(2, 1fr); }
-    .section .projects-gallery__item {
-      margin: 0;
-      max-height: 100px; }
   .section-home__left {
     height: 55vh;
     transform: translate(-50%, -55%); }
@@ -678,12 +684,6 @@ body {
     font-size: 2rem; }
   .section {
     width: 75vw; }
-    .section .projects-gallery {
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 7rem; }
-      .section .projects-gallery__item {
-        margin: 0;
-        max-height: 30%; }
     .section .section-about__info {
       padding: 0 2rem;
       display: grid;
