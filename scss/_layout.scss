@@ -80,6 +80,8 @@ html {
     margin: 0 .4rem;
     display: flex;
     align-items: center;
+    justify-content: stretch;
+    white-space: nowrap;
 }
 
 .footer__copyright,

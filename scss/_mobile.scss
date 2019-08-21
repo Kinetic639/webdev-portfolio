@@ -130,16 +130,19 @@
     // }
 
     .btn-arrow {
-        width: 10%;
+        width: 8rem;
     }
 
     .footer {
 
         &__navigation {
 
-            flex: 1;
+            flex: 0;
+            width: 100%;
         }
     }
+
+
 
     .menu {
 

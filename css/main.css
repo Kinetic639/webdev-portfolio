@@ -158,7 +158,9 @@ html {
 .current-full {
   margin: 0 .4rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: stretch;
+  white-space: nowrap; }
 
 .footer__copyright,
 .side-bars {
@@ -661,9 +663,10 @@ body {
   .footer {
     width: 70%; }
   .btn-arrow {
-    width: 10%; }
+    width: 8rem; }
   .footer__navigation {
-    flex: 1; }
+    flex: 0;
+    width: 100%; }
   .menu {
     overflow: hidden; }
     .menu-nav {
