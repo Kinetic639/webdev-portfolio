@@ -134,10 +134,15 @@ function intersectionCallback(entries) {
     let visiblePct = Math.floor(entry.intersectionRatio * 100) + "%";
     const name = document.querySelector(".header__title");
 
+    const navName = document.querySelector(".current-title");
+
     if (entry.intersectionRatio > 0.5) {
       // console.log(entry.target.id + " ponad 50%! " + visiblePct);
       name.innerHTML = entry.target.dataset.title;
       // navTitle.innerHTML = "/ 04 " + entry.target.dataset.title;
+      if ((entry.target.dataset.title = "Home")) {
+        navName.innerHTML = "/ 04 " + entry.target.dataset.title;
+      }
     }
   });
 }

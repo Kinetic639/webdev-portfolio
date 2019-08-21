@@ -76,13 +76,20 @@ html {
     }
 }
 
-.current-full {
-    margin: 0 .4rem;
-    display: flex;
-    align-items: center;
-    justify-content: stretch;
-    white-space: nowrap;
+.current {
+    &-full {
+        margin: 0 .4rem;
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        white-space: nowrap;
+    }
+
+    &-title {
+        text-transform: uppercase;
+    }
 }
+
 
 .footer__copyright,
 .side-bars {

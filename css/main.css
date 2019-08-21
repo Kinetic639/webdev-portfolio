@@ -162,6 +162,9 @@ html {
   justify-content: stretch;
   white-space: nowrap; }
 
+.current-title {
+  text-transform: uppercase; }
+
 .footer__copyright,
 .side-bars {
   display: none; }
