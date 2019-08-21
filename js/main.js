@@ -134,15 +134,27 @@ function intersectionCallback(entries) {
     let visiblePct = Math.floor(entry.intersectionRatio * 100) + "%";
     const name = document.querySelector(".header__title");
 
+    const navView = document.querySelector(".current-view");
     const navName = document.querySelector(".current-title");
 
     if (entry.intersectionRatio > 0.5) {
       // console.log(entry.target.id + " ponad 50%! " + visiblePct);
       name.innerHTML = entry.target.dataset.title;
       // navTitle.innerHTML = "/ 04 " + entry.target.dataset.title;
+      navName.innerHTML = "&nbsp/ 04 " + entry.target.dataset.title;
       if ((entry.target.dataset.title = "Home")) {
-        navName.innerHTML = "/ 04 " + entry.target.dataset.title;
-      }
+        navView.innerHTML = "01 ";
+      } else navView.innerHTML = "05 ";
+      //   navView.innerHTML = "01 ";
+      // } else if ((entry.target.dataset.title = "About")) {
+      //   navView.innerHTML = "02 ";
+      // } else if ((entry.target.dataset.title = "Skills")) {
+      //   navView.innerHTML = "03 ";
+      // } else if ((entry.target.dataset.title = "Projects")) {
+      //   navView.innerHTML = "04 ";
+      // } else if ((entry.target.dataset.title = "Contact")) {
+      //   navView.innerHTML = "05 ";
+      // } else navView.innerHTML = "05 ";
     }
   });
 }
