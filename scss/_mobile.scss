@@ -29,6 +29,10 @@
         }
 
     }
+
+    .btn-arrow {
+        width: 20%;
+    }
 }
 
 // Tablets & Small Laptops
@@ -124,6 +128,18 @@
     // .header {
     //     padding: 4rem 10rem;
     // }
+
+    .btn-arrow {
+        width: 10%;
+    }
+
+    .footer {
+
+        &__navigation {
+
+            flex: 1;
+        }
+    }
 
     .menu {
 

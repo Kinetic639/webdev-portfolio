@@ -453,7 +453,7 @@ body {
       height: fit-content;
       transition: all .8s ease-in-out; }
       .section .projects-gallery__item:hover {
-        height: 50vh;
+        height: 55vh;
         transition: all .8s ease-in-out; }
       .section .projects-gallery__item:hover .image-overlay {
         bottom: 0;
@@ -467,9 +467,7 @@ body {
           transition: all .8s ease-out; }
       .section .projects-gallery__item:hover .image {
         transform: scale(1.1);
-        filter: blur(10px);
-        height: 100%;
-        width: auto; }
+        filter: blur(10px); }
   .section .image {
     display: block;
     width: 100%;
@@ -629,7 +627,9 @@ body {
   .section-home__title h2 {
     font-size: 2.5rem; }
   .section .projects-gallery__item {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .btn-arrow {
+    width: 20%; } }
 
 @media screen and (min-width: 620px) {
   .section {
@@ -660,6 +660,10 @@ body {
   .header,
   .footer {
     width: 70%; }
+  .btn-arrow {
+    width: 10%; }
+  .footer__navigation {
+    flex: 1; }
   .menu {
     overflow: hidden; }
     .menu-nav {

@@ -251,13 +251,11 @@
             max-width: 500px;
             background-position: center;
             width: 100%;
-            // height: auto;
-            // height: 250px;
             height: fit-content;
             transition: all .8s ease-in-out;
 
             &:hover {
-                height: 50vh;
+                height: 55vh;
                 transition: all .8s ease-in-out;
             }
 
@@ -282,8 +280,7 @@
             &:hover .image {
                 transform: scale(1.1);
                 filter: blur(10px);
-                height: 100%;
-                width: auto;
+
             }
 
 
@@ -303,7 +300,6 @@
     }
 
     .image-overlay {
-        //     // border: 1px solid red;
         height: 100%;
         padding: 2rem;
         position: absolute;
