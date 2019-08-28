@@ -325,6 +325,48 @@ body {
 .menu__item:nth-child(5) {
   transition-delay: 0.5s; }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif; }
+
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+ul li {
+  list-style: none;
+  margin: 0;
+  font-size: 3em; }
+
+ul li a {
+  position: relative;
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 700; }
+
+ul li a:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  color: #262626;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.5s ease-in-out; }
+
+ul:hover li a:before {
+  width: 0; }
+
+ul li:hover a:before {
+  width: 100%; }
+
 .section {
   min-height: 100%;
   display: flex;
