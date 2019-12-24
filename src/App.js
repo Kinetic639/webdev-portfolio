@@ -60,7 +60,7 @@ export class App extends Component {
           <DrawerToggleButton click={this.drawerToggleclickHandler} />
           <Navbar
             show={sideDrawerOpen}
-            drawerClickHandler={this.drawerToggleclickHandler}
+            click={this.drawerToggleclickHandler}
             views={this.state.views}
           />
           {backdrop}

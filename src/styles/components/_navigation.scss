@@ -23,7 +23,7 @@
         
         &:hover {
           cursor: pointer;
-          background-color: yellowgreen;
+          background-color: $color-link;
     
         }
     }
@@ -33,6 +33,6 @@
 
 
 .is-active {
-    color: red;
+    color: $color-link;
 }
 

@@ -8,9 +8,9 @@ export default function Navbar(props) {
   }
   return (
     <nav className={navbarClasses}>
-      <div className="branding">branding</div>
+      <div className="branding">Portfolio </div>
       {/* <div className="spacer"></div> */}
-        <NavList show={props.show} views={props.views} />
+        <NavList show={props.show} views={props.views} click={props.click}/>
              
     </nav>
   );

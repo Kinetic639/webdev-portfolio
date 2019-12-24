@@ -3,11 +3,11 @@ import {  NavLink } from "react-router-dom";
 
 export default function NavItem(props) {
     const isActive = {
-        color: 'red'
+        color: '#9acd32'
     }
     return (
     <li className='nav-menu__item'>
-<NavLink activeStyle={isActive} to={props.children}>{props.children}</NavLink>
+<NavLink activeStyle={isActive} to={props.children} onClick={props.click}>{props.children}</NavLink>
     </li>
     )
 }

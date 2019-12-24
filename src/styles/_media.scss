@@ -10,8 +10,8 @@
 
     &-navbar {
       height: $header-height;
-      background-color: #fff;
       box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.3);
+      padding: 0 3rem;
       position: fixed;
       top: 0;
       right: 0;
@@ -52,12 +52,12 @@
       height: 100%;
       display: flex;
       align-items: center;
-      
+
       & a {
-          height: 100%;
-          padding: 0 2rem;
-          display: flex;
-          align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
       }
     }
   }
