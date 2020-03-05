@@ -1,18 +1,80 @@
 {
-  "name": "traveresy-portfolio",
-  "version": "1.0.0",
-  "description": "responsive portfolio website",
-  "main": "index.js",
-  "homepage": "https://Kinetic639.github.io/porfolio",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive",
-    "deploy": "gh-pages -d dist"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "boilerplate-react-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "most-visible": "^1.4.0",
-    "node-sass": "^4.12.0"
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "firebase": "^7.8.2",
+    "history": "^4.10.1",
+    "html-webpack-plugin": "^3.2.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
+    "raf": "^3.4.1",
+    "react": "^16.12.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "uuid": "^3.4.0",
+    "validator": "^12.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  },
+  "scripts": {
+    "serve": "live-server public/",
+    "start": "node server/server.js",
+    "build": "react-scripts build",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
+    "eject": "react-scripts eject",
+    "dev-server": "webpack-dev-server --open --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "cross-env": "^7.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "file-loader": "^5.1.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react-test-renderer": "^16.12.0",
+    "redux-mock-store": "^1.5.4",
+    "webpack-dev-server": "^3.9.0"
   }
 }

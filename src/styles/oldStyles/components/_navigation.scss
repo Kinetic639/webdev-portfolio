@@ -1,0 +1,38 @@
+.nav-menu {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &.open {
+    display: block;
+  }
+
+  &__item {
+    width: 100%;
+    text-align: center;
+    line-height: 4;
+    & a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        &:hover {
+          cursor: pointer;
+          background-color: $color-link;
+    
+        }
+    }
+  }
+
+}
+
+
+.is-active {
+    color: $color-link;
+}
+

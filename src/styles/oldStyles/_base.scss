@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.root,
+.container-main {
+  height: 100%;
+}
+
+html{
+  font-size: 62.5%;
+  color: $fc-primary;
+}
+
+body {
+  font-size: $fs-m;
+
+}
+
+a {
+  
+  color: $fc-primary;
+}
+
