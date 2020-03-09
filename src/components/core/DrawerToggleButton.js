@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function DrawerToggleButton(props) {
-  console.log(props.isOpen);
-  
   let getStyle;
-  props.isOpen ? getStyle = 'toggle-button open' : getStyle= 'toggle-button'
+  props.isOpen
+    ? (getStyle = "toggle-button open")
+    : (getStyle = "toggle-button");
   // let firstLine;
   // let secondLine;
   // let thirdLine;
@@ -14,7 +14,7 @@ export default function DrawerToggleButton(props) {
   //   thirdLine = { transform: "rotate(-45deg)", transformOrigin: "100% 50%" };
   // }
   return (
-    <button className={getStyle}  onClick={props.click}>
+    <button className={getStyle} onClick={props.click}>
       <div className="toggle-button__line"></div>
       <div className="toggle-button__line"></div>
       <div className="toggle-button__line"></div>

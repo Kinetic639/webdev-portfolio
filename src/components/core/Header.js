@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 import NavList from "./NavList";
 
 export class Header extends Component {
   state = {
-    
     navbarShow: false
   };
   render() {
@@ -18,7 +15,7 @@ export class Header extends Component {
           </Link>
         </div>
         <nav>
-         <NavList />
+          <NavList />
         </nav>
       </header>
     );

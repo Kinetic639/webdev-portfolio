@@ -5,23 +5,28 @@ export class NavList extends Component {
   state = {
     views: [
       {
-        page: "Home",
+        page: "/",
+        title: "Home",
         id: 1
       },
       {
-        page: "Skills",
+        page: "skills",
+        title: "Skills",
         id: 2
       },
       {
-        page: "Projects",
+        page: "projects",
+        title: "Projects",
         id: 3
       },
       {
-        page: "About",
+        page: "about",
+        title: "About",
         id: 4
       },
       {
-        page: "Contact",
+        page: "contact",
+        title: "Contact",
         id: 5
       }
     ]
@@ -31,7 +36,9 @@ export class NavList extends Component {
     return (
       <ul className="nav-menu">
         {views.map(e => (
-          <NavItem key={e.id}>{e.page}</NavItem>
+          <NavItem key={e.id} page={e.page}>
+            {e.title}
+          </NavItem>
         ))}
       </ul>
     );

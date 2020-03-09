@@ -1,0 +1,46 @@
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 24px;
+  width: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 201;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  &.open {
+    .toggle-button__line {
+      &:nth-child(1) {
+        transform: translate(1px, 8px) rotate(-45deg);
+        // transform-origin: "100% 50%";
+        transition: all 0.3s ease;
+      }
+      &:nth-child(2) {
+        width: 0;
+        transform-origin: left;
+        transition: all 0.3s ease;
+      }
+      &:nth-child(3) {
+        transform: translate(0px, -8px) rotate(45deg);
+        // transform-origin: "100% 50%";
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &__line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+}
