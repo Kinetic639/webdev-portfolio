@@ -25,6 +25,10 @@ body {
 
 .container-main {
   height: 100%;
+  color: $fc-primary;
+  & h1 {
+    margin: 0;
+  }
 }
 
 .content-container {
