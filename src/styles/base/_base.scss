@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  color: $dark-grey;
-  font-family: Arial, sans-serif;
+  background-color: $main-bg-dark;
+  font-family: "Work Sans" , Arial, sans-serif;
   font-size: $m-size;
   line-height: 1.6;
   height: 100%;
@@ -23,15 +23,22 @@ body {
   height: 100%;
 }
 
-.container-main {
+.page {
   height: 100%;
   color: $fc-primary;
-  & h1 {
-    margin: 0;
-  }
 }
 
 .content-container {
-  width: 80%;
+  // width: 80%;
   margin: 0 auto;
+}
+
+
+.container{ 
+  &-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+  }
 }

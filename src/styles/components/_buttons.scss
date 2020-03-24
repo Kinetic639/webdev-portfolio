@@ -5,7 +5,7 @@
   height: 24px;
   width: 30px;
   padding: 0;
-  background-color: green;
+  // background-color: green;
   border: none;
   z-index: 201;
   cursor: pointer;
@@ -22,4 +22,16 @@
     height: 2px;
     background-color: #fff;
   }
+}
+
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: $color-secondary;
+  text-decoration: none;
+  color: $main-bg-dark;
+  padding: 1.5rem  4rem;
+  width: fit-content;
+  margin: 0 auto;
 }

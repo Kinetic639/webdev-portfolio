@@ -1,12 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import {  NavLink } from "react-router-dom";
 
 export default function NavItem(props) {
-  return (
-    <li className="nav-menu__item">
-      <NavLink activeClassName="is-active" to={props.page} exact={true}>
-        {props.children}
-      </NavLink>
+    const isActive = {
+        color: '#9acd32'
+    }
+    return (
+    <li className='nav-menu__item'>
+<NavLink activeStyle={isActive} to={props.children} onClick={props.click}>{props.children}</NavLink>
     </li>
-  );
+    )
 }
