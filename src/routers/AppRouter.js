@@ -14,6 +14,7 @@ import DrawerToggleButton from "../components/core/DrawerToggleButton";
 import NotFoundPage from "../components/pages/NotFoundPage";
 import HomePage from "../components/pages/HomePage";
 import ContactPage from "../components/pages/ContactPage";
+import ProjectsPage from "../components/pages/ProjectsPage";
 
 export const history = createBrowserHistory();
 
@@ -23,7 +24,7 @@ export class App extends Component {
     views: [
       {
         id: 1,
-        page: "home"
+        page: "/"
       },
       {
         id: 2,
@@ -75,8 +76,8 @@ export class App extends Component {
         {backdrop}
         <Switch>
           <Route path="/" component={HomePage} exact={true} />
+          <Route path="/Projects" component={ProjectsPage} />
           {/*<Route path="/Skills" component={Skills} />
-          <Route path="/Projects" component={Projects} />
     <Route path="/About" component={About} />*/}
           <Route path="/Contact" component={ContactPage} />
           <Route component={NotFoundPage} />
