@@ -2,8 +2,10 @@ import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div>
-      <h1>My projects</h1>
+    <div className="page projects-page">
+      <div className="content-container container-projects">
+        <p>Projects</p>
+      </div>
     </div>
   );
 };

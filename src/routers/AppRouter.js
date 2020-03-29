@@ -15,6 +15,7 @@ import NotFoundPage from "../components/pages/NotFoundPage";
 import HomePage from "../components/pages/HomePage";
 import ContactPage from "../components/pages/ContactPage";
 import ProjectsPage from "../components/pages/ProjectsPage";
+import AboutPage from "../components/pages/AboutPage";
 
 export const history = createBrowserHistory();
 
@@ -31,11 +32,6 @@ export class App extends Component {
         id: 2,
         page: "about",
         title: "about"
-      },
-      {
-        id: 3,
-        page: "skills",
-        title: "Skills"
       },
       {
         id: 4,
@@ -82,8 +78,7 @@ export class App extends Component {
         <Switch>
           <Route path="/" component={HomePage} exact={true} />
           <Route path="/Projects" component={ProjectsPage} />
-          {/*<Route path="/Skills" component={Skills} />
-    <Route path="/About" component={About} />*/}
+          <Route path="/About" component={AboutPage} />
           <Route path="/Contact" component={ContactPage} />
           <Route component={NotFoundPage} />
         </Switch>

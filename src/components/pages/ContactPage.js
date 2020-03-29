@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function ContactPage() {
   return (
-    <div className="page home-page">
-      <div className="content-container container-home">
+    <div className="page contact-page">
+      <div className="content-container container-contact">
         <p>Contact</p>
       </div>
     </div>
