@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="page home-page">
       <div className="content-container container-home">

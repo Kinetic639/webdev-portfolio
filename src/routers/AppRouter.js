@@ -13,6 +13,7 @@ import DrawerToggleButton from "../components/core/DrawerToggleButton";
 // import Contact from "../components/pages/Contact";
 import NotFoundPage from "../components/pages/NotFoundPage";
 import HomePage from "../components/pages/HomePage";
+import ContactPage from "../components/pages/ContactPage";
 
 export const history = createBrowserHistory();
 
@@ -76,8 +77,8 @@ export class App extends Component {
           <Route path="/" component={HomePage} exact={true} />
           {/*<Route path="/Skills" component={Skills} />
           <Route path="/Projects" component={Projects} />
-          <Route path="/About" component={About} />
-          <Route path="/Contact" component={Contact} /> */}
+    <Route path="/About" component={About} />*/}
+          <Route path="/Contact" component={ContactPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </Router>
