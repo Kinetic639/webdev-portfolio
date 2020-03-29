@@ -24,23 +24,28 @@ export class App extends Component {
     views: [
       {
         id: 1,
-        page: "/"
+        page: "/",
+        title: "Home"
       },
       {
         id: 2,
-        page: "about"
+        page: "about",
+        title: "about"
       },
       {
         id: 3,
-        page: "skills"
+        page: "skills",
+        title: "Skills"
       },
       {
         id: 4,
-        page: "projects"
+        page: "projects",
+        title: "Projects"
       },
       {
         id: 5,
-        page: "contact"
+        page: "contact",
+        title: "Contact"
       }
     ]
   };

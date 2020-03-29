@@ -10,8 +10,12 @@ export default function Navbar(props) {
     <nav className={navbarClasses}>
       <div className="branding">Portfolio </div>
       {/* <div className="spacer"></div> */}
-        <NavList show={props.show} views={props.views} click={props.click}/>
-             
+      <NavList
+        show={props.show}
+        pages={props.pages}
+        views={props.views}
+        click={props.click}
+      />
     </nav>
   );
 }

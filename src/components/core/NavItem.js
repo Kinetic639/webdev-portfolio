@@ -7,7 +7,7 @@ export default function NavItem(props) {
     }
     return (
     <li className='nav-menu__item'>
-<NavLink activeStyle={isActive} to={props.children} onClick={props.click}>{props.children}</NavLink>
+<NavLink activeStyle={isActive} to={props.page} onClick={props.click}>{props.children}</NavLink>
     </li>
     )
 }
