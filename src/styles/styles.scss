@@ -8,20 +8,12 @@
 @import "./components/core/navigation";
 @import "./components/core/header";
 
-// @import "./base/button";
-// @import "./base/content-container";
-// @import "./components/loaders";
-// @import "./components/box-layout";
 @import "./components/buttons";
-// @import "./components/header";
 @import "./components/backdrop/backdrop";
-// @import "./components/page-header";
-// @import "./components/input-group";
-// @import "./components/inputs";
-// @import "./components/form";
-// @import "./components/list";
-@import "./components/pages/homePage";
+
 @import "./components/pages/page";
+@import "./components/pages/homePage";
+@import "./components/pages/aboutPage";
 @import "./components/pages/contactPage";
 
 //media

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { createBrowserHistory } from "history";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import "normalize.css/normalize.css";
 //
 import Navbar from "../components/core/Navbar";

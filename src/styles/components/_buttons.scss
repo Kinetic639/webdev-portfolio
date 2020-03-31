@@ -31,7 +31,12 @@
   background-color: $color-secondary;
   text-decoration: none;
   color: $main-bg-dark;
-  padding: 1.5rem  4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem  2.5rem;
   width: fit-content;
   margin: 0 auto;
+  &__icon {
+    margin: 0 .5rem;
+  }
 }

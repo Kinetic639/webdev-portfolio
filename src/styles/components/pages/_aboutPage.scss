@@ -1,0 +1,35 @@
+.about-page {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.12;
+    z-index: -1;
+    background: url("./images/about_bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+.container-about{
+    justify-content: space-between;
+}
+
+.about-card {
+    &__title {
+        color: $color-secondary;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    &__description {
+        font-size: 1.3rem;
+    }
+}
+.btn-cta__contact {
+    margin-bottom: 4rem;
+}

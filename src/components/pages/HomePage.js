@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
 
@@ -20,7 +22,8 @@ export default function HomePage() {
           <span className="link">here</span>.
         </p>
         <Link className="btn btn-cta" to="/projects">
-          Projects
+        <FontAwesomeIcon className='btn__icon' icon={faEye} />
+        Projects
         </Link>
       </div>
     </div>
