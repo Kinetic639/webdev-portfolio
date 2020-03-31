@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../core/Header";
 
 const ProjectsPage = () => {
   return (
     <div className="page projects-page">
       <div className="content-container container-projects">
-        <p>Projects</p>
+        <Header>My Projects</Header>
       </div>
     </div>
   );
