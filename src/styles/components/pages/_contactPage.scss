@@ -15,5 +15,38 @@
     background-position: center top;
     background-size: cover;
   }
+}
+.container-contact {
+  justify-content: space-between;
+}
 
+.container-social {
+  height: 40vh;
+  margin-bottom: 15vh;
+  color: $color-secondary;
+  font-size: 6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  & a {
+    color: $color-secondary;
+    display: inline-block;
+    line-height: 1;
+  }
+}
+
+.location {
+    text-align: center;
+  & h3 {
+    color: $color-secondary;
+    font-size: 2rem;
+    & span {
+        color: #fff;
+        font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+  & p {
+      font-size: 1.4rem;
+  }
 }
