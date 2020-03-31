@@ -29,14 +29,14 @@ export class App extends Component {
         title: "Home"
       },
       {
-        id: 2,
-        page: "about",
-        title: "about"
-      },
-      {
         id: 4,
         page: "projects",
         title: "Projects"
+      },
+      {
+        id: 2,
+        page: "about",
+        title: "about"
       },
       {
         id: 5,
