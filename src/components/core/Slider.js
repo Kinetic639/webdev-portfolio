@@ -37,12 +37,40 @@ export class Slider extends Component {
       }
     ]
   };
-  render() {
-    let swipeEl;
 
+  render() {
+    var element = document.getElementById("mySwipe");
+    window.mySwipe = new Swipe(element, {
+      startSlide: 0,
+      auto: 3000,
+      draggable: false,
+      autoRestart: false,
+      continuous: true,
+      disableScroll: true,
+      stopPropagation: true,
+      callback: function(index, element) {},
+      transitionEnd: function(index, element) {}
+    });
+
+    const endTransition = (index, element) => {
+      const dotNavigation = document.querySelector(".dot-navigation").children;
+      for (let i = 0; i < dotNavigation.length; i++) {
+        dotNavigation[i].classList.remove("current");
+        dotNavigation[index].classList.add("current");
+      }
+    };
+
+    let swipeEl;
     return (
       <div className="slider">
-        <Swipe ref={o => (swipeEl = o)} auto={null} continuous={true}>
+        <Swipe
+          id="mySwipe"
+          className="mySwipe"
+          ref={o => (swipeEl = o)}
+          auto={null}
+          continuous={true}
+          transitionEnd={endTransition}
+        >
           {this.state.slides.map(item => {
             return (
               <SwipeItem key={item.id}>
@@ -57,25 +85,27 @@ export class Slider extends Component {
         <button id="goRight" onClick={() => swipeEl.next()}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
+
         <div className="dotstyle dotstyle-fillup">
-          <ul>
-            <li >
+          <ul className="dot-navigation">
+            {/* {this.state.slides.map(el => {
+              return (
+                <li key={el.id}>
+                  <a href="#">Home</a>
+                </li>
+              );
+            })} */}
+            <li className='current'>
               <a href="#">Home</a>
             </li>
-            <li className="current">
-              <a href="#">About</a>
+            <li>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Products</a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a href="#">Home</a>
             </li>
           </ul>
         </div>
