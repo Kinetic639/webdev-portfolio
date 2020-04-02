@@ -87,9 +87,10 @@ module.exports = {
         })
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|jpg)$/i,
         include: path.join(__dirname, "app"),
         use: [
+          "file-loader",
           {
             loader: "url-loader",
             options: {
