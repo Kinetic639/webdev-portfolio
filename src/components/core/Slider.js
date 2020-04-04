@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+
 import Swipe, { SwipeItem } from "swipejs/react";
 
 export class Slider extends Component {
@@ -12,27 +13,31 @@ export class Slider extends Component {
     slides: [
       {
         id: 1,
-        title: "Project 1",
-        description: "description 1",
+        title: "Expenses Menager",
+        description: "App where you can manage your expenses. Fully build with React,  Firebase real time database, Google Authentication.",
         imgUrl: "./images/projects/project1.jpg",
+        stack: ["Html 5", "React", "Js", "CSS", "Sass"],
       },
       {
         id: 2,
         title: "Project 2",
         description: "description 2",
         imgUrl: "./images/projects/project2.jpg",
+        stack: ["Html 5", "Js", "React", "CSS", "Sass"],
       },
       {
         id: 3,
         title: "Project 3",
         description: "description 3",
         imgUrl: "./images/projects/project3.jpg",
+        stack: ["faHtml5", "faJs"],
       },
       {
         id: 4,
         title: "Project 4",
         description: "description 4",
         imgUrl: "./images/projects/project4.jpg",
+        stack: ["faHtml5", "faJs"],
       },
     ],
   };
