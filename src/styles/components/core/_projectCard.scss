@@ -1,11 +1,12 @@
 .project-card {
   // background-color: $color-secondary;
   height: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
   z-index: 1;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2.5rem 7rem;
   // background: url('./images/projects/project1.jpg');
   &::before {
     content: "";
@@ -20,6 +21,7 @@
   }
 
   &__title {
+    color: $color-secondary;
     font-size: 2.2rem;
     font-weight: 500;
   }
@@ -39,7 +41,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 5rem;
+    // font-size: 5rem;
   }
   &__item {
     align-self: center;
@@ -62,5 +64,16 @@
   }
   &-react {
     color: #60dbfc;
+  }
+}
+
+.container-cta {
+  display: flex;
+  justify-content: center;
+  & > .btn {
+    margin: 0 2rem;
+
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
   }
 }
