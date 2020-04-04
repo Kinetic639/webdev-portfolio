@@ -6,7 +6,7 @@ const ProjectSlide = props => {
     background: `url(./images/projects/project${props.item.id}.jpg)`
   }
   return (
-    <div className="project-card" style={bgImage}>
+    <div className="project-card" id='dupa' style={bgImage}>
       <div className="title">{props.item.title}</div>
       <div className="description">{props.item.description}</div>
       <div className="tech-stack">tech stack</div>
