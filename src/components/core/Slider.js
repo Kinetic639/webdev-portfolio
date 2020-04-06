@@ -15,31 +15,55 @@ export class Slider extends Component {
         id: 1,
         title: "Expenses Menager",
         description:
-          "App where you can manage your expenses. Fully build with React,  Firebase real time database, Google Authentication.",
+          "My biggest project so far. It's an App for managing expenses.",
         imgUrl: "./images/projects/project1.jpg",
-        stack: ["Html 5", "React", "Javascript",  "Sass(SCSS)"],
+        stack: [
+          "Html 5",
+          "Sass(SCSS)",
+          "Javascript",
+          "React",
+          "Redux",
+          "Jest",
+          "Enzyme",
+
+          "Firebase",
+          "Heroku",
+        ],
+        features: [
+          "Build with React",
+          "Google Authentication",
+          "Firebase realtime database",
+        ],
+        github: "https://github.com/Kinetic639/budget-app",
+        live: "https://simple-budget-menager.herokuapp.com/",
       },
       {
         id: 2,
-        title: "Project 2",
-        description: "description 2",
+        title: "Portfolio website",
+        description: "It's the website you are currently watching",
         imgUrl: "./images/projects/project2.jpg",
-        stack: ["Html 5", "Javascript", "React", "Sass(SCSS)"],
+        stack: [
+          "Html 5",
+          "Javascript",
+          "React",
+          "Sass(SCSS)",
+          "Heroku",
+          "Figma",
+        ],
+        features: [],
+        github: "https://github.com/Kinetic639/webdev-portfolio",
+        live: "http://www.michal-stepien.eu/",
       },
       {
         id: 3,
-        title: "Project 3",
-        description: "description 3",
+        title: "Random value picker",
+        description: "Simple app, where you create list of values and let the computer pick one of them at random. ",
         imgUrl: "./images/projects/project3.jpg",
-        stack: ["Html 5", "React", "Javascript", "Sass(SCSS)"],
-      },
-      {
-        id: 4,
-        title: "Project 4",
-        description: "description 4",
-        imgUrl: "./images/projects/project4.jpg",
-        stack: ["Html 5", "React", "Javascript", "Sass(SCSS)"],
-      },
+        stack: ["Html 5", "React", "Javascript", "Sass(SCSS)", "Heroku"],
+        features: ['Forms', 'Using local storage'],
+        github: "https://github.com/Kinetic639/indecision",
+        live: "https://random-value-picker.herokuapp.com/",
+      }
     ],
   };
 
@@ -71,9 +95,11 @@ export class Slider extends Component {
             return (
               <SwipeItem key={item.id}>
                 <ProjectSlide item={item} />
+                
               </SwipeItem>
             );
           })}
+          {/* <SwipeItem><div>Contact me</div></SwipeItem> */}
         </Swipe>
         <button id="goLeft" onClick={() => swipeEl.prev()}>
           <FontAwesomeIcon icon={faChevronLeft} />
