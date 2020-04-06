@@ -12,8 +12,8 @@ import Header from "../core/Header";
 export default function ContactPage() {
   return (
     <div className="page contact-page">
-      <div className="content-container container-contact">
         <Header>Contact</Header>
+      <div className="content-container container-contact">
         <div className="location">
           <h3>Location: <span>Poznań, Poland</span> </h3>
           <p>(I don't mind relocating if necessary)</p>

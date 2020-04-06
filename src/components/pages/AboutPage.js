@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const AboutPage = () => {
   return (
     <div className="page about-page">
-      <div className="content-container container-about">
         <Header>About me</Header>
+      <div className="content-container container-about">
         <div className="about-card">
           <h3 className="about-card__title">About me</h3>
           <p className="about-card__description">

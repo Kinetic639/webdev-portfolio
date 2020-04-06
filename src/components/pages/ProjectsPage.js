@@ -8,7 +8,7 @@ const ProjectsPage = () => {
   return (
     <div className="page projects-page">
       <div className="content-container container-projects">
-        <Header>My Projects</Header>
+        <Header className='header-projects'>My Projects</Header>
         <Slider />
         {/* <ProjectsNavigation /> */}
       </div>
