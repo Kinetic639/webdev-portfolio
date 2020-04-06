@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import Swipe, { SwipeItem } from "swipejs/react";
+import ContactPage from "../pages/ContactPage";
 
 export class Slider extends Component {
   state = {
@@ -40,7 +41,7 @@ export class Slider extends Component {
       {
         id: 2,
         title: "Portfolio website",
-        description: "It's the website you are currently watching",
+        description: "It's the website you are currently visiting",
         imgUrl: "./images/projects/project2.jpg",
         stack: [
           "Html 5",
@@ -57,13 +58,14 @@ export class Slider extends Component {
       {
         id: 3,
         title: "Random value picker",
-        description: "Simple app, where you create list of values and let the computer pick one of them at random. ",
+        description:
+          "Simple app, where you create list of values and let the computer pick one of them at random. ",
         imgUrl: "./images/projects/project3.jpg",
         stack: ["Html 5", "React", "Javascript", "Sass(SCSS)", "Heroku"],
-        features: ['Forms', 'Using local storage'],
+        features: ["Forms", "Using local storage"],
         github: "https://github.com/Kinetic639/indecision",
         live: "https://random-value-picker.herokuapp.com/",
-      }
+      },
     ],
   };
 
@@ -95,11 +97,13 @@ export class Slider extends Component {
             return (
               <SwipeItem key={item.id}>
                 <ProjectSlide item={item} />
-                
               </SwipeItem>
             );
           })}
-          {/* <SwipeItem><div>Contact me</div></SwipeItem> */}
+          ;
+          <SwipeItem>
+           <ContactPage />
+          </SwipeItem>
         </Swipe>
         <button id="goLeft" onClick={() => swipeEl.prev()}>
           <FontAwesomeIcon icon={faChevronLeft} />
@@ -125,6 +129,9 @@ export class Slider extends Component {
                 );
               }
             })}
+            <li>
+              <button onClick={() => swipeEl.slide(this.state.slides.length)}></button>
+            </li>
           </ul>
         </div>
       </div>

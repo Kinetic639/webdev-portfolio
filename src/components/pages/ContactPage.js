@@ -4,18 +4,30 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faFacebook
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-
+import { createBrowserHistory } from "history";
 import Header from "../core/Header";
-
 export default function ContactPage() {
   return (
     <div className="page contact-page">
+      {createBrowserHistory().location.pathname === "/contact" ? (
         <Header>Contact</Header>
+      ) : null}
       <div className="content-container container-contact">
+        {createBrowserHistory().location.pathname !== "/contact" ? (
+          <div className="questions">
+            <h3>
+              Any questions? 
+            </h3><h3>
+              Contact me
+            </h3>
+          </div>
+        ) : null}
         <div className="location">
-          <h3>Location: <span>Poznań, Poland</span> </h3>
+          <h3>
+            Location: <span>Poznań, Poland</span>
+          </h3>
           <p>(I don't mind relocating if necessary)</p>
         </div>
         <div className="container-social">

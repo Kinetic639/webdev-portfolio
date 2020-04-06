@@ -17,12 +17,12 @@
   }
 }
 .container-contact {
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .container-social {
   height: 40vh;
-  margin-bottom: 15vh;
+  // margin-bottom: 15vh;
   color: $color-secondary;
   font-size: 6rem;
   display: grid;
@@ -37,6 +37,7 @@
 
 .location {
     text-align: center;
+    margin:  2rem 0 5rem;
   & h3 {
     color: $color-secondary;
     font-size: 2rem;
@@ -49,4 +50,9 @@
   & p {
       font-size: 1.3rem;
   }
+}
+
+.questions {
+  @extend .location;
+  margin: 0 0 2rem;
 }
