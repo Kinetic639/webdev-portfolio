@@ -26,32 +26,36 @@ export class App extends Component {
       {
         id: 1,
         page: "/",
-        title: "Home"
+        title: "Home",
       },
       {
         id: 4,
         page: "projects",
-        title: "Projects"
+        title: "Projects",
       },
       {
         id: 2,
         page: "about",
-        title: "about"
+        title: "about",
       },
       {
         id: 5,
         page: "contact",
-        title: "Contact"
-      }
-    ]
+        title: "Contact",
+      },
+    ],
   };
 
   backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
+    const navItems = [...document.querySelector(".nav-menu").children];
+    navItems.map((e) => e.classList.toggle("show"));
   };
 
   drawerToggleclickHandler = () => {
     this.setState({ sideDrawerOpen: !this.state.sideDrawerOpen });
+    const navItems = [...document.querySelector(".nav-menu").children];
+    navItems.map((e) => e.classList.toggle("show"));
   };
 
   render() {

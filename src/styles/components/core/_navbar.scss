@@ -15,10 +15,27 @@
     transition: all 0.3s ease-out;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     &.open {
       transform: translateX(0);
     }
   }
 }
 
-
+.branding {
+  margin: 10vh auto 0; 
+  display: flex;
+  &__portrait {
+    background-color: #fff;
+    background: url("./images/portrait_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(50%);
+    height: 150px;
+    width: 150px;
+    border: 2px solid $color-secondary;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
