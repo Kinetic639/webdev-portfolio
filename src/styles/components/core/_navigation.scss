@@ -21,6 +21,15 @@
     &.show {
       transform: translate3d(0, 0, 0);
       transition: all 0.3s ease-out;
+      & a {
+        &.is-active {
+          color: $color-secondary;
+          &::before {
+            transform: scaleX(1) translateX(-50%);
+            transition-delay: .8s;
+          }
+        }
+      }
     }
 
     & a {
@@ -31,9 +40,9 @@
       text-transform: uppercase;
       &.is-active {
         color: $color-secondary;
-        &::before {
-
+        &.show::before {
           transform: scaleX(1) translateX(-50%);
+          // transition-delay: 2.3s;
         }
       }
 
@@ -43,15 +52,15 @@
         left: 50%;
         bottom: 0;
         background-color: $color-secondary;
-        width: 40%;
+        width: 30%;
         height: 2px;
         transform: scaleX(0) translateX(-50%);
-        transform-origin: center;
-        transition: all 5.3s ease;
+        transform-origin: left;
+        transition: all 0.3s ease;
       }
 
       &:hover::before {
-        transform: scaleX(1);
+        transform: scaleX(1) translateX(-50%);
       }
       &:active {
         color: #464646;
