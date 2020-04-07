@@ -1,53 +1,23 @@
 const path = require("path");
-const webpack = require("webpack");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CSSExtract = new ExtractTextPlugin("styles.css");
-
-process.env.NODE_ENV = process.env.NODE_ENV || "development";
-
-if (process.env.NODE_ENV === "test") {
-  require("dotenv").config({ path: ".env.test" });
-} else if (process.env.NODE_ENV === "development") {
-  require("dotenv").config({ path: ".env.development" });
-}
 
 module.exports = {
   // entry: "./src/playground/redux-expensify.js",
   entry: ["./src/App.js"],
   output: {
-    path: path.join(__dirname, "public", "dist"),
+    path: path.join(__dirname, "dist"),
     // publicPath: "/",
     filename: "bundle.js",
   },
 
   plugins: [
     CSSExtract,
-    new webpack.DefinePlugin({
-      "process.env.FIREBASE_API_KEY": JSON.stringify(
-        process.env.FIREBASE_API_KEY
-      ),
-      "process.env.FIREBASE_AUTH_DOMAIN": JSON.stringify(
-        process.env.FIREBASE_AUTH_DOMAIN
-      ),
-      "process.env.FIREBASE_DATABASE_URL": JSON.stringify(
-        process.env.FIREBASE_DATABASE_URL
-      ),
-      "process.env.FIREBASE_PROJECT_ID": JSON.stringify(
-        process.env.FIREBASE_PROJECT_ID
-      ),
-      "process.env.FIREBASE_STORAGE_BUCKET": JSON.stringify(
-        process.env.FIREBASE_STORAGE_BUCKET
-      ),
-      "process.env.FIREBASE_MESSAGING_SENDER_ID": JSON.stringify(
-        process.env.FIREBASE_MESSAGING_SENDER_ID
-      ),
-      "process.env.FIREBASE_APP_ID": JSON.stringify(
-        process.env.FIREBASE_APP_ID
-      ),
-      "process.env.FIREBASE_MEASUREMENT_ID": JSON.stringify(
-        process.env.FIREBASE_MEASUREMENT_ID
-      ),
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      favicon: "src/images/favicon.ico",
+      
     }),
   ],
   module: {
@@ -60,12 +30,16 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/,
-        use: "file-loader?name=assets/[name].[hash].[ext]",
-      },
-      {
         test: /\.(ico)$/,
-        use: "file-loader?name=assets/[name].[ext]",
+        use: [
+          {
+            loader: "file-loader?name=[name].[ext]",
+            options: {
+              outputPath: "images/",
+              publicPath: "images/",
+            },
+          },
+        ],
       },
       {
         test: /\.s?css$/,
@@ -87,8 +61,17 @@ module.exports = {
         }),
       },
       {
-        test: /\.(jpe?g|png|gif|svg|jpg)$/i,
-        use: ["file-loader"],
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+              publicPath: "images/",
+            },
+          },
+        ],
       },
     ],
   },
