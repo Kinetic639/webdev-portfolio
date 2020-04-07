@@ -18,7 +18,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "public", "dist"),
     // publicPath: "/",
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
 
   plugins: [
@@ -47,8 +47,8 @@ module.exports = {
       ),
       "process.env.FIREBASE_MEASUREMENT_ID": JSON.stringify(
         process.env.FIREBASE_MEASUREMENT_ID
-      )
-    })
+      ),
+    }),
   ],
   module: {
     rules: [
@@ -56,16 +56,16 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+        },
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/,
-        use: "file-loader?name=assets/[name].[hash].[ext]"
+        use: "file-loader?name=assets/[name].[hash].[ext]",
       },
       {
         test: /\.(ico)$/,
-        use: "file-loader?name=assets/[name].[ext]"
+        use: "file-loader?name=assets/[name].[ext]",
       },
       {
         test: /\.s?css$/,
@@ -74,32 +74,22 @@ module.exports = {
             {
               loader: "css-loader",
               options: {
-                sourceMap: true
-              }
+                sourceMap: true,
+              },
             },
             {
               loader: "sass-loader",
               options: {
-                sourceMap: true
-              }
-            }
-          ]
-        })
+                sourceMap: true,
+              },
+            },
+          ],
+        }),
       },
       {
         test: /\.(jpe?g|png|gif|svg|jpg)$/i,
-        include: path.join(__dirname, "app"),
-        use: [
-          "file-loader",
-          {
-            loader: "url-loader",
-            options: {
-              limit: 30000,
-              name: "[name].[ext]"
-            }
-          }
-        ]
-      }
-    ]
-  }
+        use: ["file-loader"],
+      },
+    ],
+  },
 };

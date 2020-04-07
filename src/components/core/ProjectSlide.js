@@ -1,4 +1,9 @@
 import React from "react";
+import myImg1 from "../../images/project1.jpg";
+import myImg2 from "../../images/project2.jpg";
+import myImg3 from "../../images/project3.jpg";
+import myImg4 from "../../images/project4.jpg";
+const images = [myImg1, myImg2, myImg3, myImg4];
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import {
 //   faHtml5,
@@ -9,7 +14,7 @@ import React from "react";
 // } from "@fortawesome/free-brands-svg-icons";
 const ProjectSlide = (props) => {
   const bgImage = {
-    background: `url(images/project${props.item.id}.jpg)`,
+    background: `url(${images[props.item.id - 1]})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center top",
     backgroundSize: "cover",
