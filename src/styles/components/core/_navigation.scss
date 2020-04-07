@@ -54,6 +54,7 @@
           transition: all 0.3s ease;
         }
       }
+      
       &::before {
         content: "";
         position: absolute;
@@ -66,6 +67,7 @@
         transform-origin: left;
         transition: all 0.3s ease;
       }
+
       &:hover::before {
         transform: scaleX(1) translateX(-50%);
       }
