@@ -9,7 +9,7 @@ import React from "react";
 // } from "@fortawesome/free-brands-svg-icons";
 const ProjectSlide = (props) => {
   const bgImage = {
-    background: `url(/dist/images/project${props.item.id}.jpg)`,
+    background: `url(images/project${props.item.id}.jpg)`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center top",
     backgroundSize: "cover",
