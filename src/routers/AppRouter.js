@@ -24,17 +24,17 @@ export class App extends Component {
         title: "Home",
       },
       {
-        id: 4,
+        id: 2,
         page: "projects",
         title: "Projects",
       },
       {
-        id: 2,
+        id: 3,
         page: "about",
         title: "about",
       },
       {
-        id: 5,
+        id: 4,
         page: "contact",
         title: "Contact",
       },

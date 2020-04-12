@@ -1,0 +1,29 @@
+.img-frame {
+  margin: 0 auto;
+  position: absolute;
+  overflow: hidden;
+  border: 5px solid $color-secondary;
+  transform: translate(75px, -50%) rotate(-45deg);
+  z-index: 2;
+  &.home-frame {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 142%;
+      height: 142%;
+      background-color: #fff;
+      background: url("./images/portrait_3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translate(-50%, -50%) rotate(45deg);
+      transform-origin: center;
+      // transform: rotate(45deg) translate(-50%, -50%);
+      transition: all 0.3s ease;
+    }
+    &:hover::before {
+      transform: translate(-50%, -50%) rotate(45deg) scale(1.3);
+    }
+  }
+}

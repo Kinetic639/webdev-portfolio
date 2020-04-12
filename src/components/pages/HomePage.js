@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
+import ImgFrame from "../core/ImgFrame";
 
 export default function HomePage() {
   return (
@@ -25,6 +26,7 @@ export default function HomePage() {
         <FontAwesomeIcon className='btn__icon' icon={faEye} />
         Projects
         </Link>
+        <ImgFrame width='50vh' class='home-frame' opacity='.3' />
       </div>
     </div>
   );

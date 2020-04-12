@@ -2,20 +2,22 @@
   
   position: relative;
   z-index: 1;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    opacity: 0.1;
-    z-index: -1;
-    background: url("./images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   border: 12px solid $color-secondary;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 50%;
+  //   opacity: 0.1;
+  //   z-index: -1;
+  //   background: url("./images/background.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: center bottom;
+  //   background-size: cover;
+  //   transform: rotate(45deg);
+  // }
 
   & * {
     text-align: center;
@@ -63,11 +65,9 @@
     //   background-size: 100% auto;
     // }
   }
-  &__cta {
-  }
 }
 
-.link {
-  color: $fc-secondary;
-}
+// .link {
+//   color: $fc-secondary;
+// }
 //7198721301

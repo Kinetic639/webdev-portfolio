@@ -5,7 +5,7 @@ export default function NavList(props) {
   return (
     <ul className="nav-menu">
       {props.views.map(e => (
-        <NavItem click={props.click} key={e.id} title={e.title} page={e.page}>
+        <NavItem click={props.click} key={e.id} id={e.id} title={e.title} page={e.page}>
           {e.title}
         </NavItem>
       ))}

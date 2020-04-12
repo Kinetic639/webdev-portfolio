@@ -5,8 +5,8 @@ import Slider from "../core/Slider";
 const ProjectsPage = () => {
   return (
     <div className="page projects-page">
-      <div className="content-container container-projects">
         <Header className="header-projects">My Projects</Header>
+      <div className="content-container container-projects">
         <Slider />
       </div>
     </div>

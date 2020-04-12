@@ -1,0 +1,100 @@
+.nav-menu {
+    padding: 0;
+    margin: 0 0 10vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &.open {
+      display: block;
+    }
+  
+    &__icon {
+      margin-right: 2rem;
+    }
+  
+    &__item {
+      width: 50%;
+      text-align: center;
+      line-height: 2.5;
+      position: relative;
+      margin: 0 0 1.5rem;
+      transform: translate3d(600px, 0, 0);
+      transition: all 0.3s ease;
+      &.show {
+        transform: translate3d(0, 0, 0);
+        transition: all 0.3s ease-out;
+        & a {
+          transform: translate3d(0, 0, 0);
+          justify-content: center;
+  
+          transition: all 0.3s ease;
+          &.is-active {
+            color: $color-secondary;
+            &::before {
+              transform: scaleX(1) translateX(-50%);
+              transition-delay: 0.8s;
+            }
+          }
+        }
+      }
+  
+      & a {
+        color: $fc-primary;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translate3d(220px, 0, 0);
+        transition: all 0.3s ease;
+       
+        &.is-active {
+          color: $color-secondary;
+  
+          &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            background-color: $color-secondary;
+            width: 70%;
+            height: 2px;
+            transform: scaleX(0) translateX(-50%);
+            transform-origin: left;
+            transition: all 0.3s ease;
+          }
+        }
+  
+        &::before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          background-color: $color-secondary;
+          width: 70%;
+          height: 2px;
+          transform: scaleX(0) translateX(-50%);
+          transform-origin: left;
+          transition: all 0.3s ease;
+        }
+  
+        &:hover::before {
+          transform: scaleX(1) translateX(-50%);
+        }
+        &:active {
+          color: #464646;
+        }
+      }
+    }
+  }
+  
+  @for $x from 1 through 4 {
+    .nav-menu__item:nth-child(#{$x}) {
+      // transition: all 0.3s;
+      transition-delay: $x * 0.1s;
+    }
+  }
+  
