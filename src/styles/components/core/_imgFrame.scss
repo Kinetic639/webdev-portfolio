@@ -3,9 +3,10 @@
   position: absolute;
   overflow: hidden;
   border: 5px solid $color-secondary;
-  transform: translate(75px, -50%) rotate(-45deg);
+  
   z-index: 2;
   &.home-frame {
+    transform: translate(0,-40%) rotate(-45deg) ;
     &::before {
       content: "";
       position: absolute;

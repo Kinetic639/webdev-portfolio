@@ -1,13 +1,15 @@
 import React from "react";
 
-const ImgFrame = (props) => {
-  const classes = ['img-frame', props.class]
+const ImgFrame = ({width, height, opacity, classList}) => {
+  const classes = ['img-frame', classList]
+  const {innerWidth} = window;
   const frameStyle = {
-    width: props.width,
-    height: props.height ? props.height : props.width,
+    width: width,
+    height: height ? height : width,
     top: '50%',
-    right: '-30%',
-    opacity: props.opacity,
+    // left: `0`,
+    left: window.innerWidth < 400 ? `${0 + (innerWidth/50)}%` : `${40 + (innerWidth/50)}%`,
+    opacity: opacity,
   }
   return <div style={frameStyle} className={classes.join(' ')}></div>
 };

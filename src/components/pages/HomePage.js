@@ -26,7 +26,7 @@ export default function HomePage() {
         <FontAwesomeIcon className='btn__icon' icon={faEye} />
         Projects
         </Link>
-        <ImgFrame width='50vh' class='home-frame' opacity='.3' />
+        <ImgFrame width='380px' classList='home-frame' opacity='.3' />
       </div>
     </div>
   );

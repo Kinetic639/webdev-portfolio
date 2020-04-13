@@ -26,6 +26,8 @@ body {
 .page {
   height: 100%;
   color: $fc-primary;
+  // height: fit-content;
+  overflow: hidden;
 }
 
 .content-container {
