@@ -5,7 +5,7 @@ import Slider from "../core/Slider";
 const ProjectsPage = () => {
   return (
     <div className="page projects-page">
-        <Header className="header-projects">My Projects</Header>
+        {/* <Header className="header-projects">My Projects</Header> */}
       <div className="content-container container-projects">
         <Slider />
       </div>

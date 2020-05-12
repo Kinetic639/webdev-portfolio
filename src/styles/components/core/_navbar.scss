@@ -1,9 +1,16 @@
+// .container {
+//   &-navbar {
+//    display: none;
+    
+//   }
+// }
+
 .container {
-  background-color: $color-primary;
+  background-color: $cl-primary;
 
   &-navbar {
     height: 100%;
-    background-color: $main-bg-dark;
+    background-color: $cl-primary-dark;
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -34,7 +41,7 @@
     filter: grayscale(50%);
     height: 150px;
     width: 150px;
-    border: 2px solid $color-secondary;
+    border: 2px solid $cl-secondary;
     border-radius: 50%;
     margin: 0 auto;
   }
