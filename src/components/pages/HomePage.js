@@ -10,12 +10,12 @@ export default function HomePage() {
     <div className="page home-page">
       <div className="content-container container-home">
         <div className="home-page__top">
-          <h1 className="home-page__title">
+          <h1 className="page__title">
             Michał <span>Stępień</span>
           </h1>
-          <h3 className="home-page__subtitle">
+          <h2 className="page__subtitle">
             Front end developer / programmer
-          </h3>
+          </h2>
         </div>
         <p className="home-page__description">
           Specializing in custom theme development. If you're a business seeking
@@ -26,7 +26,7 @@ export default function HomePage() {
           <FontAwesomeIcon className="btn__icon" icon={faEye} />
           Projects
         </Link>
-        <ImgFrame width='380px' classList='home-frame' opacity='.3' />
+        {/* <ImgFrame width='380px' classList='home-frame' opacity='.3' /> */}
       </div>
     </div>
   );

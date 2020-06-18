@@ -1,0 +1,14 @@
+.page {
+    &__title {
+        font-size: $ml-size;
+        & span {
+            color: $cl-secondary;
+        }
+    }
+    h2 {
+        font-size: $m-size;
+    }
+    p {
+        font-size: $s-size;
+    }
+}

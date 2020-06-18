@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import ProjectSlide from "./ProjectSlide";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faChevronLeft,
+//   faChevronRight,
+// } from "@fortawesome/free-solid-svg-icons";
 
-import Swipe, { SwipeItem } from "swipejs/react";
 import ContactPage from "../pages/ContactPage";
+
+import ReactIdSwiperCustom from "react-id-swiper/lib/ReactIdSwiper.custom";
+import { Swiper, Navigation, Pagination } from "swiper/js/swiper.esm";
 
 export class Slider extends Component {
   state = {
@@ -70,73 +72,36 @@ export class Slider extends Component {
   };
 
   render() {
-    const endTransition = (index, element) => {
-      const dotNavigation = document.querySelector(".dot-navigation").children;
-      for (let i = 0; i < dotNavigation.length; i++) {
-        dotNavigation[i].classList.remove("current");
-        dotNavigation[index].classList.add("current");
-      }
+    const params = {
+      // Provide Swiper class as props
+      Swiper,
+      // Add modules you need
+      modules: [Navigation, Pagination],
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      spaceBetween: 300,
     };
-
-    const handleSlideChange = (index) => {
-      swipeEl.slide(index);
-    };
-
-    let swipeEl;
     return (
-      <div className="slider">
-        <Swipe
-          id="mySwipe"
-          className="mySwipe"
-          ref={(o) => (swipeEl = o)}
-          auto={null}
-          continuous={true}
-          transitionEnd={endTransition}
-        >
+        <ReactIdSwiperCustom {...params}>
           {this.state.slides.map((item) => {
-            return (
-              <SwipeItem key={item.id}>
-                <ProjectSlide item={item} />
-              </SwipeItem>
-            );
+            return <ProjectSlide key={item.id} item={item} />;
           })}
-          ;
-          <SwipeItem>
-           <ContactPage />
-          </SwipeItem>
-        </Swipe>
-        <button id="goLeft" onClick={() => swipeEl.prev()}>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        <button id="goRight" onClick={() => swipeEl.next()}>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
-
-        <div className="dotstyle dotstyle-fillup">
-          <ul className="dot-navigation">
-            {this.state.slides.map((el, index) => {
-              if (index === 0) {
-                return (
-                  <li key={index} className="current">
-                    <button onClick={() => handleSlideChange(index)}></button>
-                  </li>
-                );
-              } else {
-                return (
-                  <li key={index}>
-                    <button onClick={() => handleSlideChange(index)}></button>
-                  </li>
-                );
-              }
-            })}
-            <li>
-              <button onClick={() => swipeEl.slide(this.state.slides.length)}></button>
-            </li>
-          </ul>
-        </div>
-      </div>
+          {/* <ContactPage /> */}
+        </ReactIdSwiperCustom>
     );
   }
 }
 
 export default Slider;
+
+// {this.state.slides.map((item) => {
+//   return <ProjectSlide key={item.id} item={item} />;
+// })}
+// <ContactPage />
