@@ -4,6 +4,8 @@
         & span {
             color: $cl-secondary;
         }
+        display: flex;
+        justify-content: space-evenly;
     }
     h2 {
         font-size: $m-size;

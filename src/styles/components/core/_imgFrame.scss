@@ -3,10 +3,10 @@
   position: absolute;
   overflow: hidden;
   border: 5px solid $color-secondary;
-  
+
   z-index: 2;
   &.home-frame {
-    transform: translate(0,-40%) rotate(-45deg) ;
+    transform: translate(0, -40%) rotate(-45deg);
     &::before {
       content: "";
       position: absolute;
@@ -15,7 +15,7 @@
       width: 142%;
       height: 142%;
       background-color: #fff;
-      background: url("./images/portrait_3.jpg");
+      background: url("../../../images/portrait_3.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       transform: translate(-50%, -50%) rotate(45deg);

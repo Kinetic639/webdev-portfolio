@@ -98,3 +98,35 @@
     }
   }
   
+
+  /*
+   {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              
+              name: "[name].[ext]",
+              outputPath: "images/",
+              publicPath: "images/",
+            },
+          },
+        ],
+      },
+
+{
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images/",
+              publicPath: "images/",
+            },
+          },
+        ],
+      },
+
+      */

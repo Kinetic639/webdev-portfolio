@@ -28,18 +28,7 @@ module.exports = {
           loader: "babel-loader",
         },
       },
-      {
-        test: /\.(ico)$/,
-        use: [
-          {
-            loader: "file-loader?name=[name].[ext]",
-            options: {
-              outputPath: "images/",
-              publicPath: "images/",
-            },
-          },
-        ],
-      },
+
       {
         test: /\.s?css$/,
         use: CSSExtract.extract({
@@ -72,6 +61,7 @@ module.exports = {
           },
         ],
       },
+
       {
         exclude: [/node_modules\/(?!(swiper|dom7)\/).*/, /\.test\.js(x)?$/],
         test: /\.js(x)?$/,

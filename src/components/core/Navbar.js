@@ -1,6 +1,7 @@
 import React from "react";
 import NavList from "./NavList";
 
+
 export default function Navbar(props) {
   let navbarClasses = "container-navbar";
   if (props.show) {

@@ -10,10 +10,6 @@
     height: 100%;
     opacity: 0.15;
     z-index: -1;
-    background: url("./images/contact_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
   }
 }
 .container-contact {
@@ -23,13 +19,13 @@
 .container-social {
   height: 40vh;
   // margin-bottom: 15vh;
-  color: $color-secondary;
+  color: $cl-secondary;
   font-size: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   & a {
-    color: $color-secondary;
+    color: $cl-secondary;
     display: inline-block;
     line-height: 1;
   }
@@ -39,7 +35,7 @@
     text-align: center;
     margin:  2rem 0 5rem;
   & h3 {
-    color: $color-secondary;
+    color: $cl-secondary;
     font-size: 2rem;
     & span {
         color: #fff;

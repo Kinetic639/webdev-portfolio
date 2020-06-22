@@ -18,8 +18,7 @@ export default function HomePage() {
           </h2>
         </div>
         <p className="home-page__description">
-          Specializing in custom theme development. If you're a business seeking
-          a web presence or are looking to hire, contact me{" "}
+        Aspiring self tought programmer looking for first experience as a front end developer. If you're a business seeking someone to hire, contact me{" "}
           <span className="link">here</span>.
         </p>
         <Link className="btn btn-cta" to="/projects">
