@@ -19,7 +19,8 @@ const AboutPage = () => {
           <h3 className="about-card__title">Career goals</h3>
           <p className="about-card__description">
             My goal is to become top shelf React Developer Creating and working
-            on well known Web Apps used large number of people across the world.
+            on well known Web Apps used by large number of people across the
+            world.
           </p>
         </div>
         <Link className="btn btn-cta btn-cta__contact" to="/contact">

@@ -1,16 +1,20 @@
 .page {
     &__title {
-        font-size: $ml-size;
+        font-size: 4rem;
+        display: inline-flex;
+        min-width: 350px;
+        justify-content: space-evenly;
+        margin: 1rem auto;
         & span {
             color: $cl-secondary;
         }
-        display: flex;
-        justify-content: space-evenly;
     }
-    h2 {
-        font-size: $m-size;
+    &__subtitle {
+        font-weight: 400;
+        font-size: $xm-size;
+        text-align: center;
     }
-    p {
-        font-size: $s-size;
+    &__description {
+        font-size: $xs-size;
     }
 }

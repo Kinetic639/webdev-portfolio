@@ -17,7 +17,7 @@ export default function HomePage() {
             Front end developer / programmer
           </h2>
         </div>
-        <p className="home-page__description">
+        <p className="page__description">
         Aspiring self tought programmer looking for first experience as a front end developer. If you're a business seeking someone to hire, contact me{" "}
           <span className="link">here</span>.
         </p>
