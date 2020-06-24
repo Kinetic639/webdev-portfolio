@@ -17,13 +17,16 @@
 }
 
 .container-social {
-  height: 40vh;
+  height: 30vh;
+  width: 80%;
+  max-width: 30rem;
   // margin-bottom: 15vh;
   color: $cl-secondary;
   font-size: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  align-items: center;
   & a {
     color: $cl-secondary;
     display: inline-block;

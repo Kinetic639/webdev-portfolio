@@ -22,6 +22,7 @@
 
 .about-card {
   padding: 0 2rem;
+  max-width: 60rem;
   &__title {
     color: $cl-secondary;
     font-weight: 400;
@@ -33,4 +34,8 @@
 }
 .btn-cta__contact {
   margin: 6rem 0;
+}
+.about-card:first-child() .about-card__description {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $cl-secondary;
 }
