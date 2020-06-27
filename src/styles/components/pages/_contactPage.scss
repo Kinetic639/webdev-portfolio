@@ -14,13 +14,15 @@
 }
 .container-contact {
   justify-content: center;
+  padding-bottom: 15vh;
 }
 
 .container-social {
   height: 30vh;
   width: 80%;
   max-width: 30rem;
-  // margin-bottom: 15vh;
+  min-height: 20rem;
+  max-height: 30rem;
   color: $cl-secondary;
   font-size: 6rem;
   display: grid;
