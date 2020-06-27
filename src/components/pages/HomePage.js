@@ -11,7 +11,7 @@ export default function HomePage() {
       <div className="content-container container-home">
         <div className="home-page__top">
           <h1 className="page__title">
-            Michał <span>Stępień</span>
+            {`Michał `}<span> Stępień</span>
           </h1>
           <h2 className="page__subtitle">
             Front end developer / programmer
