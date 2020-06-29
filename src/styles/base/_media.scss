@@ -1,55 +1,64 @@
 @media (min-width: $mobile-l) {
-    .page {
-        &__title {
-            letter-spacing: 6px;
-            font-size: 6rem;
-            margin: 1rem auto;
-            & span {
-                padding-left: 2rem;
-            }
-        }
-        &__subtitle {
-            font-size: $m-size;
-        }
-        &__description {
-            font-size: $s-size;
-            line-height: 1.7;
-        }
+  .page {
+    &__title {
+      letter-spacing: 6px;
+      font-size: 6rem;
+      margin: 1rem auto;
+      & span {
+        padding-left: 2rem;
+      }
     }
+    &__subtitle {
+      font-size: $m-size;
+    }
+    &__description {
+      font-size: $s-size;
+      line-height: 1.7;
+    }
+  }
+
+  .about-card {
+    &__title {
+      font-size: 2.6rem;
+    }
+    &__description {
+      font-size: $s-size;
+    }
+  }
 }
 
 @media (min-width: $tablet) {
-    .page {
-        &__title {
-            margin: 3rem auto 1rem;
-            letter-spacing: 6px;
-            font-size: 8rem;
-            & span {
-                padding-left: 2rem;
-            }
-        }
-        &__subtitle {
-            font-size: $l-size;
-        }
-        &__description {
-            font-size: $xm-size;
-            line-height: 1.7;
-            max-width: 45rem;
-        }
+  .page {
+    &__title {
+      margin: 3rem auto 1rem;
+      letter-spacing: 6px;
+      font-size: 8rem;
+      & span {
+        padding-left: 2rem;
+      }
     }
+    &__subtitle {
+      font-size: $l-size;
+    }
+    &__description {
+      font-size: $xm-size;
+      line-height: 1.7;
+      max-width: 45rem;
+    }
+  }
 
-    .btn {
-        font-size: $m-size;
-        &-cta {
-            margin-bottom: 5rem;
-        }
+  .btn {
+    font-size: $m-size;
+    &-cta {
+      margin-bottom: 5rem;
     }
+  }
 
-    .toggle-button {
-        position: absolute;
-        top: 80px;
-        right: 80px;
-    }
+  .toggle-button {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+  }
 }
 // @media (min-width: $desktop-breakpoint) {
 //   .toggle-button {

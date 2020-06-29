@@ -1,41 +1,18 @@
-.about-page {
-  //   position: relative;
-  //   z-index: 1;
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     opacity: 0.12;
-  //     z-index: -1;
-  //     background: url("./images/about_bg.png");
-  //     background-repeat: no-repeat;
-  //     background-position: center top;
-  //     background-size: cover;
-  //   }
-}
 .container-about {
   justify-content: space-evenly;
 }
 
 .about-card {
-  padding: 0 2rem;
+  padding: 0 2rem 3rem;
   max-width: 60rem;
+  border-bottom: 1px solid $cl-secondary;
+
   &__title {
     color: $cl-secondary;
     font-weight: 400;
     margin-bottom: 1rem;
   }
   &__description {
-    font-size: 1.3rem;
+    font-size: $xs-size;
   }
-}
-.btn-cta__contact {
-  margin: 6rem 0;
-}
-.about-card:first-child() .about-card__description {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid $cl-secondary;
 }

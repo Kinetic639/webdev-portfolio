@@ -1,24 +1,30 @@
 .page {
-    &__title {
-        font-weight: 500;
-        font-size: 4rem;
-        display: inline-flex;
-        min-width: 350px;
-        justify-content: space-evenly;
-        margin: 1rem auto;
-        & span {
-            color: $cl-secondary;
-        }
+  &__title,
+  &__title--contact {
+    font-weight: 500;
+    font-size: 4rem;
+    display: inline-flex;
+    min-width: 350px;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    & span {
+      color: $cl-secondary;
     }
-    &__subtitle {
-        font-weight: 400;
-        font-size: $xm-size;
-        text-align: center;
-    }
-    &__description {
-        font-size: $xs-size;
-        line-height: 1.7;
-        text-align: center;
-        max-width: 40rem;
-    }
+  }
+  &__title--contact {
+    display: inline-block;
+    font-size: 2.6rem;
+  }
+  &__subtitle,
+  &__subtitle--contact {
+    font-weight: 400;
+    font-size: $xm-size;
+    text-align: center;
+  }
+  &__description {
+    font-size: $xs-size;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 40rem;
+  }
 }
