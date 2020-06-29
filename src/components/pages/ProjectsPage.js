@@ -1,14 +1,17 @@
 import React from "react";
-import Header from "../core/Header";
-import Slider from "../core/Slider";
+import ProjectCard from "../core/ProjectCard";
+import ContactPage from "./ContactPage";
 
 const ProjectsPage = () => {
   return (
-    <div className="page projects-page">
-        {/* <Header className="header-projects">My Projects</Header> */}
+    <div className="page page-projects">
+      {/* <Header className="header-projects">My Projects</Header> */}
       <div className="content-container container-projects">
-       <h1 className='page__title'><span>Projects</span></h1>
-       <p className='page__description'>coming soon...</p>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ContactPage />
       </div>
     </div>
   );

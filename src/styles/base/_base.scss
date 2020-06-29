@@ -41,14 +41,19 @@ body {
 }
 
 .content-container {
-  height: 100%;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
+.container {
+  &-home,
+  &-contact,
+  &-about {
+    height: 100%;
+  }
+}
 // .content-container {
 //   // width: 80%;
 //   margin: 0 auto;

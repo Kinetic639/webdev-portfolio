@@ -28,3 +28,27 @@
     max-width: 40rem;
   }
 }
+
+
+.project-card {
+    &__number {
+        text-align: center;
+        font-weight: 500;
+        color: $cl-secondary;
+        font-size: 6rem;
+        line-height: 1;
+        opacity: .6;
+    }
+    &__img {
+    }
+    &__description {
+        &-title {
+            font-weight: 500;
+            color: $cl-secondary;
+            font-size: $xm-size;
+        }
+        &-text {
+            font-size: $xxs-size;
+        }
+    }
+  }
