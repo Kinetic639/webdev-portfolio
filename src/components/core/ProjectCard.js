@@ -1,11 +1,11 @@
 import React from "react";
 
-const ProjectCard = ({ id, title, description, imgUrl, click }) => {
+const ProjectCard = ({ id, title, description, imgUrl }) => {
   const imgStyle = {
     backgroundImage: `url(${imgUrl})`
   };
   return (
-    <div className="project-card" onClick={(e) => click(id)}>
+    <div className="project-card">
       <div className="project-card__number-container">
         {" "}
         <h1 className="project-card__number">{id}</h1>

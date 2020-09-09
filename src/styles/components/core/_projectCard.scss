@@ -1,9 +1,12 @@
 .project-card {
   display: flex;
+  height: 400px;
   width: 100vw;
   padding: 0 0 2rem;
   position: relative;
   margin-bottom: 4rem;
+  max-width: 350px;
+  justify-self: center;
   &:nth-child(even) {
     flex-direction: row-reverse;
     & .project-card__description {
