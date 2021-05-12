@@ -40,7 +40,7 @@
     "sass-loader": "^8.0.2",
     "slick-carousel": "^1.8.1",
     "style-loader": "^1.2.1",
-    "swiper": "^5.4.5",
+    "swiper": "^6.5.1",
     "url-loader": "^4.1.0",
     "uuid": "^3.4.0",
     "validator": "^12.2.0",
